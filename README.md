@@ -1,16 +1,18 @@
 # Information Stealers Wall of Sheep (IS-WOS)
 
-Similar to DEF CON's Wall of Sheep, but for information stealers and keyloggers that mostly operate over SMTP and FTP. Families include AgentTesla, HawkEye, Phoenix, AspireLogger, and Orion Logger. Only uniques hashes are considered.
+Similar to DEF CON's Wall of Sheep, but for information stealers and keyloggers that mostly operate over SMTP and FTP. Families include AgentTesla, HawkEye, Phoenix, AspireLogger, and Orion Logger. Only unique hashes are considered.
 
 ![image](https://github.com/ditekshen/is-wos/raw/master/img/dashboard.jpg)
 
-## Key Takeaways
+## Observations
 
 - AgentTesla is the most used information stealer.
 - Operators utilize samples from different information stealer families.
 - Operators share passwords across multiple samples, families, and exfiltration accounts.
 - Most abused network for exfiltration is PDR (AS394695). HawkEye samples seem to favor NameCheap, Inc. (AS22612), which happens to be the second most abused network.
-- Almost all families used SMTPS for encrypted exfiltration.
+- Although plaintext SMTP was used for the majority of exfiltration across the families, almost all families used SMTPS for encrypted exfiltration.
+- SMTP, FTP, and HTTP exfilration was observed by some families, separately. For example, AgentTesla was observed to use SMTP, FTP and HTTP, and HawkEye was observed to use SMTP and FTP.
+- Some samples employed timestopming on the compilation timestamp, some of which were static.
 - Some samples used a non-standard SMTP destination port 26 as a means of evasion.
 - None of the binaries was signed.
 
