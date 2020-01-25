@@ -2,6 +2,8 @@
 
 Similar to DEF CON's Wall of Sheep, but for information stealers and keyloggers that mostly operate over SMTP and FTP. Families include AgentTesla, HawkEye, Phoenix, AspireLogger, and Orion Logger. Only uniques hashes are considered.
 
+![image](https://github.com/ditekshen/is-wos/raw/master/img/dashboard.jpg)
+
 ## Key Takeaways
 
 - AgentTesla is the most used information stealer.
