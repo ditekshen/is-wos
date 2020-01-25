@@ -1,0 +1,28 @@
+{
+    "description": "Ingest pipeline created by file structure finder",
+    "processors": [
+        {
+            "date": {
+                "field": "observed",
+                "timezone": "{{ beat.timezone }}",
+                "formats": [
+                    "ISO8601"
+                ]
+            }
+        },
+        {
+            "geoip": {
+                "field": "ip",
+                "ignore_missing": true
+            }
+        },
+        {
+            "geoip": {
+                "field": "ip",
+                "ignore_missing": true,
+                "database_file": "GeoLite2-ASN.mmdb",
+                "target_field": "geo_ip"
+            }
+        }
+    ]
+}

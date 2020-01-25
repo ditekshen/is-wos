@@ -1,0 +1,125 @@
+{
+    "@timestamp": {
+        "type": "date"
+    },
+    "compiled": {
+        "type": "date",
+        "format": "yyyy-MM-dd HH:mm:ss"
+    },
+    "domain": {
+        "type": "text",
+        "fields": {
+            "keyword": {
+                "type": "keyword",
+                "ignore_above": 256
+            }
+        }
+    },
+    "encrypted_cnc": {
+        "type": "boolean"
+    },
+    "family": {
+        "type": "text",
+        "fields": {
+            "keyword": {
+                "type": "keyword",
+                "ignore_above": 256
+            }
+        }
+    },
+    "ip": {
+        "type": "ip"
+    },
+    "md5": {
+        "type": "text",
+        "fields": {
+            "keyword": {
+                "type": "keyword",
+                "ignore_above": 256
+            }
+        }
+    },
+    "observed": {
+        "type": "date",
+        "format": "iso8601"
+    },
+    "password": {
+        "type": "text",
+        "fields": {
+            "keyword": {
+                "type": "keyword",
+                "ignore_above": 256
+            }
+        }
+    },
+    "port": {
+        "type": "long"
+    },
+    "recipient": {
+        "type": "text",
+        "fields": {
+            "keyword": {
+                "type": "keyword",
+                "ignore_above": 256
+            }
+        }
+    },
+    "sender": {
+        "type": "text",
+        "fields": {
+            "keyword": {
+                "type": "keyword",
+                "ignore_above": 256
+            }
+        }
+    },
+    "sha1": {
+        "type": "text",
+        "fields": {
+            "keyword": {
+                "type": "keyword",
+                "ignore_above": 256
+            }
+        }
+    },
+    "sha256": {
+        "type": "text",
+        "fields": {
+            "keyword": {
+                "type": "keyword",
+                "ignore_above": 256
+            }
+        }
+    },
+    "user": {
+        "type": "text",
+        "fields": {
+            "keyword": {
+                "type": "keyword",
+                "ignore_above": 256
+            }
+        }
+    },
+    "size": {
+        "type": "long"
+    },
+    "type": {
+        "type": "text",
+        "fields": {
+            "keyword": {
+                "type": "keyword",
+                "ignore_above": 256
+            }
+        }
+    },
+    "signed": {
+        "type": "boolean"
+    },
+    "geoip": {
+        "properties": {
+            "location": {
+                "type": "geo_point"
+            }
+        }
+    }
+}
