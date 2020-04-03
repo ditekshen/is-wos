@@ -16,7 +16,7 @@ Similar to DEF CON's Wall of Sheep, but for information stealers and keyloggers 
 - Some samples used a non-standard SMTP destination port 26 as a means of evasion.
 - None of the binaries was signed.
 
-Additional observations and correlations can be found in the (Analysis.md)[https://github.com/ditekshen/is-wos/blob/master/Analysis.md] document.
+Additional observations and correlations can be found in the [Analysis.md](https://github.com/ditekshen/is-wos/blob/master/Analysis.md) document.
 
 ## Yara Rules
 
