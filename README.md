@@ -2,7 +2,7 @@
 
 Similar to DEF CON's Wall of Sheep, but for information stealers and keyloggers that mostly operate over SMTP and FTP. Families include AgentTesla, HawkEye, Phoenix, AspireLogger, and Orion Logger. Only unique hashes are considered.
 
-![image](https://github.com/ditekshen/is-wos/raw/master/img/dashboard_snapshot_20200402.jpg)
+![image](https://github.com/ditekshen/is-wos/raw/master/img/dashboard_snapshot_20200417.jpg)
 
 ## Observations
 
