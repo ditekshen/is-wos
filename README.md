@@ -73,5 +73,3 @@ The published data is for research purposes only, and not to be used for any mal
 
 - Create an ECS-compliant field mappings.
 - Create standard visualiztions and dashboard.
-
-https://github.com/ditekshen/is-wos/blob/master/Aanalysis.md
