@@ -21,6 +21,14 @@
 
 The operators in this correlation mostly utilize HawkEye with 34 unique samples. Between 2020-03-19/20 and 2020-03-24/25 and forward, the operators started utilizing AgentTesla-T2 with 11 unique samples. The accounts and passwords used across both families overlap. The operators are also active in creating new accounts and regularly changing passwords of existing accounts. If you work with or hire these operators, quit or fire them, they are already costing you money.
 
+The operators potentially introdcued a new keylogger known as 'M00nD3v' based on on password analysis and correlation. The same password 'Whyworry90#' is observed in previous HawkEye and AgentTesla samples operated by the same group. This keylogger appears to have been newly announced on April 17, 2020.
+
+M00nD3v Samples:
+
+| User                         | Count | Password          | Count |
+|------------------------------|-------|-------------------|-------|
+| billions@cairoways.me        | 2     | Whyworry90#       | 2     |
+
 HawkEye Samples:
 
 | User                         | Count | Password          | Count |

@@ -1,8 +1,8 @@
 # Information Stealers Wall of Sheep (IS-WOS)
 
-Similar to DEF CON's Wall of Sheep, but for information stealers and keyloggers that mostly operate over SMTP and FTP. Families include AgentTesla, HawkEye, Phoenix, AspireLogger, and Orion Logger. Only unique hashes are considered.
+Similar to DEF CON's Wall of Sheep, but for information stealers and keyloggers that mostly operate over SMTP and FTP. Families include AgentTesla, HawkEye, M00nD3v, Phoenix, AspireLogger, and Orion Logger. Only unique hashes are considered. Timestamps are in UTC.
 
-![image](https://github.com/ditekshen/is-wos/raw/master/img/dashboard_snapshot_20200417.jpg)
+![image](https://github.com/ditekshen/is-wos/raw/master/img/dashboard_snapshot_20200501.jpg)
 
 ## Observations
 
@@ -15,6 +15,10 @@ Similar to DEF CON's Wall of Sheep, but for information stealers and keyloggers 
 - Some samples employed timestopming on the compilation timestamp, some of which were static.
 - Some samples used a non-standard SMTP destination port 26 as a means of evasion.
 - None of the binaries was signed.
+
+### 2020-05-01
+
+- A new keylogger known as __M00nD3v__ is introduced. This keylogger is potentially used by the same operators under the "Fire Them" correlation, based on on password analysis and correlation. See the [Analysis.md](https://github.com/ditekshen/is-wos/blob/master/Analysis.md) document for more information.
 
 Additional observations and correlations can be found in the [Analysis.md](https://github.com/ditekshen/is-wos/blob/master/Analysis.md) document.
 
