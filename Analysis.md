@@ -2,7 +2,7 @@
 
 ### Use-Case 1
 
-44 unique samples distributed between AgentTesla-T1 and AgentTesla that do not issue DNS queries as part of therir C&C as seen in the "Top 10 Domains" table. 42 samples exfiltrate to two IP addresses on the same /24 subnet on Virtual Systems LLC. Emails addresses, particularly the user and recipient addresses as well as passwords follow the same patterns, potenially linking all 43 samples to the same operator.
+44 unique samples distributed between AgentTesla and AgentTesla that do not issue DNS queries as part of therir C&C as seen in the "Top 10 Domains" table. 42 samples exfiltrate to two IP addresses on the same /24 subnet on Virtual Systems LLC. Emails addresses, particularly the user and recipient addresses as well as passwords follow the same patterns, potenially linking all 43 samples to the same operator.
 
 | IP Address    | Count |
 |---------------|-------|
@@ -21,24 +21,28 @@
 
 ### Additional Use-Cases
 
-| User                           | Recipient                      | Password     | Count |
-|--------------------------------|--------------------------------|--------------|-------|
-| satinder@bodycarecreations.com | satinder@bodycarecreations.com | Lion@4321    | 7     |
-| enquiry@waman.in               | enquiry@waman.in               | enquiry@2020 | 5     |
-| shahid@onyxfreight.com         | shahid@onyxfreight.com         | jiashah123   | 4     |
+| User                            | Recipient                      | Password     | Count | Family              |
+|---------------------------------|--------------------------------|--------------|-------|---------------------|
+| satinder@bodycarecreations.com  | satinder@bodycarecreations.com | Lion@4321    | 7     | AgentTesla          |
+| enquiry@waman.in                | enquiry@waman.in               | enquiry@2020 | 5     | AgentTesla          |
+| shahid@onyxfreight.com          | shahid@onyxfreight.com         | jiashah123   | 5     | AgentTesla          |
+| onlineboxmonitor@tehnopan.rs    | nwekeboxs@tehnopan.rs          | ;&7]PU*4yzVJ | 7     | Phoenix, AgentTesla |
+| onlineboxmonitor@fiscalitate.eu | nwekeboxs@fiscalitate.eu       | ;&7]PU*4yzVJ | 5     | AgentTesla          |
+| accounts2@oilexindia.com        | accounts2@oilexindia.com       | Kamal@2019   | 4     | AgentTesla          |
 
 
 ## Correlation 'Fire Them'
 
 The operators in this correlation mostly utilize HawkEye with 34 unique samples. Between 2020-03-19/20 and 2020-03-24/25 and forward, the operators started utilizing AgentTesla with 11 unique samples. The accounts and passwords used across both families overlap. The operators are also active in creating new accounts and regularly changing passwords of existing accounts. If you work with or hire these operators, quit or fire them, they are already costing you money.
 
-The operators potentially introdcued a new keylogger known as 'M00nD3v' based on on password analysis and correlation. The same password 'Whyworry90#' is observed in previous HawkEye and AgentTesla samples operated by the same group. This keylogger appears to have been newly announced on April 17, 2020.
+The operators potentially introdcued a new keylogger known as 'M00nD3v' based on on password analysis and correlation. The same password 'Whyworry90#' is observed in previous HawkEye and AgentTesla samples operated by the same group. This keylogger appears to have been announced on April 17, 2020. Only 4 samples are currently observed and all of them are run by the same operator.
 
 M00nD3v Samples:
 
 | User                         | Count | Password          | Count |
 |------------------------------|-------|-------------------|-------|
-| billions@cairoways.me        | 2     | Whyworry90#       | 2     |
+| billions@cairoways.me        | 3     | Whyworry90#       | 3     |
+| admin@cairoways.me           | 1     | requestShow@      | 1     |
 
 HawkEye Samples:
 
@@ -86,17 +90,18 @@ AgentTesla Samples:
 
 ## Correlation 'Impersonation'
 
-4 uniqe AgentTesla samples, potentially attempting to impersonate General Electric (GE) with the use of a look-a-like typosquatted domain.
+4 uniqe AgentTesla samples, potentially attempting to impersonate General Electric (GE) with the use of a look-a-like typosquatted domain. This operator introduced new keylogger known as MassLogger using the same domain name, but with differnt account and password.
 
-| User                  | Count | Domain               | Password | Count |
-|-----------------------|-------|----------------------|----------|-------|
-| slim1@ge-lndustry.com | 4     | smtp.ge-lndustry.com | J)*(EIv4 | 4     |
+| User                  | Count | Domain               | Password | Count | Family |
+|-----------------------|-------|----------------------|----------|-------|------------|
+| slim1@ge-lndustry.com | 4     | smtp.ge-lndustry.com | J)*(EIv4 | 4     | AgentTesla |
+| admin@ge-lndustry.com | 2     | smtp.ge-lndustry.com | tvyTkyG1 | 2     | MassLogger |
 
 ## Correlation 'Steering Towards Arid Yandex Pastures'
 
 ### Use-Case 1
 
-The operator strykeir is prolific with 33 unique samples distributed between AgentTesla-T1 and AgentTesla. One of the samples used a different password. Pivoting on this password reveals that the same password is also used with different accounts, more recently with a Yandex account.
+The operator strykeir is prolific with 33 unique samples distributed between AgentTesla and AgentTesla. One of the samples used a different password. Pivoting on this password reveals that the same password is also used with different accounts, more recently with a Yandex account.
 
 | User                           | Count | Password      | Count |
 |--------------------------------|-------|---------------|-------|
@@ -120,12 +125,12 @@ Another sample shifting to Yandex is the operator of the trevisqa domain. With o
 | fffffffgggd@yandex.com | 3     |              |       |
 
 
-In general, 97 AgentTesla and 2 HawkEye samples rely on Yandex for data exfiltration.
+In general, 106 AgentTesla and 2 HawkEye samples rely on Yandex for data exfiltration.
 
 | User                           | Password            | Family              | Count |
 |--------------------------------|---------------------|---------------------|-------|
 | mullarwhite@yandex.com         | challenge12345      | AgentTesla          | 10    |
-| ikpc1@yandex.com               | ikechukwu112        | AgentTesla          | 9     |
+| ikpc1@yandex.com               | ikechukwu112        | AgentTesla          | 10    |
 | tim3.44@yandex.com             | Obaten10            | AgentTesla          | 8     |
 | staronuegbu@yandex.com         | @@Io419090@@        | AgentTesla          | 6     |
 | okirinwajesus@yandex.com       | 07062487004         | AgentTesla          | 5     |
@@ -133,13 +138,14 @@ In general, 97 AgentTesla and 2 HawkEye samples rely on Yandex for data exfiltra
 | selecttools@yandex.com         | biafra123           | AgentTesla          | 4     |
 | genuxpc@yandex.com             | africa@@@@@         | AgentTesla          | 4     |
 | chijiokejackson121@yandex.com  | chijiokejackson     | AgentTesla          | 4     |
+| chi.eb@yandex.com              | sages101            | AgentTesla          | 4     |
 | sleeves100@yandex.com          | @Sleeves100         | AgentTesla          | 3     |
 | rose.nunez@yandex.ru           | lochmann2           | AgentTesla          | 3     |
 | r.tome@yandex.com              | qwerty123@@         | AgentTesla          | 3     |
 | p.origin@yandex.com            | Loverboy123         | AgentTesla          | 3     |
 | lucinedauglas@yandex.com       | myhp6000            | AgentTesla          | 3     |
 | fffffffgggd@yandex.com         | greatman32          | AgentTesla          | 3     |
-| chi.eb@yandex.com              | sages101            | AgentTesla          | 3     |
+| zecospiritual101@yandex.com    | 07030452451         | AgentTesla          | 2     |
 | resultbox042@yandex.com        | OGOM12345           | AgentTesla          | 2     |
 | Goodluck2k20@yandex.com        | Pl@nedon1234        | AgentTesla          | 2     |
 | boymouse@yandex.com            | 333link00win        | AgentTesla, HawkEye | 2     |
@@ -149,10 +155,15 @@ In general, 97 AgentTesla and 2 HawkEye samples rely on Yandex for data exfiltra
 | mobile.mailer@yandex.com       | qwerty123@          | AgentTesla          | 1     |
 | lightmusic12345@yandex.ru      | chibuike12345@@@@@  | AgentTesla          | 1     |
 | jessicafaithjessica@yandex.com | 123abc1!            | AgentTesla          | 1     |
+| james.cho8282@yandex.com       | klassic1993         | AgentTesla          | 1     |
 | iykelog1@yandex.com            | Conversation2       | AgentTesla          | 1     |
+| irina.macrotek@yandex.ru       | hygiene@789         | AgentTesla          | 1     |
 | iren159k@yandex.com            | Protected@123       | AgentTesla          | 1     |
+| info.pana@yandex.com           | user@12345          | AgentTesla          | 1     |
 | import22.export@yandex.com     | khalifa2019         | AgentTesla          | 1     |
+| genaral1122@yandex.ru          | kukeremaster1122    | AgentTesla          | 1     |
 | freshclinton8269@yandex.com    | fresh826699         | AgentTesla          | 1     |
+| frank.got@yandex.ru            | godson00            | AgentTesla          | 1     |
 | cupjul@yandex.com              | esut96092           | HawkEye             | 1     |
 | blr@saharaexpress.com          | Sahara*542          | AgentTesla          | 1     |
 | acksonjogodo121@yandex.com     | jacksonjogodo       | AgentTesla          | 1     |
@@ -163,7 +174,7 @@ In general, 97 AgentTesla and 2 HawkEye samples rely on Yandex for data exfiltra
 
 ## Correlation 'God is Great'
 
-27 unique samples distributed among HawkEye, AgentTesla and AgentTesla-T1, respectively, had religiously themed passwords, with specific patterns that potentially tie the accounts to the same operator. This is particularly evident when the origins of samples are correlated to the same source(s). No God condones theft, stealing, or crime.
+27 unique samples distributed among HawkEye, AgentTesla and AgentTesla, respectively, had religiously themed passwords, with specific patterns that potentially tie the accounts to the same operator. This is particularly evident when the origins of samples are correlated to the same source(s). No God condones theft, stealing, or crime.
 
 | User                        | Count | Password            | Count | Family              |
 |-----------------------------|-------|---------------------|-------|---------------------|
@@ -179,7 +190,7 @@ In general, 97 AgentTesla and 2 HawkEye samples rely on Yandex for data exfiltra
 |                             |       | biggod1234          | 1     | HawkEye             |
 | elber@wtsele.net            | 2     | .,?!miracleGod12345 | 2     | AgentTesla          |
 | imports@eastendfood-uk.icu  | 2     | GodGrace6665555     | 2     | HawkEye             |
-| carolyne@dandopub.mu        | 2     | OhMyGod#357         | 2     | AgentTesla-T1       |
+| carolyne@dandopub.mu        | 2     | OhMyGod#357         | 2     | AgentTesla          |
 | service@ptocs.xyz           | 2     | bigGod1234@         | 2     | HawkEye             |
 | sav@emeco.icu               | 1     | GodsPlan@#          | 1     | HawkEye             |
 | frank.got@yandex.ru         | 1     | godson00            | 1     | AgentTesla          |
@@ -189,7 +200,7 @@ In general, 97 AgentTesla and 2 HawkEye samples rely on Yandex for data exfiltra
 | sly-originlogs@yandex.ru    | 1     | JesusChrist007      | 1     | AgentTesla          |
 | msg@acroative.com           | 2     | onegod5050()        | 2     | AgentTesla          |
 
-# Correlation 'Why even bother?'
+## Correlation 'Why even bother?'
 
 Some operators attempted to hide thier repetitive offenses by using different recipient addresses, domains, or accounts and passwords as demonestrated in the below two uses cases.
 
@@ -221,19 +232,22 @@ Some operators attempted to hide thier repetitive offenses by using different re
 
 | IP Address     | Count | Domain                    | User                        | Count | Password   | Family     |
 |----------------|-------|---------------------------|-----------------------------|-------|------------|------------|
-| 85.187.154.178 | 12    | mail.flood-protection.org | clark@flood-protection.org  | 3     | clark2424@ | AgentTesla |
+| 85.187.154.178 | 13    | mail.flood-protection.org | clark@flood-protection.org  | 3     | clark2424@ | AgentTesla |
 |                |       | mail.flood-protection.org | fido@flood-protection.org   | 3     | fido2424@  | AgentTesla |
 |                |       | mail.flood-protection.org | sender@flood-protection.org | 3     | kelex2424@ | AgentTesla |
-|                |       | mail.flood-protection.org | somc@flood-protection.org   | 1     | somc2424@  | AgentTesla |
+|                |       | mail.flood-protection.org | somc@flood-protection.org   | 2     | somc2424@  | AgentTesla |
 |                |       | mail.flood-protection.org | udug@flood-protection.org   | 1     | udug2424@  | AgentTesla |
 |                |       | mail.flood-protection.org | wale@flood-protection.org   | 1     | wale2424@  | AgentTesla |
 
 ### Use-Case 4
 
+Same operator attempted to change by using the "kingmezz" domain, though everything else is almost the same.
+
 | User                    | Count | Password          | Domain                | Family     |
 |-------------------------|-------|-------------------|---------------------- |------------|
 | urch@damienzy.xyz       | 5     | @damienzy.xyz2240 | mail.privateemail.com | AgentTesla |
 | david@damienzy.xyz      | 4     | @damienzy.xyz2240 | mail.privateemail.com | AgentTesla |
+| ck@kingmezz.xyz         | 1     | @kingmezz.xyz     | mail.privateemail.com | AgentTesla |
 
 ### Use-Case 5
 
@@ -261,9 +275,9 @@ Some samples, mostly HawkEye, associated with the same actor alternated the acco
 | yosra.gamal@csatolin.com   | 1     | @Mexico1.,   | 1     | HawkEye             |
 | sale@somakinya.com         | 1     | Wenenighty., | 1     | HawkEye             |
 
-### Correlation 'Encrypt or not to Encrypt'
+## Correlation 'Encrypt or not to Encrypt'
 
-24 unique AgentTesla samples exfiltrating to a Saudi domain associated with 3 IP addresses, all belonging to Hetzner Online GmbH, and two of them are adjacent, appear to encrypt SMTP with one account but not the other, despite the fact that their passwords simply swtich word locations, suggesting that both accounts belonging to the same operator.
+25 unique AgentTesla samples exfiltrating to a Saudi domain associated with 3 IP addresses, all belonging to Hetzner Online GmbH, and two of them are adjacent, appear to encrypt SMTP with one account but not the other, despite the fact that their passwords simply swtich word locations, suggesting that both accounts belonging to the same operator.
 
 * Registrant Org: مصنع وضوح الشرق للحديد (Bright East Steel Factory)
 * Registrant Country: المملكة العربية السعودية (Kingdom of Saudia Arabia)
@@ -273,22 +287,25 @@ Some samples, mostly HawkEye, associated with the same actor alternated the acco
 |-------------------|-------|-----------------|-------|
 | mail.besco.com.sa | 22    | 136.243.194.254 | 15    |
 |                   |       | 46.4.159.174    | 7     |
-| besco.com.sa      | 2     | 136.243.194.253 | 2     |
+| besco.com.sa      | 3     | 136.243.194.253 | 2     |
+|                   |       | 136.243.194.254 | 1     |
 
 | User                   | Count | Password           | Count |
 |------------------------|-------|--------------------|-------|
 | khalid@besco.com.sa    | 16    | besco2020admin     | 16    |
 | pavan@besco.com.sa     | 6     | admin2020besco     | 6     |
-| al_ghamaz@besco.com.sa | 6     | admin2000besco2005 | 2     |
+| al_ghamaz@besco.com.sa | 3     | admin2000besco2005 | 3     |
 
 | User                   | SMTPS | Count |
 |------------------------|-------|-------|
 | khalid@besco.com.sa    | false | 15    |
 | khalid@besco.com.sa    | true  | 1     |
 | pavan@besco.com.sa     | true  | 6     |
-| al_ghamaz@besco.com.sa | false | 2     |
+| al_ghamaz@besco.com.sa | false | 3     |
 
-### Correlation 'FTP vs. SMTP'
+## Correlation 'FTP vs. SMTP'
+
+### Use-Case 1
 
 The operator of the flyxpo domain with unique 13 AgentTesla samples and C&C to single IP address on Liquid Web, L.L.C, exclusively. The operator alternates between FTP and SMTP for exfiltration, each of which has their own sub-domain, aptly named, ftp and mail.
 
@@ -309,7 +326,22 @@ The operator of the flyxpo domain with unique 13 AgentTesla samples and C&C to s
 | kene@flyxpo.com  | mail.flyxpo.com  | 3     |
 | xmweb@flyxpo.com | mail.flyxpo.com  | 2     |
 
-### Correlation 'I Speak FTP Only'
+
+### Use-Case 2
+
+| Domain                           | Count | IP Address    | Count |
+|----------------------------------|-------|---------------|-------|
+| mail.scandinavian-collection.com | 1     | 206.72.205.67 | 3     |
+| ftp.scandinavian-collection.com  | 2     |               |       |
+
+| User                             | Count | Password         | Count | Protocol |
+|----------------------------------|-------|------------------|-------|----------|
+| may@scandinavian-collection.com  | 1     | kR6d.DFet#7w     | 1     | SMTP     |
+| may@scandinavian-collection.com  | 2     | =piYR_r.%[Ch     | 2     | FTP      |
+
+
+
+## Correlation 'I Speak FTP Only'
 
 The 10 samples evenly distributed between HawkEye and AgentTesla exfiltrating to the tashipta domain only do so over FTP. Only a signle aptly named sub-domain associating to a single IP address are used. Almost all passwords relate to their respective account. 
 
@@ -339,4 +371,4 @@ The 10 samples evenly distributed between HawkEye and AgentTesla exfiltrating to
 | ftp.faltelecom.com         | 1     | 43.255.154.108 | faltelecom@faltelecom.com   | Playboy@11    |
 | ftp.eloelokendi.com        | 1     | 107.172.93.44  | hhhpp@eloelokendi.com       | boygirl654321 |
 
-#AS20200502
+#AS20200507
