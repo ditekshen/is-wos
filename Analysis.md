@@ -28,14 +28,14 @@
 | shahid@onyxfreight.com          | shahid@onyxfreight.com         | jiashah123   | 5     | AgentTesla          |
 | onlineboxmonitor@tehnopan.rs    | nwekeboxs@tehnopan.rs          | ;&7]PU*4yzVJ | 7     | Phoenix, AgentTesla |
 | onlineboxmonitor@fiscalitate.eu | nwekeboxs@fiscalitate.eu       | ;&7]PU*4yzVJ | 5     | AgentTesla          |
-| accounts2@oilexindia.com        | accounts2@oilexindia.com       | Kamal@2019   | 4     | AgentTesla          |
+| accounts2@oilexindia.com        | accounts2@oilexindia.com       | Kamal@2019   | 6     | AgentTesla          |
 
 
 ## Correlation 'Fire Them'
 
 The operators in this correlation mostly utilize HawkEye with 34 unique samples. Between 2020-03-19/20 and 2020-03-24/25 and forward, the operators started utilizing AgentTesla with 11 unique samples. The accounts and passwords used across both families overlap. The operators are also active in creating new accounts and regularly changing passwords of existing accounts. If you work with or hire these operators, quit or fire them, they are already costing you money.
 
-The operators potentially introdcued a new keylogger known as 'M00nD3v' based on on password analysis and correlation. The same password 'Whyworry90#' is observed in previous HawkEye and AgentTesla samples operated by the same group. This keylogger appears to have been announced on April 17, 2020. Only 4 samples are currently observed and all of them are run by the same operator.
+The operators potentially introdcued a new keylogger known as 'M00nD3v' based on on password analysis and correlation. The same password 'Whyworry90#' is observed in previous HawkEye and AgentTesla samples operated by the same group. This keylogger appears to have been announced on April 17, 2020. Only 4 samples are currently observed and all of them are run by the same operator where the accounts/passwords are used across HawkEye and AgentTesla.
 
 M00nD3v Samples:
 
@@ -70,6 +70,7 @@ HawkEye Samples:
 | sale@somakinya.com           | 1     | Wenenighty.,      | 1     |
 | xu@weifeng-fulton.com        | 1     | @bongo1.,         | 1     |
 | jamit@cairoways.icu          | 1     | breakinglimit100% | 1     |
+| billions@cairoways.me        | 1     | Whyworry90#       | 1     |
 | accounts@friendships-ke.icu  | 1     | INGODWETRUST      | 1     |
 | dcaicedo@igihm.icu           | 1     | STAYSAFE123       | 2     |
 | ahmadi@gheytarencarpet.com   | 1     | Focus$Pray        | 1     |
@@ -87,6 +88,8 @@ AgentTesla Samples:
 |                              |       | GodAbegOo#        | 1     |
 |                              |       | HELPmeLORD@       | 1     |
 | yosra.gamal@csatolin.com     | 1     | HELPmeLORD@       | 1     |
+| billions@cairoways.me        | 1     | Whyworry90#       | 1     |
+| admin@cairoways.me           | 1     | requestShow@      | 1     |
 
 ## Correlation 'Impersonation'
 
@@ -232,12 +235,12 @@ Some operators attempted to hide thier repetitive offenses by using different re
 
 | IP Address     | Count | Domain                    | User                        | Count | Password   | Family     |
 |----------------|-------|---------------------------|-----------------------------|-------|------------|------------|
-| 85.187.154.178 | 13    | mail.flood-protection.org | clark@flood-protection.org  | 3     | clark2424@ | AgentTesla |
+| 85.187.154.178 | 15    | mail.flood-protection.org | clark@flood-protection.org  | 3     | clark2424@ | AgentTesla |
 |                |       | mail.flood-protection.org | fido@flood-protection.org   | 3     | fido2424@  | AgentTesla |
-|                |       | mail.flood-protection.org | sender@flood-protection.org | 3     | kelex2424@ | AgentTesla |
+|                |       | mail.flood-protection.org | sender@flood-protection.org | 4     | kelex2424@ | AgentTesla |
 |                |       | mail.flood-protection.org | somc@flood-protection.org   | 2     | somc2424@  | AgentTesla |
+|                |       | mail.flood-protection.org | wale@flood-protection.org   | 2     | wale2424@  | AgentTesla |
 |                |       | mail.flood-protection.org | udug@flood-protection.org   | 1     | udug2424@  | AgentTesla |
-|                |       | mail.flood-protection.org | wale@flood-protection.org   | 1     | wale2424@  | AgentTesla |
 
 ### Use-Case 4
 
@@ -343,20 +346,25 @@ The operator of the flyxpo domain with unique 13 AgentTesla samples and C&C to s
 
 ## Correlation 'I Speak FTP Only'
 
-The 10 samples evenly distributed between HawkEye and AgentTesla exfiltrating to the tashipta domain only do so over FTP. Only a signle aptly named sub-domain associating to a single IP address are used. Almost all passwords relate to their respective account. 
+The 10 samples evenly distributed between HawkEye and AgentTesla exfiltrating to the "__tashipta__" domain only do so over FTP. Only a signle aptly named sub-domain associating to a single IP address are used. Almost all passwords relate to their respective account. The operator of the "__tashipta__" started using MassLogger keylogger configuring the same sample (a8c1496f2eecd879518ecd9e4963be33f44d759bf71e888505a35615f8eaf438) with both, FTP and SMTP exfiltration 
 
 | Domain          | Count | IP Address   | Count |
 |-----------------|-------|--------------|-------|
-|ftp.tashipta.com | 10    | 103.21.59.28 | 10    |
+| ftp.tashipta.com | 10    | 103.21.59.28 | 11    |
 
-| Password      | Count | User                     | Count |
-|---------------|-------|--------------------------|-------|
-| server1123455 | 3     | server@tashipta.com      | 3     |
-| router11477   | 2     | router11477@tashipta.com | 2     |
-| server1543211 | 2     | server1@tashipta.com     | 2     |
-| success2020   | 2     | mails@tashipta.com       | 1     |
-|               |       | server1@tashipta.com     | 1     |
-| prosperity1   | 1     | xmoni@tashipta.com       | 1     |
+| Password      | Count | User                      | Count | Fmaily     | Protocol |
+|---------------|-------|---------------------------|-------|------------|----------|
+| server1123455 | 3     | server@tashipta.com       | 3     | AgentTesla | FTP      |
+| router11477   | 2     | router11477@tashipta.com  | 2     | AgentTesla | FTP      |
+| server1543211 | 2     | server1@tashipta.com      | 2     | AgentTesla | FTP      |
+| success2020   | 2     | mails@tashipta.com        | 1     | AgentTesla | FTP      |
+|               |       | server1@tashipta.com      | 1     | AgentTesla | FTP      |
+| prosperity1   | 1     | xmoni@tashipta.com        | 1     | AgentTesla | FTP      |
+| @Success$2020 | 1     | xmoni-w@tashipta.com      | 1     | MassLogger | FTP      |
+| moneymustdrop | 1     | fletcherjohnsgt@gmail.com | 1     | MassLogger | SMTP     |
+
+
+Other FTP-based AgentTesla samples.
 
 | Domain                     | Count | IP Address     | User                        | Password      |
 |----------------------------|-------|----------------|-----------------------------|---------------|
@@ -370,5 +378,60 @@ The 10 samples evenly distributed between HawkEye and AgentTesla exfiltrating to
 | ftp.filelog.info           | 1     | 162.213.253.54 | Burna@filelog.info          | ^{Opb6h,rjW^  |
 | ftp.faltelecom.com         | 1     | 43.255.154.108 | faltelecom@faltelecom.com   | Playboy@11    |
 | ftp.eloelokendi.com        | 1     | 107.172.93.44  | hhhpp@eloelokendi.com       | boygirl654321 |
+| ftp.connectus-trade.net    | 1     | 104.247.74.6   | one@connectus-trade.net     | o^Z0CIU?^yL2  |
 
-#AS20200507
+## Correlation 'The Shifters'
+
+The data in this correlation may be repetitive. It's goal is to highlight how existing AgentTesla / HawkEye operators are shifting to newly added keyloggers, namely, __m00nD3v__ and __MassLogger__.
+
+- Between 2020-04-29 and 2020-05-02, the operators under the 'Fire Them' correlation starting utilizing __M00nD3v__ keylogger.
+
+  | User                         | Count | Password          | Count | Family     | Shifts           |
+  |------------------------------|-------|-------------------|-------|------------|------------------|
+  | billions@cairoways.me        | 3     | Whyworry90#       | 3     | M00nD3v    | After 2020-04-29 |
+  | admin@cairoways.me           | 1     | requestShow@      | 1     | M00nD3v    | After 2020-04-29 |
+  | billions@cairoways.me        | 1     | Whyworry90#       | 3     | HawkEye    | After 2020-04-29 |
+  | admin@cairoways.me           | 1     | requestShow@      | 1     | AgentTesla | After 2020-04-29 |
+  | billions@cairoways.me        | 1     | Whyworry90#       | 1     | AgentTesla | After 2020-04-29 |
+
+- Between 2020-05-03 and 2020-05-07, the operator under the Impersonation' correlation started utilizing __MassLogger__ keylogger.
+
+  | User                  | Count | Domain               | Password | Count | Family     | Shifts            |
+  |-----------------------|-------|----------------------|----------|-------|------------|-------------------|
+  | slim1@ge-lndustry.com | 4     | smtp.ge-lndustry.com | J)*(EIv4 | 4     | AgentTesla | Before 2020-05-03 |
+  | admin@ge-lndustry.com | 2     | smtp.ge-lndustry.com | tvyTkyG1 | 2     | MassLogger | After 2020-05-03  |
+
+- Between 2020-05-05 and 2020-05-08, the operator of the "__tashpita__" domain under the 'I Speak FTP Only' correlation started utilizing __MassLogger__ keylogger. The opertor in this case configured the sample for both FTP and SMTP exfiltration.
+
+  | Password      | Count | User                      | Count | Fmaily     | Protocol | Shifts            |
+  |---------------|-------|---------------------------|-------|------------|----------|-------------------|
+  | server1123455 | 3     | server@tashipta.com       | 3     | AgentTesla | FTP      | Before 2020-05-05 |
+  | router11477   | 2     | router11477@tashipta.com  | 2     | AgentTesla | FTP      | Before 2020-05-05 |
+  | server1543211 | 2     | server1@tashipta.com      | 2     | AgentTesla | FTP      | Before 2020-05-05 |
+  | success2020   | 2     | mails@tashipta.com        | 1     | AgentTesla | FTP      | Before 2020-05-05 |
+  |               |       | server1@tashipta.com      | 1     | AgentTesla | FTP      | Before 2020-05-05 |
+  | prosperity1   | 1     | xmoni@tashipta.com        | 1     | AgentTesla | FTP      | Before 2020-05-05 |
+  | @Success$2020 | 1     | xmoni-w@tashipta.com      | 1     | MassLogger | FTP      | After 2020-05-05  |
+  | moneymustdrop | 1     | fletcherjohnsgt@gmail.com | 1     | MassLogger | SMTP     | After 2020-05-05  |
+
+## Correlation 'Gmail Abuse'
+
+| Sender                               | Recipient                      | Account                              | Password               | Fmaily     |
+|--------------------------------------|--------------------------------|--------------------------------------|------------------------|------------|
+| regan10586@gmail.com                 | regan10586@gmail.com           | regan10586@gmail.com                 | 231father              | MassLogger |
+| fletcherjohnsgt@gmail.com            | fletcherjohnsgt@gmail.com      | fletcherjohnsgt@gmail.com            | moneymustdrop          | MassLogger |
+| sanbrith112@gmail.com                | sanbrith112@gmail.com          | sanbrith112@gmail.com                | pointaz45              | MassLogger |
+| 2020@website-practise.site           | sumayyah.diijlafood@gmail.com  | 2020@website-practise.site           | Best4666##@@           | AgentTesla |
+| practice@webdesign-class.site        | sumayyah.diijlafood@gmail.com  | practice@webdesign-class.site        | Best4666##@@           | AgentTesla |
+| saleem@ejazontheweb.com              | nisanelactricals.pro@gmail.com | saleem@ejazontheweb.com              | t%[D2FmSeQezu,}e       | AgentTesla |
+| saleem@ejazontheweb.com              | hoke.sales01@gmail.com         | saleem@ejazontheweb.com              | t%[D2FmSeQezu,}e       | AgentTesla |
+| testing@bhavnatutor.com              | gabandtee@gmail.com            | testing@bhavnatutor.com              | Onyeoba111             | Phoenix    |
+| postmaster@unitedparcelsservices.com | jameshamilton7544@gmail.com    | postmaster@unitedparcelsservices.com | Dw1e7Tlo1id            | AgentTesla |
+| tou013@efx.net.nz                    | ourplastic22@gmail.com         | tou013@efx.net.nz                    | etou01315              | AgentTesla |
+| pulsit.c@spinteng.com                | lightbabamusic@gmail.com       | pulsit.c@spinteng.com                | Spie#th2017            | Phoenix    |
+| varahi@varahi.in                     | lightbabamusic@gmail.com       | varahi@varahi.in                     | Pass@#2019             | Phoenix    |
+| lal@montaneshipping.com              | pedroalex716@gmail.com         | lal@montaneshipping.com              | Montanemumbai*@*@*@321 | AgentTesla |
+|                                      | hoke.sales01@gmail.com         |                                      |                        | AgentTesla |
+|                                      | i.sibrmiov@gmail.com           |                                      |                        | AgentTesla |
+
+#AS20200509
