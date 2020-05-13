@@ -28,14 +28,45 @@
 | shahid@onyxfreight.com          | shahid@onyxfreight.com         | jiashah123   | 5     | AgentTesla          |
 | onlineboxmonitor@tehnopan.rs    | nwekeboxs@tehnopan.rs          | ;&7]PU*4yzVJ | 7     | Phoenix, AgentTesla |
 | onlineboxmonitor@fiscalitate.eu | nwekeboxs@fiscalitate.eu       | ;&7]PU*4yzVJ | 5     | AgentTesla          |
-| accounts2@oilexindia.com        | accounts2@oilexindia.com       | Kamal@2019   | 6     | AgentTesla          |
+| accounts2@oilexindia.com        | accounts2@oilexindia.com       | Kamal@2019   | 9     | AgentTesla          |
 
 
 ## Correlation 'Fire Them'
 
-The operators in this correlation mostly utilize HawkEye with 34 unique samples. Between 2020-03-19/20 and 2020-03-24/25 and forward, the operators started utilizing AgentTesla with 11 unique samples. The accounts and passwords used across both families overlap. The operators are also active in creating new accounts and regularly changing passwords of existing accounts. If you work with or hire these operators, quit or fire them, they are already costing you money.
+The operators in this correlation mostly utilize HawkEye with 34 unique samples. Between 2020-03-19/20 and 2020-03-24/25 and forward, the operators started utilizing AgentTesla with 13 unique samples. The accounts and passwords used across both families overlap. The operators are also active in creating new accounts and regularly changing passwords of existing accounts. If you work with or hire these operators, quit or fire them, they are already costing you money.
 
-The operators potentially introdcued a new keylogger known as 'M00nD3v' based on on password analysis and correlation. The same password 'Whyworry90#' is observed in previous HawkEye and AgentTesla samples operated by the same group. This keylogger appears to have been announced on April 17, 2020. Only 4 samples are currently observed and all of them are run by the same operator where the accounts/passwords are used across HawkEye and AgentTesla.
+Between 2020-04-29 and 2020-05-02, the operators potentially introdcued a new keylogger known as __M00nD3v__ based on on password analysis and correlation. The same password 'Whyworry90#' is observed in previous HawkEye and AgentTesla samples operated by the same group. This keylogger appears to have been announced on April 17, 2020. Only 4 samples are currently observed and all of them are run by the same operator where the accounts/passwords are used across HawkEye and AgentTesla.
+
+Between 2020-05-11 and 2020-05-13, the operators utilizing __MassLogger__ keylogger, which was initially added on 2020-05-07. The same account and password 'Whyworry90#' is observed in previous AgentTesla, HawkEye, and M00nD3d samples operated by the same group.
+
+MassLogger Samples:
+
+| User                                   | Count | Password         | Count |
+|----------------------------------------|-------|------------------|-------|
+| billions@cairoways.me                  | 2     | Whyworry90#      | 2     |
+| admin@cairoways.me                     | 1     | requestShow@     | 1     |
+| mpa@cairoways.me                       | 1     | NewBlessings     | 1     |
+| uz@cairoways.me                        | 1     | 09012345@        | 1     |
+| aboyo@akonuchenwam.org                 | 1     | fySnrmX9         | 1     |
+| dogman@akonuchenwam.org                | 1     | HaLzYAY8         | 1     |
+| mobite@akonuchenwam.org                | 1     | )^nveCU9         | 1     |
+| manman@akonuchenwam.org                | 1     | QMvStW^7         | 1     |
+| martinze@akonuchenwam.org              | 1     | (SLYNY(3         | 1     |
+| nednwoko@akonuchenwam.org              | 1     | mMtRZHe4         | 1     |
+| obuman@akonuchenwam.org                | 1     | H*XyvM)5         | 1     |
+| obino@akonuchenwam.org                 | 1     | dho)YOW7         | 1     |
+| abu@akonuchenwam.org                   | 1     | i^*Moaf0         | 1     |
+| wiz@metalfabme.icu                     | 1     | Whyworry#@       | 1     |
+| bob@metalfabme.icu                     | 1     | @Mexico1.,       | 1     |
+| binu@metalfabme.icu                    | 1     | @Mexico1.,       | 1     |
+| lchandra@bazciproduct.com              | 1     | whywori#@#       | 1     |
+| gestionesolleciti@pec-warrantgroup.icu | 1     | NoisyGeneration# | 1     |
+| docs@hdtrans.me                        | 1     | @A120741#        | 1     |
+| s.ewaldt@otv-international.me          | 1     | 1234567890       | 1     |
+| huangjianping@chinacables.icu          | 1     | whyworry1090#    | 1     |
+| finance@supreme-sg.icu                 | 1     | biggod1234@      | 1     |
+| info23@huatengaccessfloor.icu          | 2     | @Mexico1.,       | 1     |
+| ampall@ampail.com                      | 1     | 1234567890       | 1     |
 
 M00nD3v Samples:
 
@@ -150,13 +181,14 @@ In general, 106 AgentTesla and 2 HawkEye samples rely on Yandex for data exfiltr
 | fffffffgggd@yandex.com         | greatman32          | AgentTesla          | 3     |
 | zecospiritual101@yandex.com    | 07030452451         | AgentTesla          | 2     |
 | resultbox042@yandex.com        | OGOM12345           | AgentTesla          | 2     |
+| lightmusic12345@yandex.ru      | chibuike12345@@@@@  | AgentTesla          | 2     |
+| fxxxfuz@yandex.com             | genesis070          | AgentTesla          | 2     |
 | Goodluck2k20@yandex.com        | Pl@nedon1234        | AgentTesla          | 2     |
 | boymouse@yandex.com            | 333link00win        | AgentTesla, HawkEye | 2     |
 | zhu.china@yandex.com           | KOSI213141          | AgentTesla          | 1     |
 | sly-originlogs@yandex.ru       | JesusChrist007      | AgentTesla          | 1     |
 | oriego1@yandex.ru              | Ijeomam288          | AgentTesla          | 1     |
 | mobile.mailer@yandex.com       | qwerty123@          | AgentTesla          | 1     |
-| lightmusic12345@yandex.ru      | chibuike12345@@@@@  | AgentTesla          | 1     |
 | jessicafaithjessica@yandex.com | 123abc1!            | AgentTesla          | 1     |
 | james.cho8282@yandex.com       | klassic1993         | AgentTesla          | 1     |
 | iykelog1@yandex.com            | Conversation2       | AgentTesla          | 1     |
@@ -202,6 +234,8 @@ In general, 106 AgentTesla and 2 HawkEye samples rely on Yandex for data exfiltr
 | ahmadi@gheytarencarpet.com  | 1     | Focus$Pray          | 1     | HawkEye             |
 | sly-originlogs@yandex.ru    | 1     | JesusChrist007      | 1     | AgentTesla          |
 | msg@acroative.com           | 2     | onegod5050()        | 2     | AgentTesla          |
+| mpa@cairoways.me            | 1     | NewBlessings        | 1     | MassLogger          |
+| finance@supreme-sg.icu      | 1     | biggod1234@         | 1     | MassLogger          |
 
 ## Correlation 'Why even bother?'
 
@@ -264,19 +298,23 @@ Same operator attempted to change by using the "kingmezz" domain, though everyth
 
 Some samples, mostly HawkEye, associated with the same actor alternated the accounts as well as the paswords used for exfiltration. Yet, the passwords still followed the same pattern, not to mention the origins of these samples.
 
-| User                       | Count | Password     | Count | Family              |
-|----------------------------|-------|--------------|-------|---------------------|
-| charif.yassin@cronimet.me  | 5     | @mile31.,    | 5     | HawkEye, AgentTesla |
-| xu@weifeng-fulton.com      | 3     | @bongo1.,    | 3     | HawkEye             |
-| produccion@servalec-com.me | 2     | @bongo1.,    | 2     | HawkEye             |
-| info@friendships-ke.icu    | 1     | @bongo1.,    | 1     | HawkEye             |
-| panos@skepsis-sg.icu       | 1     | @Bongo1.,    | 1     | HawkEye             |
-| michellej@fernsturm.com    | 1     | @Ranger1.,   | 1     | AgentTesla          |
-| raphael@gitggn.com         | 1     | @mexico1.,   | 1     | HawkEye             |
-| v.clemens@slee-de.me       | 1     | @mexico1.,   | 1     | HawkEye             |
-| parisa@abarsiava.com       | 1     | @Mexico1.,   | 1     | HawkEye             |
-| yosra.gamal@csatolin.com   | 1     | @Mexico1.,   | 1     | HawkEye             |
-| sale@somakinya.com         | 1     | Wenenighty., | 1     | HawkEye             |
+| User                          | Count | Password     | Family              |
+|-------------------------------|-------|--------------|---------------------|
+| charif.yassin@cronimet.me     | 5     | @mile31.,    | HawkEye, AgentTesla |
+| xu@weifeng-fulton.com         | 3     | @bongo1.,    | HawkEye             |
+| produccion@servalec-com.me    | 2     | @bongo1.,    | HawkEye             |
+| info23@huatengaccessfloor.icu | 2     | @Mexico1.,   | MassLogger          |
+| info@friendships-ke.icu       | 1     | @bongo1.,    | HawkEye             |
+| panos@skepsis-sg.icu          | 1     | @Bongo1.,    | HawkEye             |
+| michellej@fernsturm.com       | 1     | @Ranger1.,   | AgentTesla          |
+| raphael@gitggn.com            | 1     | @mexico1.,   | HawkEye             |
+| v.clemens@slee-de.me          | 1     | @mexico1.,   | HawkEye             |
+| parisa@abarsiava.com          | 1     | @Mexico1.,   | HawkEye             |
+| yosra.gamal@csatolin.com      | 1     | @Mexico1.,   | HawkEye             |
+| sale@somakinya.com            | 1     | Wenenighty., | HawkEye             |
+| bob@metalfabme.icu            | 1     | @Mexico1.,   | MassLogger          |
+| binu@metalfabme.icu           | 1     | @Mexico1.,   | MassLogger          |
+
 
 ## Correlation 'Encrypt or not to Encrypt'
 
@@ -382,17 +420,19 @@ Other FTP-based AgentTesla samples.
 
 ## Correlation 'The Shifters'
 
-The data in this correlation may be repetitive. It's goal is to highlight how existing AgentTesla / HawkEye operators are shifting to newly added keyloggers, namely, __m00nD3v__ and __MassLogger__.
+The data in this correlation may be repetitive. It's goal is to highlight how existing AgentTesla / HawkEye operators are shifting to newly added keyloggers, namely, __m00nD3v__ and __MassLogger__. Below are correlated samples and not inclusive of all samples operated by the same group of operators.
 
-- Between 2020-04-29 and 2020-05-02, the operators under the 'Fire Them' correlation starting utilizing __M00nD3v__ keylogger.
+- Between 2020-04-29 and 2020-05-02, the operators under the 'Fire Them' correlation starting utilizing __M00nD3v__ keylogger. Between 2020-05-11 and 2020-05-13, the operators also started utilizing __MassLogger__.
 
   | User                         | Count | Password          | Count | Family     | Shifts           |
-  |------------------------------|-------|-------------------|-------|------------|------------------|
-  | billions@cairoways.me        | 3     | Whyworry90#       | 3     | M00nD3v    | After 2020-04-29 |
-  | admin@cairoways.me           | 1     | requestShow@      | 1     | M00nD3v    | After 2020-04-29 |
-  | billions@cairoways.me        | 1     | Whyworry90#       | 3     | HawkEye    | After 2020-04-29 |
-  | admin@cairoways.me           | 1     | requestShow@      | 1     | AgentTesla | After 2020-04-29 |
-  | billions@cairoways.me        | 1     | Whyworry90#       | 1     | AgentTesla | After 2020-04-29 |
+  |------------------------------|-------|---------------|-------|------------|------------------|
+  | billions@cairoways.me        | 3     | Whyworry90#   | 3     | M00nD3v    | After 2020-04-29 |
+  | admin@cairoways.me           | 1     | requestShow@  | 1     | M00nD3v    | After 2020-04-29 |
+  | billions@cairoways.me        | 1     | Whyworry90#   | 3     | HawkEye    | After 2020-04-29 |
+  | admin@cairoways.me           | 1     | requestShow@  | 1     | AgentTesla | After 2020-04-29 |
+  | billions@cairoways.me        | 1     | Whyworry90#   | 1     | AgentTesla | After 2020-04-29 |
+  | billions@cairoways.me        | 2     | Whyworry90#   | 2     | MassLogger | After 2020-05-11 |
+  | admin@cairoways.me           | 1     | requestShow@  | 1     | MassLogger | After 2020-05-11 |
 
 - Between 2020-05-03 and 2020-05-07, the operator under the Impersonation' correlation started utilizing __MassLogger__ keylogger.
 
@@ -434,4 +474,19 @@ The data in this correlation may be repetitive. It's goal is to highlight how ex
 |                                      | hoke.sales01@gmail.com         |                                      |                        | AgentTesla |
 |                                      | i.sibrmiov@gmail.com           |                                      |                        | AgentTesla |
 
-#AS20200509
+## Correlation 'Too Obvious?'
+
+While low confidence and circumstantial, the passwords pattern and the occasional repetition in this correlation cannot be dismissed.
+
+| Account                            | Password      | Fmaily     | Count |
+|------------------------------------|---------------|------------|-------|
+| shrutika.chaudhary@oppomobilemp.in | Welcome@123   | AgentTesla | 3     |
+| db2@blacksea.red                   | dengo@123     | AgentTesla | 2     |
+| takers@blacksea.red                | dengo@123     | AgentTesla | 1     |
+| beni@ddimnepal.com                 | ddhuman@123   | HawkEye    | 1     |
+| naci@turkrom.xyz                   | naci@123      | AgentTesla | 1     |
+| info@comfortkids.in                | Comfort@123   | AgentTesla | 1     |
+| iren159k@yandex.com                | Protected@123 | AgentTesla | 1     |
+| eurotoolz@returntolz.com           | Protected@123 | AgentTesla | 1     |
+
+#AS20200513

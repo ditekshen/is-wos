@@ -2,13 +2,21 @@
 
 Similar to DEF CON's Wall of Sheep, but for information stealers and keyloggers that mostly operate over SMTP and FTP. Families include AgentTesla, HawkEye, M00nD3v, Phoenix, MassLogger, AspireLogger, and Orion Logger. Only unique hashes are considered. All Timestamps are in UTC.
 
-![image](https://github.com/ditekshen/is-wos/raw/master/img/dashboard_snapshot_20200509.jpg)
+![image](https://github.com/ditekshen/is-wos/raw/master/img/dashboard_snapshot_20200513.jpg)
 
 ## Observations
 
+### 2020-05-13
+
+The number of the unique samples and relatively recent __MassLogger__ keylogger exceeded the number of __Phoenix__ sample. This is due the large-scale adoption of MassLogger by the operators under the 'Fire Them' correlation, contributing 26 unique samples so far. With this observation, the operators are known to use AgentTesla, HawkEye, M00nD3v, and Masslogger, potentially concurrently.
+
+### 2020-05-11
+
+- Between 2020-05-11 and 2020-05-13, the operators under the 'Fire Them' correlation started utilizing __MassLogger__ keylogger, exfiltration account and password correlation; the same accounts and passwords are observed being used with AgentTesla, HawkEye, and M00nD3v samples. See the [Analysis.md](https://github.com/ditekshen/is-wos/blob/master/Analysis.md) document for more information, in particaulr, the 'The Shifters' correlation
+
 ### 2020-05-7
 
-A new keylogger known as __MassLogger__ is introduced. This keylogger is used by existing AgentTesla operators , for example, the operators under the 'Impersonation' and 'I Speak FTP Only' correlations, based on domain name and password correlation See the [Analysis.md](https://github.com/ditekshen/is-wos/blob/master/Analysis.md) document for more information.
+A new keylogger known as __MassLogger__ is introduced. This keylogger is used by existing AgentTesla operators , for example, the operators under the 'Impersonation' and 'I Speak FTP Only' correlations, based on domain name and password correlation. See the [Analysis.md](https://github.com/ditekshen/is-wos/blob/master/Analysis.md) document for more information.
 
 - Between 2020-05-03 and 2020-05-07, the operator under the 'Impersonation' correlation started utilizing __MassLogger__ keylogger. 
 - Between 2020-05-05 and 2020-05-08, the operator of the "__tashpita__" domain under the 'I Speak FTP Only' correlation started utilizing __MassLogger__ keylogger. The opertor in this case configured the sample for both FTP and SMTP exfiltration.
@@ -24,7 +32,7 @@ A new keylogger known as __M00nD3v__ is introduced. This keylogger is potentiall
 - AgentTesla is the most used information stealer.
 - Operators utilize samples from different information stealer families.
 - Some operators shift to utilize new keyloggers such as __M00nD3v__ and __MassLogger__. These are highlighted under the 'The Shifters' correlation.
-- Actor abuse Gmail for SMTP exfiltration, which provides interesting correlations as demonestrated in the "Gmail Abuse" correlation.
+- Actors abuse Gmail for SMTP exfiltration, which provides interesting correlations as demonestrated in the "Gmail Abuse" correlation.
 - Operators share passwords across multiple samples, families, and exfiltration accounts.
 - Most abused network for exfiltration is PDR (AS394695). HawkEye samples seem to favor NameCheap, Inc. (AS22612), which happens to be the second most abused network.
 - Although plaintext SMTP was used for the majority of exfiltration across the families, almost all families used SMTPS for encrypted exfiltration.
