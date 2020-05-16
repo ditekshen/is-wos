@@ -27,8 +27,8 @@
 | enquiry@waman.in                | enquiry@waman.in               | enquiry@2020 | 5     | AgentTesla          |
 | shahid@onyxfreight.com          | shahid@onyxfreight.com         | jiashah123   | 5     | AgentTesla          |
 | onlineboxmonitor@tehnopan.rs    | nwekeboxs@tehnopan.rs          | ;&7]PU*4yzVJ | 7     | Phoenix, AgentTesla |
-| onlineboxmonitor@fiscalitate.eu | nwekeboxs@fiscalitate.eu       | ;&7]PU*4yzVJ | 5     | AgentTesla          |
-| accounts2@oilexindia.com        | accounts2@oilexindia.com       | Kamal@2019   | 9     | AgentTesla          |
+| onlineboxmonitor@fiscalitate.eu | nwekeboxs@fiscalitate.eu       | ;&7]PU*4yzVJ | 6     | AgentTesla          |
+| accounts2@oilexindia.com        | accounts2@oilexindia.com       | Kamal@2019   | 12     | AgentTesla          |
 
 
 ## Correlation 'Fire Them'
@@ -41,86 +41,87 @@ Between 2020-05-11 and 2020-05-13, the operators utilizing __MassLogger__ keylog
 
 MassLogger Samples:
 
-| User                                   | Count | Password         | Count |
-|----------------------------------------|-------|------------------|-------|
-| billions@cairoways.me                  | 2     | Whyworry90#      | 2     |
-| admin@cairoways.me                     | 1     | requestShow@     | 1     |
-| mpa@cairoways.me                       | 1     | NewBlessings     | 1     |
-| uz@cairoways.me                        | 1     | 09012345@        | 1     |
-| aboyo@akonuchenwam.org                 | 1     | fySnrmX9         | 1     |
-| dogman@akonuchenwam.org                | 1     | HaLzYAY8         | 1     |
-| mobite@akonuchenwam.org                | 1     | )^nveCU9         | 1     |
-| manman@akonuchenwam.org                | 1     | QMvStW^7         | 1     |
-| martinze@akonuchenwam.org              | 1     | (SLYNY(3         | 1     |
-| nednwoko@akonuchenwam.org              | 1     | mMtRZHe4         | 1     |
-| obuman@akonuchenwam.org                | 1     | H*XyvM)5         | 1     |
-| obino@akonuchenwam.org                 | 1     | dho)YOW7         | 1     |
-| abu@akonuchenwam.org                   | 1     | i^*Moaf0         | 1     |
-| wiz@metalfabme.icu                     | 1     | Whyworry#@       | 1     |
-| bob@metalfabme.icu                     | 1     | @Mexico1.,       | 1     |
-| binu@metalfabme.icu                    | 1     | @Mexico1.,       | 1     |
-| lchandra@bazciproduct.com              | 1     | whywori#@#       | 1     |
-| gestionesolleciti@pec-warrantgroup.icu | 1     | NoisyGeneration# | 1     |
-| docs@hdtrans.me                        | 1     | @A120741#        | 1     |
-| s.ewaldt@otv-international.me          | 1     | 1234567890       | 1     |
-| huangjianping@chinacables.icu          | 1     | whyworry1090#    | 1     |
-| finance@supreme-sg.icu                 | 1     | biggod1234@      | 1     |
-| info23@huatengaccessfloor.icu          | 2     | @Mexico1.,       | 1     |
-| ampall@ampail.com                      | 1     | 1234567890       | 1     |
+| User                                   | Count | Password         |
+|----------------------------------------|-------|------------------|
+| billions@cairoways.me                  | 3     | Whyworry90#      |
+| admin@cairoways.me                     | 1     | requestShow@     |
+| mpa@cairoways.me                       | 1     | NewBlessings     |
+| uz@cairoways.me                        | 1     | 09012345@        |
+| aboyo@akonuchenwam.org                 | 1     | fySnrmX9         |
+| dogman@akonuchenwam.org                | 1     | HaLzYAY8         |
+| mobite@akonuchenwam.org                | 1     | )^nveCU9         |
+| manman@akonuchenwam.org                | 1     | QMvStW^7         |
+| martinze@akonuchenwam.org              | 1     | (SLYNY(3         |
+| nednwoko@akonuchenwam.org              | 1     | mMtRZHe4         |
+| obuman@akonuchenwam.org                | 1     | H*XyvM)5         |
+| obino@akonuchenwam.org                 | 1     | dho)YOW7         |
+| abu@akonuchenwam.org                   | 1     | i^*Moaf0         |
+| wiz@metalfabme.icu                     | 1     | Whyworry#@       |
+| bob@metalfabme.icu                     | 1     | @Mexico1.,       |
+| binu@metalfabme.icu                    | 1     | @Mexico1.,       |
+| lchandra@bazciproduct.com              | 1     | whywori#@#       |
+| gestionesolleciti@pec-warrantgroup.icu | 1     | NoisyGeneration# |
+| docs@hdtrans.me                        | 1     | @A120741#        |
+| s.ewaldt@otv-international.me          | 1     | 1234567890       |
+| huangjianping@chinacables.icu          | 1     | whyworry1090#    |
+| finance@supreme-sg.icu                 | 1     | biggod1234@      |
+| info23@huatengaccessfloor.icu          | 2     | @Mexico1.,       |
+| ampall@ampail.com                      | 1     | 1234567890       |
 
 M00nD3v Samples:
 
-| User                         | Count | Password          | Count |
-|------------------------------|-------|-------------------|-------|
-| billions@cairoways.me        | 3     | Whyworry90#       | 3     |
-| admin@cairoways.me           | 1     | requestShow@      | 1     |
+| User                         | Count | Password          |
+|------------------------------|-------|-------------------|
+| billions@cairoways.me        | 3     | Whyworry90#       |
+| admin@cairoways.me           | 1     | requestShow@      |
 
 HawkEye Samples:
 
-| User                         | Count | Password          | Count |
-|------------------------------|-------|-------------------|-------|
-| produccion@servalec-com.me   | 4     | biggod1234        | 2     |
-|                              |       | BIGgod1234        | 1     |
-|                              |       | @bongo1.,         | 1     |
-| success@poylone.com          | 3     | @qwerty12345      | 3     |
-| wetground@poylone.com        | 3     | @qwerty12345      | 3     |
-| charif.yassin@cronimet.me    | 3     | @mile31.,         | 3     |
-| panos@skepsis-sg.icu         | 2     | @Bongo1.,         | 1     |
-|                              |       | breakinglimit@    | 1     |
-| service@ptocs.xyz            | 2     | bigGod1234@       | 2     |
-| gavin@jandregon.com          | 2     | WHYworry??#       | 2     |
-| yosra.gamal@csatolin.com     | 2     | @Mexico1.,        | 1     |
-|                              |       | HELPmeLORD@       | 1     |
-| stephanie.giet@technsiem.com | 1     | Whyworry90#       | 1     |
-| parisa@abarsiava.com         | 1     | @Mexico1.,        | 1     |
-| jplunkett@bellfilght.com     | 1     | biggod12345@      | 1     |
-| ikuku@poylone.com            | 1     | GODhelpme@#       | 1     |
-| sav@emeco.icu                | 1     | GodsPlan@#        | 1     |
-| raphael@gitggn.com           | 1     | @mexico1.,        | 1     |
-| v.clemens@slee-de.me         | 1     | @mexico1.,        | 1     |
-| sale@somakinya.com           | 1     | Wenenighty.,      | 1     |
-| xu@weifeng-fulton.com        | 1     | @bongo1.,         | 1     |
-| jamit@cairoways.icu          | 1     | breakinglimit100% | 1     |
-| billions@cairoways.me        | 1     | Whyworry90#       | 1     |
-| accounts@friendships-ke.icu  | 1     | INGODWETRUST      | 1     |
-| dcaicedo@igihm.icu           | 1     | STAYSAFE123       | 2     |
-| ahmadi@gheytarencarpet.com   | 1     | Focus$Pray        | 1     |
+| User                         | Count | Password          |
+|------------------------------|-------|-------------------|
+| produccion@servalec-com.me   | 4     | biggod1234        |
+|                              |       | BIGgod1234        |
+|                              |       | @bongo1.,         |
+| success@poylone.com          | 3     | @qwerty12345      |
+| wetground@poylone.com        | 3     | @qwerty12345      |
+| charif.yassin@cronimet.me    | 3     | @mile31.,         |
+| panos@skepsis-sg.icu         | 2     | @Bongo1.,         |
+|                              |       | breakinglimit@    |
+| service@ptocs.xyz            | 2     | bigGod1234@       |
+| gavin@jandregon.com          | 2     | WHYworry??#       |
+| yosra.gamal@csatolin.com     | 2     | @Mexico1.,        |
+|                              |       | HELPmeLORD@       |
+| stephanie.giet@technsiem.com | 1     | Whyworry90#       |
+| parisa@abarsiava.com         | 1     | @Mexico1.,        |
+| jplunkett@bellfilght.com     | 1     | biggod12345@      |
+| ikuku@poylone.com            | 1     | GODhelpme@#       |
+| sav@emeco.icu                | 1     | GodsPlan@#        |
+| raphael@gitggn.com           | 1     | @mexico1.,        |
+| v.clemens@slee-de.me         | 1     | @mexico1.,        |
+| sale@somakinya.com           | 1     | Wenenighty.,      |
+| xu@weifeng-fulton.com        | 1     | @bongo1.,         |
+| jamit@cairoways.icu          | 1     | breakinglimit100% |
+| billions@cairoways.me        | 1     | Whyworry90#       |
+| accounts@friendships-ke.icu  | 1     | INGODWETRUST      |
+| dcaicedo@igihm.icu           | 1     | STAYSAFE123       |
+| ahmadi@gheytarencarpet.com   | 1     | Focus$Pray        |
 
 AgentTesla Samples:
 
-| User                         | Count | Password          | Count |
-|------------------------------|-------|-------------------|-------|
-| jplunkett@bellfilght.com     | 2     | biggod12345@      | 2     |
-| dcaicedo@igihm.icu           | 2     | MOREMONEY123      | 2     |
-| charif.yassin@cronimet.me    | 1     | @mile31.,         | 1     |
-| gavin@jandregon.com          | 1     | WHYworry??#       | 1     |
-| stephanie.giet@technsiem.com | 1     | Whyworry90#       | 1     |
-| ikuku@poylone.com            | 3     | BLESSEDchild@     | 1     |
-|                              |       | GodAbegOo#        | 1     |
-|                              |       | HELPmeLORD@       | 1     |
-| yosra.gamal@csatolin.com     | 1     | HELPmeLORD@       | 1     |
-| billions@cairoways.me        | 1     | Whyworry90#       | 1     |
-| admin@cairoways.me           | 1     | requestShow@      | 1     |
+| User                         | Count | Password      |
+|------------------------------|-------|---------------|
+| jplunkett@bellfilght.com     | 2     | biggod12345@  |
+| dcaicedo@igihm.icu           | 2     | MOREMONEY123  |
+| charif.yassin@cronimet.me    | 1     | @mile31.,     |
+| gavin@jandregon.com          | 1     | WHYworry??#   |
+| stephanie.giet@technsiem.com | 1     | Whyworry90#   |
+| ikuku@poylone.com            | 3     | BLESSEDchild@ |
+|                              |       | GodAbegOo#    |
+|                              |       | HELPmeLORD@   |
+| yosra.gamal@csatolin.com     | 1     | HELPmeLORD@   |
+| billions@cairoways.me        | 2     | Whyworry90#   |
+| admin@cairoways.me           | 1     | requestShow@  |
+| finance@supreme-sg.icu       | 1     | biggod1234@   |
 
 ## Correlation 'Impersonation'
 
@@ -129,25 +130,26 @@ AgentTesla Samples:
 | User                  | Count | Domain               | Password | Count | Family |
 |-----------------------|-------|----------------------|----------|-------|------------|
 | slim1@ge-lndustry.com | 4     | smtp.ge-lndustry.com | J)*(EIv4 | 4     | AgentTesla |
-| admin@ge-lndustry.com | 2     | smtp.ge-lndustry.com | tvyTkyG1 | 2     | MassLogger |
+| admin@ge-lndustry.com | 2     | smtp.ge-lndustry.com | tvyTkyG1 | 5     | MassLogger |
 
 ## Correlation 'Steering Towards Arid Yandex Pastures'
 
 ### Use-Case 1
 
-The operator strykeir is prolific with 33 unique samples distributed between AgentTesla and AgentTesla. One of the samples used a different password. Pivoting on this password reveals that the same password is also used with different accounts, more recently with a Yandex account.
+The operator strykeir is prolific. One of the samples used a different password. Pivoting on this password reveals that the same password is also used with different accounts. On 2020-05-14, the password '@@Io419090@@' was observed with a new HawkEye sample.
 
 | User                           | Count | Password      | Count |
 |--------------------------------|-------|---------------|-------|
 | star-origin@strykeir.com       | 33    | iyke112@@@333 | 32    |
 |                                |       | @@Io419090@@  | 1     |
 
-| User                        | Count | Password     | Count |
-|-----------------------------|-------|--------------|-------|
-| staronuegbu@yandex.com      | 6     | @@Io419090@@ | 10    |
-| hselimoglu@bmssrevis.com    | 2     |              |       |
-| brajesh@cropchemicals.co.in | 1     |              |       |
-| star-origin@strykeir.com    | 1     |              |       |
+| User                        | Count | Family     | Password     | Count |
+|-----------------------------|-------|------------| -------------|-------|
+| staronuegbu@yandex.com      | 6     | AgentTesla | @@Io419090@@ | 11    |
+| hselimoglu@bmssrevis.com    | 2     | AgentTesla |              |       |
+| brajesh@cropchemicals.co.in | 1     | AgentTesla |              |       |
+| star-origin@strykeir.com    | 1     | AgentTesla |              |       |
+| cjmyguy@yandex.com          | 1     | HawkEye    |              |       |
 
 ### Use-Case 2
 
@@ -159,7 +161,7 @@ Another sample shifting to Yandex is the operator of the trevisqa domain. With o
 | fffffffgggd@yandex.com | 3     |              |       |
 
 
-In general, 106 AgentTesla and 2 HawkEye samples rely on Yandex for data exfiltration.
+In general, 110 AgentTesla and 3 HawkEye samples rely on Yandex for data exfiltration.
 
 | User                           | Password            | Family              | Count |
 |--------------------------------|---------------------|---------------------|-------|
@@ -178,11 +180,11 @@ In general, 106 AgentTesla and 2 HawkEye samples rely on Yandex for data exfiltr
 | r.tome@yandex.com              | qwerty123@@         | AgentTesla          | 3     |
 | p.origin@yandex.com            | Loverboy123         | AgentTesla          | 3     |
 | lucinedauglas@yandex.com       | myhp6000            | AgentTesla          | 3     |
+| fxxxfuz@yandex.com             | genesis070          | AgentTesla          | 3     |
 | fffffffgggd@yandex.com         | greatman32          | AgentTesla          | 3     |
 | zecospiritual101@yandex.com    | 07030452451         | AgentTesla          | 2     |
 | resultbox042@yandex.com        | OGOM12345           | AgentTesla          | 2     |
 | lightmusic12345@yandex.ru      | chibuike12345@@@@@  | AgentTesla          | 2     |
-| fxxxfuz@yandex.com             | genesis070          | AgentTesla          | 2     |
 | Goodluck2k20@yandex.com        | Pl@nedon1234        | AgentTesla          | 2     |
 | boymouse@yandex.com            | 333link00win        | AgentTesla, HawkEye | 2     |
 | zhu.china@yandex.com           | KOSI213141          | AgentTesla          | 1     |
@@ -200,6 +202,7 @@ In general, 106 AgentTesla and 2 HawkEye samples rely on Yandex for data exfiltr
 | freshclinton8269@yandex.com    | fresh826699         | AgentTesla          | 1     |
 | frank.got@yandex.ru            | godson00            | AgentTesla          | 1     |
 | cupjul@yandex.com              | esut96092           | HawkEye             | 1     |
+| cjmyguy@yandex.com             | @@Io419090@@        | HawkEye             | 1     |
 | blr@saharaexpress.com          | Sahara*542          | AgentTesla          | 1     |
 | acksonjogodo121@yandex.com     | jacksonjogodo       | AgentTesla          | 1     |
 | account.info1000@yandex.com    | 4canada1A@          | AgentTesla          | 1     |
@@ -211,31 +214,31 @@ In general, 106 AgentTesla and 2 HawkEye samples rely on Yandex for data exfiltr
 
 27 unique samples distributed among HawkEye, AgentTesla and AgentTesla, respectively, had religiously themed passwords, with specific patterns that potentially tie the accounts to the same operator. This is particularly evident when the origins of samples are correlated to the same source(s). No God condones theft, stealing, or crime.
 
-| User                        | Count | Password            | Count | Family              |
-|-----------------------------|-------|---------------------|-------|---------------------|
-| ikuku@poylone.com           | 4     | GODhelpme@#         | 1     | HawkEye             |
-|                             |       | BLESSEDchild@       | 1     | AgentTesla          |
-|                             |       | GodAbegOo#          | 1     | AgentTesla          |
-|                             |       | HELPmeLORD@         | 1     | AgentTesla          |
-| yosra.gamal@csatolin.com    | 1     | HELPmeLORD@         | 2     | HawkEye             |
-| produccion@servalec-com.me  | 3     | biggod1234          | 2     | HawkEye             |
-|                             |       | BIGgod1234          | 1     | HawkEye             |
-| jplunkett@bellfilght.com    | 3     | biggod12345@        | 3     | HawkEye, AgentTesla |
-| jasmine@cinco.icu           | 3     | Biggod1234          | 2     | HawkEye             |
-|                             |       | biggod1234          | 1     | HawkEye             |
-| elber@wtsele.net            | 2     | .,?!miracleGod12345 | 2     | AgentTesla          |
-| imports@eastendfood-uk.icu  | 2     | GodGrace6665555     | 2     | HawkEye             |
-| carolyne@dandopub.mu        | 2     | OhMyGod#357         | 2     | AgentTesla          |
-| service@ptocs.xyz           | 2     | bigGod1234@         | 2     | HawkEye             |
-| sav@emeco.icu               | 1     | GodsPlan@#          | 1     | HawkEye             |
-| frank.got@yandex.ru         | 1     | godson00            | 1     | AgentTesla          |
-| accounts@friendships-ke.icu | 1     | INGODWETRUST        | 1     | HawkEye             |
-| contact@assocham.icu        | 1     | GODSGRACE123        | 1     | HawkEye             |
-| ahmadi@gheytarencarpet.com  | 1     | Focus$Pray          | 1     | HawkEye             |
-| sly-originlogs@yandex.ru    | 1     | JesusChrist007      | 1     | AgentTesla          |
-| msg@acroative.com           | 2     | onegod5050()        | 2     | AgentTesla          |
-| mpa@cairoways.me            | 1     | NewBlessings        | 1     | MassLogger          |
-| finance@supreme-sg.icu      | 1     | biggod1234@         | 1     | MassLogger          |
+| User                        | Count | Password            | Count | Family                 |
+|-----------------------------|-------|---------------------|-------|------------------------|
+| ikuku@poylone.com           | 4     | GODhelpme@#         | 1     | HawkEye                |
+|                             |       | BLESSEDchild@       | 1     | AgentTesla             |
+|                             |       | GodAbegOo#          | 1     | AgentTesla             |
+|                             |       | HELPmeLORD@         | 1     | AgentTesla             |
+| yosra.gamal@csatolin.com    | 1     | HELPmeLORD@         | 2     | HawkEye                |
+| produccion@servalec-com.me  | 3     | biggod1234          | 2     | HawkEye                |
+|                             |       | BIGgod1234          | 1     | HawkEye                |
+| jplunkett@bellfilght.com    | 3     | biggod12345@        | 3     | HawkEye, AgentTesla    |
+| jasmine@cinco.icu           | 3     | Biggod1234          | 2     | HawkEye                |
+|                             |       | biggod1234          | 1     | HawkEye                |
+| elber@wtsele.net            | 2     | .,?!miracleGod12345 | 2     | AgentTesla             |
+| imports@eastendfood-uk.icu  | 2     | GodGrace6665555     | 2     | HawkEye                |
+| carolyne@dandopub.mu        | 2     | OhMyGod#357         | 2     | AgentTesla             |
+| service@ptocs.xyz           | 2     | bigGod1234@         | 2     | HawkEye                |
+| sav@emeco.icu               | 1     | GodsPlan@#          | 1     | HawkEye                |
+| frank.got@yandex.ru         | 1     | godson00            | 1     | AgentTesla             |
+| accounts@friendships-ke.icu | 1     | INGODWETRUST        | 1     | HawkEye                |
+| contact@assocham.icu        | 1     | GODSGRACE123        | 1     | HawkEye                |
+| ahmadi@gheytarencarpet.com  | 1     | Focus$Pray          | 1     | HawkEye                |
+| sly-originlogs@yandex.ru    | 1     | JesusChrist007      | 1     | AgentTesla             |
+| msg@acroative.com           | 2     | onegod5050()        | 2     | AgentTesla             |
+| mpa@cairoways.me            | 1     | NewBlessings        | 1     | MassLogger             |
+| finance@supreme-sg.icu      | 2     | biggod1234@         | 2     | MassLogger, AgentTesla |
 
 ## Correlation 'Why even bother?'
 
@@ -431,7 +434,7 @@ The data in this correlation may be repetitive. It's goal is to highlight how ex
   | billions@cairoways.me        | 1     | Whyworry90#   | 3     | HawkEye    | After 2020-04-29 |
   | admin@cairoways.me           | 1     | requestShow@  | 1     | AgentTesla | After 2020-04-29 |
   | billions@cairoways.me        | 1     | Whyworry90#   | 1     | AgentTesla | After 2020-04-29 |
-  | billions@cairoways.me        | 2     | Whyworry90#   | 2     | MassLogger | After 2020-05-11 |
+  | billions@cairoways.me        | 3     | Whyworry90#   | 3     | MassLogger | After 2020-05-11 |
   | admin@cairoways.me           | 1     | requestShow@  | 1     | MassLogger | After 2020-05-11 |
 
 - Between 2020-05-03 and 2020-05-07, the operator under the Impersonation' correlation started utilizing __MassLogger__ keylogger.

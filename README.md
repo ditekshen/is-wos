@@ -2,13 +2,13 @@
 
 Similar to DEF CON's Wall of Sheep, but for information stealers and keyloggers that mostly operate over SMTP and FTP. Families include AgentTesla, HawkEye, M00nD3v, Phoenix, MassLogger, AspireLogger, and Orion Logger. Only unique hashes are considered. All Timestamps are in UTC.
 
-![image](https://github.com/ditekshen/is-wos/raw/master/img/dashboard_snapshot_20200513.jpg)
+![image](https://github.com/ditekshen/is-wos/raw/master/img/dashboard_snapshot_20200515.jpg)
 
 ## Observations
 
 ### 2020-05-13
 
-The number of the unique samples and relatively recent __MassLogger__ keylogger exceeded the number of __Phoenix__ sample. This is due the large-scale adoption of MassLogger by the operators under the 'Fire Them' correlation, contributing 26 unique samples so far. With this observation, the operators are known to use AgentTesla, HawkEye, M00nD3v, and Masslogger, potentially concurrently.
+The number of unique samples and relatively recent __MassLogger__ exceeded the number of __Phoenix__ samples. This is due to large-scale adoption of MassLogger by the operators under the 'Fire Them' correlation, contributing 26 unique samples so far. With this observation, the operators are known to use AgentTesla, HawkEye, M00nD3v, and Masslogger, potentially concurrently.
 
 ### 2020-05-11
 
@@ -34,7 +34,7 @@ A new keylogger known as __M00nD3v__ is introduced. This keylogger is potentiall
 - Some operators shift to utilize new keyloggers such as __M00nD3v__ and __MassLogger__. These are highlighted under the 'The Shifters' correlation.
 - Actors abuse Gmail for SMTP exfiltration, which provides interesting correlations as demonestrated in the "Gmail Abuse" correlation.
 - Operators share passwords across multiple samples, families, and exfiltration accounts.
-- Most abused network for exfiltration is PDR (AS394695). HawkEye samples seem to favor NameCheap, Inc. (AS22612), which happens to be the second most abused network.
+- Most abused network for exfiltration is PDR (AS394695). HawkEye samples/operators seem to favor NameCheap, Inc. (AS22612), which happens to be the second most abused network. Yandex LLC comes in third place.
 - Although plaintext SMTP was used for the majority of exfiltration across the families, almost all families used SMTPS for encrypted exfiltration.
 - SMTP, FTP, and HTTP exfiltration was observed by some families, separately. For example, AgentTesla was observed to use SMTP, FTP and HTTP, and HawkEye was observed to use SMTP and FTP.
 - Some samples employed timestopming on the compilation timestamp, some of which were static.
