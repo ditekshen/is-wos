@@ -2,9 +2,13 @@
 
 Similar to DEF CON's Wall of Sheep, but for information stealers and keyloggers that mostly operate over SMTP and FTP. Families include AgentTesla, HawkEye, M00nD3v, Phoenix, MassLogger, AspireLogger, and Orion Logger. Only unique hashes are considered. All Timestamps are in UTC.
 
-![image](https://github.com/ditekshen/is-wos/raw/master/img/dashboard_snapshot_20200515.jpg)
+![image](https://github.com/ditekshen/is-wos/raw/master/img/dashboard_snapshot_20200521.jpg)
 
 ## Observations
+
+### 2020-05-17
+
+A spike in __M00nD3v__ (8 unique samples) and __MassLogger__ (15 unique samples) usage is observed due to considerable adoption by the 'Fire Them' operators. The same accounts and passwords are used interchangeably between the two malware families, and changed passwords for some existing accounts. The operators also attempted to influence analysis and deflect attribution by using Chinese names or the mention of the word "china" in their accounts. Probably not a smart tactic.
 
 ### 2020-05-13
 
