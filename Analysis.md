@@ -29,7 +29,7 @@
 | onlineboxmonitor@tehnopan.rs    | nwekeboxs@tehnopan.rs          | ;&7]PU*4yzVJ             | 7     | Phoenix, AgentTesla |
 | onlineboxmonitor@fiscalitate.eu | nwekeboxs@fiscalitate.eu       | ;&7]PU*4yzVJ             | 7     | AgentTesla          |
 | accounts2@oilexindia.com        | accounts2@oilexindia.com       | Kamal@2019               | 13    | AgentTesla          |
-| snp@1st-ship.com                | snp@1st-ship.com               | 441101474992991313053992 | 8     | AgentTesla          |
+| snp@1st-ship.com                | snp@1st-ship.com               | 441101474992991313053992 | 10    | AgentTesla          |
 | fuckoff@jpme.org.in             | fuckoff@jpme.org.in            | Ehimembano1@             | 5     | AgentTesla          |
 | skt@startranslogistics.com      | skt@startranslogistics.com     | SIALKOT12345             | 7     | AgentTesla          |
 | msg@acroative.com               | hm@acroative.com               | onegod5050()             | 2     | AgentTesla          |
@@ -52,8 +52,9 @@ MassLogger Samples:
 | User                                   | Count | Password         |
 |----------------------------------------|-------|------------------|
 | billions@cairoways.me                  | 4     | Whyworry90#      |
-| billions@cairoways.me                  | 2     | MOREMONEY123     |
+| billions@cairoways.me                  | 3     | MOREMONEY123     |
 | finance@supreme-sg.icu                 | 2     | biggod1234@      |
+| finance@supreme-sg.icu                 | 2     | BIGGOD1234       |
 | binu@metalfabme.icu                    | 2     | @Mexico1.,       |
 | gestionesolleciti@pec-warrantgroup.icu | 2     | NoisyGeneration# |
 | admin@cairoways.me                     | 2     | requestShow@     |
@@ -91,7 +92,9 @@ M00nD3v Samples:
 | billions@cairoways.me         | 1     | MOREMONEY123     |
 | admin@cairoways.me            | 1     | requestShow@     |
 | finance@supreme-sg.icu        | 1     | biggod1234@      |
+| finance@supreme-sg.icu        | 1     | BIGGOD1234       |
 | huangjianping@chinacables.icu | 1     | whyworry1090#    |
+| huangjianping@chinacables.icu | 1     | whyworry10902020 |
 | sales001@cairoways.me         | 1     | whyworry01#      |
 | ampall@ampail.com             | 1     | 123098322@#      |
 | inkyu@dubhe-kr.icu            | 1     | SometimesINLIFE@ |
@@ -168,11 +171,11 @@ The operator strykeir is prolific. One of the samples used a different password.
 
 | User                        | Count | Family     | Password     | Count |
 |-----------------------------|-------|------------| -------------|-------|
-| staronuegbu@yandex.com      | 6     | AgentTesla | @@Io419090@@ | 11    |
+| staronuegbu@yandex.com      | 6     | AgentTesla | @@Io419090@@ | 12    |
 | hselimoglu@bmssrevis.com    | 2     | AgentTesla |              |       |
 | brajesh@cropchemicals.co.in | 1     | AgentTesla |              |       |
 | star-origin@strykeir.com    | 1     | AgentTesla |              |       |
-| cjmyguy@yandex.com          | 1     | HawkEye    |              |       |
+| cjmyguy@yandex.com          | 2     | HawkEye    |              |       |
 
 ### Use-Case 2
 
@@ -184,11 +187,11 @@ Another sample shifting to Yandex is the operator of the trevisqa domain. With o
 | fffffffgggd@yandex.com | 3     |              |       |
 
 
-In general, 119 AgentTesla and 3 HawkEye samples rely on Yandex for data exfiltration.
+In general, 118 AgentTesla and 6 HawkEye samples rely on Yandex for data exfiltration.
 
 | User                           | Password            | Family              | Count |
 |--------------------------------|---------------------|---------------------|-------|
-| ikpc1@yandex.com               | ikechukwu112        | AgentTesla          | 12    |
+| ikpc1@yandex.com               | ikechukwu112        | AgentTesla          | 13    |
 | mullarwhite@yandex.com         | challenge12345      | AgentTesla          | 10    |
 | tim3.44@yandex.com             | Obaten10            | AgentTesla          | 9     |
 | staronuegbu@yandex.com         | @@Io419090@@        | AgentTesla          | 6     |
@@ -208,6 +211,9 @@ In general, 119 AgentTesla and 3 HawkEye samples rely on Yandex for data exfiltr
 | zecospiritual101@yandex.com    | 07030452451         | AgentTesla          | 2     |
 | resultbox042@yandex.com        | OGOM12345           | AgentTesla          | 2     |
 | lightmusic12345@yandex.ru      | chibuike12345@@@@@  | AgentTesla          | 2     |
+| irina.macrotek@yandex.ru       | hygiene@789         | AgentTesla          | 2     |
+| cjmyguy@yandex.com             | @@Io419090@@        | HawkEye             | 2     |
+| chinapeace@yandex.com          | chibuikelightwork1  | AgentTesla          | 2     |
 | Goodluck2k20@yandex.com        | Pl@nedon1234        | AgentTesla          | 2     |
 | boymouse@yandex.com            | 333link00win        | AgentTesla, HawkEye | 2     |
 | zhu.china@yandex.com           | KOSI213141          | AgentTesla          | 1     |
@@ -215,10 +221,10 @@ In general, 119 AgentTesla and 3 HawkEye samples rely on Yandex for data exfiltr
 | oriego1@yandex.ru              | Ijeomam288          | AgentTesla          | 1     |
 | mor440ney@yandex.com           | castor123@          | HawkEye             | 1     |
 | mobile.mailer@yandex.com       | qwerty123@          | AgentTesla          | 1     |
+| magagraceman@yandex.ru         | tonero4417          | HawkEye             | 1     |
 | jessicafaithjessica@yandex.com | 123abc1!            | AgentTesla          | 1     |
 | james.cho8282@yandex.com       | klassic1993         | AgentTesla          | 1     |
 | iykelog1@yandex.com            | Conversation2       | AgentTesla          | 1     |
-| irina.macrotek@yandex.ru       | hygiene@789         | AgentTesla          | 1     |
 | iren159k@yandex.com            | Protected@123       | AgentTesla          | 1     |
 | info.pana@yandex.com           | user@12345          | AgentTesla          | 1     |
 | import22.export@yandex.com     | khalifa2019         | AgentTesla          | 1     |
@@ -226,8 +232,6 @@ In general, 119 AgentTesla and 3 HawkEye samples rely on Yandex for data exfiltr
 | freshclinton8269@yandex.com    | fresh826699         | AgentTesla          | 1     |
 | frank.got@yandex.ru            | godson00            | AgentTesla          | 1     |
 | cupjul@yandex.com              | esut96092           | HawkEye             | 1     |
-| cjmyguy@yandex.com             | @@Io419090@@        | HawkEye             | 1     |
-| chinapeace@yandex.com          | chibuikelightwork1  | AgentTesla          | 1     |
 | blr@saharaexpress.com          | Sahara*542          | AgentTesla          | 1     |
 | acksonjogodo121@yandex.com     | jacksonjogodo       | AgentTesla          | 1     |
 | account.info1000@yandex.com    | 4canada1A@          | AgentTesla          | 1     |
@@ -235,22 +239,24 @@ In general, 119 AgentTesla and 3 HawkEye samples rely on Yandex for data exfiltr
 | annwilso@yandex.com            | theoldlady          | AgentTesla          | 1     |
 | annwilso@yandex.com            | HueCycle            | AgentTesla          | 1     |
 
-Other operators opted to exfiltrate to Yandex recipient without using Yandex as accounts
+Other operators opted to exfiltrate to Yandex recipient accounts without using Yandex as accounts, yet different accounts send to the same Yandex recipient account.
 
-| User                    | Recipient                   | Password     | Family              | Count |
-|-------------------------|-----------------------------|--------------|---------------------|-------|
-| zafar@guddupak.com      | charlesxmoni@yandex.com     | imzafar75    | AgentTesla          | 1     |
-| kshitij@activepumps.com | stanleybox@yandex.com       | X5=KN(JJIXso | AgentTesla          | 1     |
-| info@jaccontracting.com | stanleybox@yandex.com       | #07_WAKvjLG] | AgentTesla          | 1     |
-| info@mondastudio.com    | esime77@yandex.com          | Nigels1975!  | AgentTesla          | 1     |
-| emingles@ilclaw.com.ph  | boxblessings7744@yandex.com | P@ssw0rd     | AgentTesla          | 1     |
-| lot1567@okgrocer.co.za  | logsdetails0@yandex.com     | Theunis@123  | AgentTesla          | 1     |
-| limcor@le-belt.co.za    | morrishome1@yandex.com      | bemi6ERe     | AgentTesla          | 1     |
-| info@excellent.ba       | ffangfang@yandex.com        | Ilidza_1322  | AgentTesla          | 1     |
+| User                     | Recipient                   | Password     | Family              | Count |
+|--------------------------|-----------------------------|--------------|---------------------|-------|
+| zafar@guddupak.com       | charlesxmoni@yandex.com     | imzafar75    | AgentTesla          | 1     |
+| zainab@almushrefcoop.com | vicky.br0wn@yandex.com      | zainab123    | AgentTesla          | 1     |
+| kshitij@activepumps.com  | stanleybox@yandex.com       | X5=KN(JJIXso | AgentTesla          | 2     |
+| info@jaccontracting.com  | stanleybox@yandex.com       | #07_WAKvjLG] | AgentTesla          | 1     |
+| info@jaccontracting.com  | charlesxmoni@yandex.com     | #07_WAKvjLG] | AgentTesla          | 1     |
+| info@mondastudio.com     | esime77@yandex.com          | Nigels1975!  | AgentTesla          | 2     |
+| emingles@ilclaw.com.ph   | boxblessings7744@yandex.com | P@ssw0rd     | AgentTesla          | 1     |
+| lot1567@okgrocer.co.za   | logsdetails0@yandex.com     | Theunis@123  | AgentTesla          | 1     |
+| limcor@le-belt.co.za     | morrishome1@yandex.com      | bemi6ERe     | AgentTesla          | 1     |
+| info@excellent.ba        | ffangfang@yandex.com        | Ilidza_1322  | AgentTesla          | 1     |
 
 ## Correlation 'God is Great'
 
-27 unique samples distributed among HawkEye, AgentTesla and AgentTesla, respectively, had religiously themed passwords, with specific patterns that potentially tie the accounts to the same operator. This is particularly evident when the origins of samples are correlated to the same source(s). No God condones theft, stealing, or crime.
+Samples distributed among HawkEye, AgentTesla and AgentTesla, respectively, had religiously themed passwords, with specific patterns that potentially tie the accounts to the same operator. This is particularly evident when the origins of samples are correlated to the same source(s). No God condones theft, stealing, or crime.
 
 | User                        | Count | Password            | Count | Family                 |
 |-----------------------------|-------|---------------------|-------|------------------------|
@@ -277,6 +283,7 @@ Other operators opted to exfiltrate to Yandex recipient without using Yandex as 
 | msg@acroative.com           | 6     | onegod5050()        | 6     | AgentTesla             |
 | mpa@cairoways.me            | 1     | NewBlessings        | 1     | MassLogger             |
 | finance@supreme-sg.icu      | 2     | biggod1234@         | 2     | MassLogger, AgentTesla |
+| finance@supreme-sg.icu      | 3     | BIGGOD1234          | 3     | MassLogger, M00nD3v    |
 
 ## Correlation 'Why even bother?'
 
@@ -297,9 +304,9 @@ Some operators attempted to hide thier repetitive offenses by using different re
 
 | IP Address    | Count | Domain               | User                   | Count | Password           | Family     |
 |---------------|-------|----------------------|------------------------|-------|--------------------|------------|
-| 162.241.27.33 | 25    | mail.platinships.net | amani@platinships.net  | 2     | Azz%LcQK%sb!       | AgentTesla |
-|               |       | mail.platinships.net | amani@platinships.net  | 1     | #%c,*lVZNIXctE.!BA | AgentTesla |
-|               |       | mail.platinships.net | garang@platinships.net | 4     | %izARl@$-zHKEYwlHM | AgentTesla |
+| 162.241.27.33 | 26    | mail.platinships.net | amani@platinships.net  | 2     | Azz%LcQK%sb!       | AgentTesla |
+|               |       | mail.platinships.net | armani@platinships.net | 4     | #%c,*lVZNIXctE.!BA | AgentTesla |
+|               |       | mail.platinships.net | garang@platinships.net | 5     | %izARl@$-zHKEYwlHM | AgentTesla |
 |               |       | mail.platinships.net | phyno@platinships.net  | 6     | J~5v.F5[G06H6}ct{! | AgentTesla |
 |               |       | mail.platinships.net | chima@platinships.net  | 5     | R[2](NaueJp!6tL?sW | AgentTesla |
 |               |       | mail.platinships.net | don@platinships.net    | 1     | Vn,?+Es5;dNayEvk]* | AgentTesla |
@@ -313,10 +320,11 @@ Some operators attempted to hide thier repetitive offenses by using different re
 |----------------|-------|---------------------------|-----------------------------|-------|------------|------------|
 | 85.187.154.178 | 15    | mail.flood-protection.org | clark@flood-protection.org  | 3     | clark2424@ | AgentTesla |
 |                |       | mail.flood-protection.org | fido@flood-protection.org   | 3     | fido2424@  | AgentTesla |
-|                |       | mail.flood-protection.org | sender@flood-protection.org | 4     | kelex2424@ | AgentTesla |
+|                |       | mail.flood-protection.org | sender@flood-protection.org | 7     | kelex2424@ | AgentTesla |
 |                |       | mail.flood-protection.org | somc@flood-protection.org   | 2     | somc2424@  | AgentTesla |
 |                |       | mail.flood-protection.org | wale@flood-protection.org   | 2     | wale2424@  | AgentTesla |
 |                |       | mail.flood-protection.org | udug@flood-protection.org   | 1     | udug2424@  | AgentTesla |
+|                |       | mail.flood-protection.org | sepp@flood-protection.org   | 2     | sepp2424@  | AgentTesla |
 
 ### Use-Case 4
 
@@ -330,12 +338,16 @@ Same operator attempted to change by using the "kingmezz" domain, though everyth
 
 ### Use-Case 5
 
-| IP Address | Count | Domain         | User                          | Count | Password     | Recipient                     | Family     |
-|------------|-------|----------------|-------------------------------|-------|--------------|-------------------------------|------------|
-| 74.208.5.2 | 9     | smtp.ionos.com | 2020@website-practise.site    | 6     | Best4666##@@ | sumayyah.diijlafood@gmail.com | AgentTesla |
-|            |       | smtp.ionos.com | best-success@pure-energy.site | 2     | Best4666$$   | best-success@pure-energy.site | AgentTesla |
-|            |       | smtp.ionos.com | practice@webdesign-class.site | 1     | Best4666##@@ | sumayyah.diijlafood@gmail.com | AgentTesla |
-| 74.208.5.8 | 1     | smtp.ionos.mx  | reclutamiento1@cosea.mx       | 1     | 4l3ly2019.#  | reclutamiento1@cosea.mx       | AgentTesla |
+| IP Address     | Count | Domain         | User                          | Count | Password     | Recipient                     | Family     |
+|----------------|-------|----------------|-------------------------------|-------|-------------------|-------------------------------|------------|
+| 74.208.5.2     | 9     | smtp.ionos.com | 2020@website-practise.site    | 6     | Best4666##@@      | sumayyah.diijlafood@gmail.com | AgentTesla |
+|                |       | smtp.ionos.com | 2020@website-practise.site    | 2     | A$sfxcedvcc1      | jplorrder@gmail.com           | AgentTesla |
+|                |       | smtp.ionos.com | best-success@pure-energy.site | 2     | Best4666$$        | best-success@pure-energy.site | AgentTesla |
+|                |       | smtp.ionos.com | practice@webdesign-class.site | 1     | Best4666##@@      | sumayyah.diijlafood@gmail.com | AgentTesla |
+| 74.208.5.8     | 1     | smtp.ionos.mx  | reclutamiento1@cosea.mx       | 1     | 4l3ly2019.#       | reclutamiento1@cosea.mx       | AgentTesla |
+| 213.165.67.102 | 2     | smtp.ionos.es  | proyectos@santiagogarcia.es   | 1     | 964Arantza&&??@68 | miguelipscc@gmail.com         | AgentTesla |
+|                |       | smtp.ionos.es  | proyectos@santiagogarcia.es   | 1     | 964Arantza&&??@68 | nurifrost556@gmail.com        | AgentTesla |
+| 213.165.67.118 | 1     | smtp.ionos.es  | proyectos@santiagogarcia.es   | 1     | 964Arantza&&??@68 | miguelipscc@gmail.com         | AgentTesla |
 
 ## Correlation '.,'
 
@@ -508,6 +520,7 @@ The data in this correlation may be repetitive. It's goal is to highlight how ex
 | sanbrith112@gmail.com                | sanbrith112@gmail.com          | sanbrith112@gmail.com                | pointaz45              | MassLogger |
 | 2020@website-practise.site           | sumayyah.diijlafood@gmail.com  | 2020@website-practise.site           | Best4666##@@           | AgentTesla |
 | practice@webdesign-class.site        | sumayyah.diijlafood@gmail.com  | practice@webdesign-class.site        | Best4666##@@           | AgentTesla |
+| practice@webdesign-class.site        | jplorrder@gmail.com            | practice@webdesign-class.site        | A$sfxcedvcc1           | AgentTesla |
 | saleem@ejazontheweb.com              | nisanelactricals.pro@gmail.com | saleem@ejazontheweb.com              | t%[D2FmSeQezu,}e       | AgentTesla |
 | saleem@ejazontheweb.com              | hoke.sales01@gmail.com         | saleem@ejazontheweb.com              | t%[D2FmSeQezu,}e       | AgentTesla |
 | testing@bhavnatutor.com              | gabandtee@gmail.com            | testing@bhavnatutor.com              | Onyeoba111             | Phoenix    |
@@ -518,5 +531,11 @@ The data in this correlation may be repetitive. It's goal is to highlight how ex
 | lal@montaneshipping.com              | pedroalex716@gmail.com         | lal@montaneshipping.com              | Montanemumbai*@*@*@321 | AgentTesla |
 |                                      | hoke.sales01@gmail.com         |                                      |                        | AgentTesla |
 |                                      | i.sibrmiov@gmail.com           |                                      |                        | AgentTesla |
+| bellalice897@gmail.com               | bellalice897@gmail.com         | bellalice897@gmail.com               | Germany777@@           | MassLogger |
+| proyectos@santiagogarcia.es          | miguelipscc@gmail.com          | proyectos@santiagogarcia.es          | 964Arantza&&??@68      | AgentTesla |
+| proyectos@santiagogarcia.es          | miguelipscc@gmail.com          | proyectos@santiagogarcia.es          | 964Arantza&&??@68      | AgentTesla |
+| proyectos@santiagogarcia.es          | nurifrost556@gmail.com         | proyectos@santiagogarcia.es          | 964Arantza&&??@68      | AgentTesla |
 
-#AS20200521
+| bellalice897@gmail.com               | bellalice897@gmail.com         | bellalice897@gmail.com               | Germany777@@           | MassLogger |
+
+#AS20200529
