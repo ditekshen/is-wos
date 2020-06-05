@@ -11,7 +11,7 @@ Similar to DEF CON's Wall of Sheep, but for information stealers and keyloggers 
 - 'Fire Them' operators heavily utilized __MassLogger__ with over 40 samples, making it a few samples away from exceeding __HawkEye__ samples.
 - 'Fire Them' operators enabled HTTP POST to __MassLogger__ /panel/upload.php, along with SMTPS exfiltration.
 
-![image](https://github.com/ditekshen/is-wos/raw/master/img/firethem_masslogger_panel.jpg)
+![image](https://github.com/ditekshen/is-wos/raw/master/img/firethem_masslogger_panel.png)
 
 ### 2020-05-17
 
