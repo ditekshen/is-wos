@@ -2,9 +2,16 @@
 
 Similar to DEF CON's Wall of Sheep, but for information stealers and keyloggers that mostly operate over SMTP and FTP. Families include AgentTesla, HawkEye, M00nD3v, Phoenix, MassLogger, AspireLogger, and Orion Logger. Only unique hashes are considered. All Timestamps are in UTC.
 
-![image](https://github.com/ditekshen/is-wos/raw/master/img/dashboard_snapshot_20200529.jpg)
+![image](https://github.com/ditekshen/is-wos/raw/master/img/dashboard_snapshot_20200605.jpg)
 
 ## Observations
+
+### 2020-06-03
+
+- 'Fire Them' operators heavily utilized __MassLogger__ with over 40 samples, making it a few samples away from exceeding __HawkEye__ samples.
+- 'Fire Them' operators enabled HTTP POST to __MassLogger__ /panel/upload.php, along with SMTPS exfiltration.
+
+![image](https://github.com/ditekshen/is-wos/raw/master/img/firethem_masslogger_panel.jpg)
 
 ### 2020-05-17
 
