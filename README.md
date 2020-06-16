@@ -1,62 +1,17 @@
 # Information Stealers Wall of Sheep (IS-WOS)
 
-Similar to DEF CON's Wall of Sheep, but for information stealers and keyloggers that mostly operate over SMTP and FTP. Families include AgentTesla, HawkEye, M00nD3v, Phoenix, MassLogger, AspireLogger, and Orion Logger. Only unique hashes are considered. All Timestamps are in UTC.
+- Similar to DEF CON's Wall of Sheep, but for information stealers and keyloggers that mostly operate over SMTP and FTP. Information stealer families include AgentTesla, HawkEye, MassLogger, M00nD3v, Phoenix, AspireLogger, and Orion Logger. Only unique hashes are considered. All Timestamps are in UTC.
+- Using password analysis and correlation, it is possbile to cluster sheep into identifiable herds.
 
-![image](https://github.com/ditekshen/is-wos/raw/master/img/dashboard_snapshot_20200605.jpg)
+![image](https://github.com/ditekshen/is-wos/raw/master/img/dashboard_snapshot_20200615.jpg)
 
-## Observations
+## Observations and Analysis
 
-### 2020-06-03
-
-- 'Fire Them' operators heavily utilized __MassLogger__ with over 40 samples, making it a few samples away from exceeding __HawkEye__ samples.
-- 'Fire Them' operators enabled HTTP POST to __MassLogger__ /panel/upload.php, along with SMTPS exfiltration.
-
-![image](https://github.com/ditekshen/is-wos/raw/master/img/firethem_masslogger_panel.png)
-
-### 2020-05-17
-
-A spike in __M00nD3v__ (8 unique samples) and __MassLogger__ (15 unique samples) usage is observed due to considerable adoption by the 'Fire Them' operators. The same accounts and passwords are used interchangeably between the two malware families, and changed passwords for some existing accounts. The operators also attempted to influence analysis and deflect attribution by using Chinese names or the mention of the word "china" in their accounts. Probably not a smart tactic.
-
-### 2020-05-13
-
-The number of unique samples and relatively recent __MassLogger__ exceeded the number of __Phoenix__ samples. This is due to large-scale adoption of MassLogger by the operators under the 'Fire Them' correlation, contributing 26 unique samples so far. With this observation, the operators are known to use AgentTesla, HawkEye, M00nD3v, and Masslogger, potentially concurrently.
-
-### 2020-05-11
-
-- Between 2020-05-11 and 2020-05-13, the operators under the 'Fire Them' correlation started utilizing __MassLogger__ keylogger, exfiltration account and password correlation; the same accounts and passwords are observed being used with AgentTesla, HawkEye, and M00nD3v samples. See the [Analysis.md](https://github.com/ditekshen/is-wos/blob/master/Analysis.md) document for more information, in particaulr, the 'The Shifters' correlation
-
-### 2020-05-7
-
-A new keylogger known as __MassLogger__ is introduced. This keylogger is used by existing AgentTesla operators , for example, the operators under the 'Impersonation' and 'I Speak FTP Only' correlations, based on domain name and password correlation. See the [Analysis.md](https://github.com/ditekshen/is-wos/blob/master/Analysis.md) document for more information.
-
-- Between 2020-05-03 and 2020-05-07, the operator under the 'Impersonation' correlation started utilizing __MassLogger__ keylogger. 
-- Between 2020-05-05 and 2020-05-08, the operator of the "__tashpita__" domain under the 'I Speak FTP Only' correlation started utilizing __MassLogger__ keylogger. The opertor in this case configured the sample for both FTP and SMTP exfiltration.
-
-### 2020-05-01
-
-A new keylogger known as __M00nD3v__ is introduced. This keylogger is potentially used by the same operators under the "Fire Them" correlation, based on on password analysis and correlation. See the [Analysis.md](https://github.com/ditekshen/is-wos/blob/master/Analysis.md) document for more information.
-
-- Between 2020-04-29 and 2020-05-02, the operators under the 'Fire Them' correlation starting utilizing __M00nD3v__ keylogger.
-
-### General Observations
-
-- AgentTesla is the most used information stealer.
-- Operators utilize samples from different information stealer families.
-- Some operators shift to utilize new keyloggers such as __M00nD3v__ and __MassLogger__. These are highlighted under the 'The Shifters' correlation.
-- Actors abuse Gmail for SMTP exfiltration, which provides interesting correlations as demonestrated in the "Gmail Abuse" correlation.
-- Operators share passwords across multiple samples, families, and exfiltration accounts.
-- Most abused network for exfiltration is PDR (AS394695). HawkEye samples/operators seem to favor NameCheap, Inc. (AS22612), which happens to be the second most abused network. Yandex LLC comes in third place.
-- Although plaintext SMTP was used for the majority of exfiltration across the families, almost all families used SMTPS for encrypted exfiltration.
-- SMTP, FTP, and HTTP exfiltration was observed by some families, separately. For example, AgentTesla was observed to use SMTP, FTP and HTTP, and HawkEye was observed to use SMTP and FTP.
-- Some samples employed timestopming on the compilation timestamp, some of which were static.
-- Some samples used a non-standard SMTP destination port 26 as a means of evasion.
-- None of the binaries was signed.
-
-Additional observations and correlations can be found in the [Analysis.md](https://github.com/ditekshen/is-wos/blob/master/Analysis.md) document.
+See the [Analysis.md](https://github.com/ditekshen/is-wos/blob/master/Analysis.md) document for details.
 
 ## Yara Rules
 
-Yara rules can be used for detection when investigating processes and memory dumps.
+Three Yara rules exist. One for email addresses, another for the domains within these addresses, and the final one is for the passwords. The passwords rule will generate false positives.
 
 ## Ingesting Data
 
