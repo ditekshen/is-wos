@@ -825,7 +825,7 @@ Some samples opted to exfiltrate via HTTP only, or both HTTP and SMTP.
 | MassLogger | ```eaa8776e7fe85e8f5f8e240a94ff0eaf``` | ```https://baileybluesclothing.com/themes/wind/images/ukr/upload.php``` | ```https://baileybluesclothing.com/themes/wind/images/ukr/login/index.php``` | ```68.66.216.8:443```  |
 
 
-- ```10e2d3c8c81501b0b70f6cdf8ea5c872```
+- ```10e2d3c8c81501b0b70f6cdf8ea5c872```</br>
   ![image](https://github.com/ditekshen/is-wos/raw/master/img/m00ndev_panel_10e2d3c8c81501b0b70f6cdf8ea5c872.png)
 
 - ```e52e5dd7cd8cda6e283f96a76a5f4855```
