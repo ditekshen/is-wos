@@ -3,7 +3,7 @@
 - Similar to DEF CON's Wall of Sheep, but for information stealers and keyloggers that mostly operate over SMTP and FTP. Information stealer families include AgentTesla, HawkEye, MassLogger, M00nD3v, Phoenix, AspireLogger, and Orion Logger. Only unique hashes are considered. All Timestamps are in UTC.
 - Using password analysis and correlation, it is possbile to cluster sheep into identifiable herds.
 
-![image](https://github.com/ditekshen/is-wos/raw/master/img/dashboard_snapshot_20200615.jpg)
+![image](https://github.com/ditekshen/is-wos/raw/master/img/dashboard_snapshot_20200626.jpg)
 
 ## Observations and Analysis
 
