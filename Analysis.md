@@ -118,8 +118,8 @@ http://microtechnology.hk/wapdast/
 
 ### Statistics:
 
-- Total Unique Samples: 232
-- MassLogger: 140
+- Total Unique Samples: 234
+- MassLogger: 142
 - HawkEye: 58
 - M00nD3v: 19
 - AgentTesla: 15
