@@ -1,0 +1,249 @@
+{
+    "@timestamp": {
+        "type": "date"
+    },
+    "destination": {
+        "properties": {
+            "address": {
+                "type": "keyword"
+            },
+            "as": {
+                "properties": {
+                    "number": {
+                        "type": "long"
+                    },
+                    "organization": {
+                        "properties": {
+                            "name": {
+                                "type": "text"
+                            }
+                        }
+                    }
+                }
+            },
+            "domain": {
+                "type": "keyword"
+            },
+            "geo": {
+                "properties": {
+                    "city_name": {
+                        "type": "keyword"
+                    },
+                    "continent_name": {
+                        "type": "keyword"
+                    },
+                    "country_iso_code": {
+                        "type": "keyword"
+                    },
+                    "country_name": {
+                        "type": "keyword"
+                    },
+                    "location": {
+                        "type": "geo_point"
+                    },
+                    "name": {
+                        "type": "keyword"
+                    },
+                    "region_iso_code": {
+                        "type": "keyword"
+                    },
+                    "region_name": {
+                        "type": "keyword"
+                    }
+                }
+            },
+            "ip": {
+                "type": "ip"
+            },
+            "port": {
+                "type": "long"
+            },
+            "user": {
+                "properties": {
+                    "email": {
+                        "type": "keyword"
+                    },
+                    "password": {
+                        "type": "keyword"
+                    },
+                    "recipient": {
+                        "type": "keyword"
+                    },
+                    "sender": {
+                        "type": "keyword"
+                    }
+                }
+            }
+        }
+    },
+    "network": {
+        "properties": {
+            "protocol": {
+                "ignore_above": 1024,
+                "type": "keyword"
+            },
+            "transport": {
+                "ignore_above": 1024,
+                "type": "keyword"
+            },
+            "type": {
+                "ignore_above": 1024,
+                "type": "keyword"
+            }
+        }
+    },
+    "family": {
+        "properties": {
+            "category": {
+                "ignore_above": 1024,
+                "type": "keyword"
+            },
+            "family": {
+                "ignore_above": 1024,
+                "type": "keyword"
+            }
+        }
+    },
+    "file": {
+        "dynamic": "true",
+        "properties": {
+            "code_signature": {
+                "properties": {
+                    "exists": {
+                        "type": "boolean"
+                    },
+                    "status": {
+                        "type": "keyword"
+                    },
+                    "subject_name": {
+                        "type": "keyword"
+                    },
+                    "trusted": {
+                        "type": "boolean"
+                    },
+                    "valid": {
+                        "type": "boolean"
+                    }
+                }
+            },
+            "created": {
+                "type": "date",
+                "format": "yyyy-MM-dd HH:mm:ss"
+            },
+            "hash": {
+                "properties": {
+                    "md5": {
+                        "type": "keyword"
+                    },
+                    "sha1": {
+                        "type": "keyword"
+                    },
+                    "sha256": {
+                        "type": "keyword"
+                    }
+                }
+            },
+            "name": {
+                "type": "keyword"
+            },
+            "observed": {
+                "type": "date",
+                "format": "yyyy-MM-dd"
+            },
+            "pe": {
+                "properties": {
+                    "architecture": {
+                        "type": "keyword"
+                    },
+                    "company": {
+                        "type": "keyword"
+                    },
+                    "compiler": {
+                        "type": "keyword"
+                    },
+                    "description": {
+                        "type": "keyword"
+                    },
+                    "file_version": {
+                        "type": "keyword"
+                    },
+                    "imphash": {
+                        "type": "keyword"
+                    },
+                    "library": {
+                        "type": "keyword"
+                    },
+                    "original_file_name": {
+                        "type": "keyword"
+                    },
+                    "product": {
+                        "type": "keyword"
+                    },
+                    "protector": {
+                        "type": "keyword"
+                    },
+                    "ssdeep": {
+                        "type": "keyword"
+                    },
+                    "sfx": {
+                        "type": "keyword"
+                    },
+                    "packer": {
+                        "type": "keyword"
+                    }
+                }
+            },
+            "size": {
+                "type": "long"
+            },
+            "magic": {
+                "type": "keyword"
+            }
+        }
+    },
+    "tls": {
+        "properties": {
+            "cipher": {
+                "type": "keyword"
+            },
+            "established": {
+                "type": "boolean"
+            },
+            "server": {
+                "properties": {
+                    "hash": {
+                        "properties": {
+                            "md5": {
+                                "type": "keyword"
+                            },
+                            "sha1": {
+                                "type": "keyword"
+                            },
+                            "sha256": {
+                                "type": "keyword"
+                            }
+                        }
+                    },
+                    "issuer": {
+                        "type": "keyword"
+                    },
+                    "not_after": {
+                        "type": "date"
+                    },
+                    "not_before": {
+                        "type": "date"
+                    },
+                    "subject": {
+                        "type": "keyword"
+                    }
+                }
+            },
+            "version": {
+                "type": "keyword"
+            },
+            "version_protocol": {
+                "type": "keyword"
+            }
+        }
+    }
+}
