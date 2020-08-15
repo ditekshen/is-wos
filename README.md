@@ -1,12 +1,12 @@
 # Information Stealers Wall of Sheep (IS-WOS)
 
-__Note:__ The old mappings and data are not longer maintained and will be removed in upcoming updates. Use the new ECS-compliant mappings and data in ```is-wos-ecs-data.ndjson```, ```is-wos-ecs-mappings.json``` and ```is-wos-ecs-ingest-pipeline.json```.
+__Note: The old mappings and data are not longer maintained and will be removed in upcoming updates. Use the new ECS-compliant mappings and data in ```is-wos-ecs-data.ndjson```, ```is-wos-ecs-mappings.json``` and ```is-wos-ecs-ingest-pipeline.json```.__
 
 - Similar to DEF CON's Wall of Sheep, but for information stealers and keyloggers that mostly operate over SMTP and FTP. Information stealer families include AgentTesla, HawkEye, MassLogger, M00nD3v, Phoenix, AspireLogger, and Orion Logger. Only unique hashes are considered. All Timestamps are in UTC.
 - Using password analysis and correlation, among other data pivot points, it is possbile to cluster sheep into identifiable herds.
 - Collect static file properties as enrichment data points, including imaphash, ssdeep, debug paths, compilers, libraries, packers, protectors, and metadata.
 
-![image](https://github.com/ditekshen/is-wos/raw/master/img/dashboard_snapshot_20200718.jpg)
+![image](https://github.com/ditekshen/is-wos/raw/master/img/dashboard_snapshot_20200815.jpg)
 
 ## Observations and Analysis
 
@@ -71,7 +71,6 @@ The published data is for research purposes only, and not to be used for any mal
 - [CAPA](https://github.com/fireeye/capa)
 - [Elasticsearch and Kibana](https://www.elastic.co/)
 - [MITRE ATT&CK](https://attack.mitre.org/)
-
 
 ## To-Do
 

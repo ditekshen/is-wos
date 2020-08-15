@@ -7,6 +7,7 @@
     - [Correlation 'Repetition Makes Perfect'](#correlation-repetition-makes-perfect)
     - [Correlation 'Impersonation'](#correlation-impersonation)
     - [Correlation 'Geo Impersonation'](#correlation-geo-impersonation)
+    - [Correlation 'Compromised Accounts?'](#correlation-compromised-accounts)
     - [Correlation 'Steering Towards Arid Yandex Pastures'](#correlation-steering-towards-arid-yandex-pastures)
     - [Correlation 'Gmail Abuse'](#correlation-gmail-abuse)
     - [Correlation 'The Shifters'](#correlation-the-shifters)
@@ -17,6 +18,12 @@
 - [Information Stealers HTTP Panels](#information-stealers-http-panels)
 
 ## Observations
+
+### 2020-08-15
+
+- Addition of 64 samples (MassLogger and AgentTesla) associated with the 'ROBO' Gang, which also introduced 6 new email addresses.
+- A legitimate but potentially compromised account is abused in one sample for data exfiltration. See correlation [Correlation 'Compromised Accounts?'](#compromised-accounts) for more details.
+- Operators occasionally change passwords of existing exfiltration accounts.
 
 ### 2020-07-15
 
@@ -83,9 +90,9 @@ The 'ROBO' name is derived from the name the operators use to refer to themselve
 
 ### Profile:
 
-- CVE-2017-11882 malspam, mostly in the form of small .RTF documents prepared to download the 2nd-stage payload.
+- CVE-2017-11882 malspam, mostly in the form of .RTF and .XLS documents prepared to download the 2nd-stage payload.
 - Direct malspam attachements in the form of .ZIP and .RAR archives.
-- Exclusively exfiltrate stolen data to ```mail.privateemail.com``` on ```198.54.122.60``` at AS22612 Namecheap, Inc (NAMECHEAP-NET).
+- Exclusively exfiltrates stolen data to ```mail.privateemail.com``` on ```198.54.122.60``` at AS22612 Namecheap, Inc (NAMECHEAP-NET).
 - Access to a wide range of commodity infromation stealers.
 - Occasionally, the operators timestomp compilation times to the future.
 - Setup of open directories to host 2nd-stage payloads. Open directories differ in their setup as follows:
@@ -93,6 +100,10 @@ The 'ROBO' name is derived from the name the operators use to refer to themselve
   - Maltiple sub-directories under the same parent directory. Each sub-directory contains a single malware executable.
   - Open directories often include the WSO webshell (examples: bo.php, docb.php, note.php) to allow the operators manage their payloads.
   - More recently, an upload form (example: bo.php) was added along with a log file capturing associated errors (example: error_log).
+- Sharing the same malware samples across multiple open directories. For example, the hash ```cae79bd87462cf7f5134c476db64c8c9c081d512a27936deb7cf7b507079f329``` was hosted on the following open directories:
+  - ```http://anythingbilliest.com/bmink/```
+  - ```http://bazzardeals.com/bano/```
+- Operators occasionally change passwords of existing exfiltration accounts.
 
 ### Confirmed Information Stealer Families:
 
@@ -128,16 +139,22 @@ http://yatesassociates.co.za/documentato/
 http://yatesassociates.co.za/panel/login/index.php (MassLogger HTTP Panel)
 http://microtechnology.hk/wapdast/
 http://bazzardeals.com/cyon/
+http://bazzardeals.com/bano/
 http://anythingbilliest.com/bmink/
+http://sadiqgill.com/assets/fonts/
+http://www.evolutionpublicidad.com/wp-admin/js/bgn/
+http://sandiegoseaworldtickets.com/baba/
 ```
 
 ### Statistics:
 
-- Total Unique Samples: 358
-- MassLogger: 250
-- HawkEye: 58
-- AgentTesla: 31
-- M00nD3v: 19
+- Total Unique Samples: 428
+  - MassLogger: 280
+  - AgentTesla: 71
+  - HawkEye: 58
+  - M00nD3v: 19
+- Total Unique Accounts: 76
+- Total Unique Passwords: 90
 
 ### Analysis
 
@@ -160,11 +177,11 @@ The below table displays the accounts and associated passwords across multiple m
 | ```charif.yassin@cronimet.me```              | 5           | HawkEye</br>AgentTesla                            | 4</br>1              | ```@mile31.,```                                                                                             |
 | ```produccion@servalec-com.me```             | 5           | HawkEye                                           | 5                    | ```@bongo1.,```</br>```biggod1234```</br>```BIGgod1234```                                                   |
 | ```success@poylone.com```                    | 5           | HawkEye                                           | 5                    | ```@qwerty12345```                                                                                          |
-| ```lchandra@bazciproduct.com```              | 15          | MassLogger</br>AgentTesla                         | 14</br>1             | ```Mariodavid89```</br>```whywori#@#```                                                                     |
+| ```lchandra@bazciproduct.com```              | 20          | MassLogger</br>AgentTesla                         | 16</br>4             | ```Mariodavid89```</br>```whywori#@#```</br>```Nolies99```                                                  |
 | ```info23@huatengaccessfloor.icu```          | 5           | MassLogger                                        | 5                    | ```1234567890```</br>```1234567891```                                                                       |
 | ```imports@eastendfood-uk.icu```             | 5           | HawkEye                                           | 5                    | ```GGASDXZAFCVB65```</br>```GodGrace6665555```                                                              |
-| ```admin@bazciproduct.com```                 | 7           | MassLogger                                        | 7                    | ```@123098#```</br>```whyworry123@```                                                                       |
-| ```ampall@ampail.com```                      | 13          | MassLogger</br>M00nD3v</br>AgentTesla             | 11</br>1</br>1       | ```123098322@#```                                                                                           |
+| ```admin@bazciproduct.com```                 | 13          | MassLogger</br>AgentTesla                         | 9</br>4              | ```@123098#```</br>```whyworry123@```</br>```Try1234567@.,```                                               |
+| ```ampall@ampail.com```                      | 15          | MassLogger</br>M00nD3v</br>AgentTesla             | 12</br>2</br>1       | ```123098322@#```                                                                                           |
 | ```wetground@poylone.com```                  | 4           | HawkEye                                           | 4                    | ```@qwerty12345```                                                                                          |
 | ```gavin@jandregon.com```                    | 4           | HawkEye</br>AgentTesla                            | 3</br>1              | ```WHYworry??#```                                                                                           |
 | ```docs@hdtrans.me```                        | 9           | MassLogger</br>M00nD3v</br>AgentTesla             | 7</br>1</br>1        | ```@A120741#```                                                                                             |
@@ -175,7 +192,7 @@ The below table displays the accounts and associated passwords across multiple m
 | ```panos@skepsis-sg.icu```                   | 3           | HawkEye                                           | 3                    | ```breakinglimit@```</br>```@Bongo1.,```                                                                    |
 | ```ikuku@poylone.com```                      | 3           | AgentTesla</br>HawkEye                            | 3</br>1              | ```BLESSEDchild@```</br>```GODhelpme@#```</br>```GodAbegOo#```</br>```HELPmeLORD@```                        |
 | ```yosra.gamal@csatolin.com```               | 3           | HawkEye</br>AgentTesla                            | 2</br>1              | ```HELPmeLORD@```</br>```@Mexico1.,```                                                                      |
-| ```justin@allaceautoparts.me```              | 8           | MassLogger                                        | 8                    | ```HelpMELord@#```</br>```NewBlessings@```</br>```GODABEG@```</br>```OneDay@time```</br>```TESTIMONY@123``` |
+| ```justin@allaceautoparts.me```              | 9           | MassLogger</br>AgentTesla                         | 8</br>1              | ```HelpMELord@#```</br>```NewBlessings@```</br>```GODABEG@```</br>```OneDay@time```</br>```TESTIMONY@123``` |
 | ```dcaicedo@igihm.icu```                     | 3           | AgentTesla</br>HawkEye                            | 2</br>1              | ```MOREMONEY123```</br>```STAYSAFE123```                                                                    |
 | ```imports@techin.icu```                     | 5           | MassLogger</br>M00nD3v                            | 4</br>1              | ```biggod12345```</br>```1234567890```</br>```MoreGrace@#```                                                |
 | ```jplunkett@bellfilght.com```               | 3           | AgentTesla</br>HawkEye                            | 2</br>1              | ```biggod12345@```                                                                                          |
@@ -186,11 +203,11 @@ The below table displays the accounts and associated passwords across multiple m
 | ```yg@cairoways.icu```                       | 1           | HawkEye                                           | 2                    | ```ygsus2020```                                                                                             |
 | ```stephanie.giet@technsiem.com```           | 2           | HawkEye</br>AgentTesla                            | 1</br>1              | ```Whyworry90#```                                                                                           |
 | ```service@ptocs.xyz```                      | 2           | HawkEye                                           | 2                    | ```bigGod1234@```                                                                                           |
-| ```sales@americantrevalerinc.com```          | 7           | MassLogger                                        | 7                    | ```1q2w3e4r5t```                                                                                            |
+| ```sales@americantrevalerinc.com```          | 8           | MassLogger                                        | 8                    | ```1q2w3e4r5t```</br>```Silence1234@```                                                                     |
 | ```info@americantrevalerinc.com```           | 8           | MassLogger</br>AgentTesla                         | 7</br>1              | ```1q2w3e4r5t```                                                                                            |
-| ```accounting@americantrevalerinc.com```     | 9           | MassLogger                                        | 9                    | ```1q2w3e4r5t```</br>```JULYwillBeGOOD@```                                                                  |
-| ```works@americantrevalerinc.com```          | 10          | MassLogger</br>AgentTesla                         | 9</br>1              | ```1q2w3e4r```                                                                                              |
-| ```supplier@americantrevalerinc.com```       | 10          | MassLogger</br>AgentTesla                         | 7</br>1              | ```1q2w3e4r```</br>```1q2w3e4```</br>```1q2w3e4x```                                                         |
+| ```accounting@americantrevalerinc.com```     | 11          | MassLogger                                        | 11                   | ```1q2w3e4r5t```</br>```JULYwillBeGOOD@```                                                                  |
+| ```works@americantrevalerinc.com```          | 11          | MassLogger</br>AgentTesla                         | 10</br>1             | ```1q2w3e4r```                                                                                              |
+| ```supplier@americantrevalerinc.com```       | 13          | MassLogger</br>AgentTesla                         | 10</br>3             | ```1q2w3e4r```</br>```1q2w3e4```</br>```1q2w3e4x```</br>```1q2w3e4xx```                                     |
 | ```doreen.muhebwa@microhaem-ug.co```         | 1           | HawkEye                                           | 1                    | ```1234567890```                                                                                            |
 | ```accounts@friendships-ke.icu```            | 1           | HawkEye                                           | 1                    | ```INGODWETRUST```                                                                                          |
 | ```info@friendships-ke.icu```                | 1           | HawkEye                                           | 1                    | ```@bongo1.,```                                                                                             |
@@ -205,16 +222,23 @@ The below table displays the accounts and associated passwords across multiple m
 | ```valentina.marangon@gruppodigitouch.me```  | 5           | MassLogger                                        | 5                    | ```NEWways@```                                                                                              |
 | ```contact@assocham.icu```                   | 1           | HawkEye                                           | 1                    | ```GODSGRACE123```                                                                                          |
 | ```g.cavitelli@sicim.icu```                  | 3           | MassLogger</br>AgentTesla                         | 2</br>1              | ```@Mexico1.,```                                                                                            |
-| ```crm.sal@suprajit.me```                    | 3           | MassLogger                                        | 3                    | ```@Mexico1.,```                                                                                            |
-| ```christian.ferretti@fox-it.me```           | 9           | MassLogger</br>AgentTesla                         | 8</br>1              | ```@Mexico1.,```                                                                                            |
-| ```albanello.n@latrivenetecavi.com```        | 8           | MassLogger                                        | 8                    | ```JulyBeGREAT@```                                                                                          |
-| ```celal@lidyatriko-com.me```                | 4           | MassLogger                                        | 4                    | ```Tomorrow@1234#```                                                                                        |
+| ```crm.sal@suprajit.me```                    | 6           | MassLogger</br>AgentTesla                         | 4</br>2              | ```@Mexico1.,```</br>```LongJohn@123```</br>```Remember@123#```                                             |
+| ```christian.ferretti@fox-it.me```           | 16          | MassLogger</br>AgentTesla                         | 10</br>6             | ```@Mexico1.,```</br>```biggod1234```</br>```Biggod1234```                                                  |
+| ```albanello.n@latrivenetecavi.com```        | 13          | MassLogger</br>AgentTesla                         | 10</br>3             | ```JulyBeGREAT@```                                                                                          |
+| ```celal@lidyatriko-com.me```                | 5           | MassLogger                                        | 4                    | ```Tomorrow@1234#```                                                                                        |
 | ```a.elayan@abuodahbros.com```               | 1           | MassLogger                                        | 1                    | ```@Mexico1.,```                                                                                            |
-| ```caglar@lidyatriko-com.me```               | 4           | MassLogger                                        | 4                    | ```O1212@3213#```                                                                                           |
+| ```caglar@lidyatriko-com.me```               | 5           | MassLogger                                        | 4                    | ```O1212@3213#```                                                                                           |
 | ```wintom@wls-com.me```                      | 4           | MassLogger                                        | 4                    | ```TryAgain@123```                                                                                          |
 | ```samco@farm-com.me```                      | 4           | MassLogger                                        | 4                    | ```whyworry@123```                                                                                          |
-| ```g.oikonomopoulos@kordelos-gr.co```        | 2           | MassLogger                                        | 2                    | ```@Mexico1.,```                                                                                            |
-| ```export@bristol-fire.co```                 | 1           | MassLogger                                        | 1                    | ```@Mexico1.,```                                                                                            |
+| ```g.oikonomopoulos@kordelos-gr.co```        | 8           | MassLogger</br>AgentTesla                         | 5</br>3              | ```@Mexico1.,```                                                                                            |
+| ```export@bristol-fire.co```                 | 4           | MassLogger</br>AgentTesla                         | 3</br>1              | ```@Mexico1.,```</br>```@Mexico111.```                                                                      |
+| ```fti@alltoplighting.icu```                 | 4           | AgentTesla</br>MassLogger                         | 3</br>1              | ```NewFlames@123```                                                                                         |
+| ```omar.alhomsi@gpgolbal.com```              | 4           | AgentTesla</br>MassLogger                         | 3</br>1              | ```BlessedAUgust@123```                                                                                     |
+| ```hany_henien@spppumps.co```                | 4           | AgentTesla</br>MassLogger                         | 3</br>1              | ```AugustBlessings@```                                                                                      |
+| ```accountant@medoermw.org```                | 4           | AgentTesla</br>MassLogger                         | 2</br>2              | ```BlessedAugust@```</br>```1qa2ws3ed```                                                                    |
+| ```binu@metalfabne.com```                    | 5           | AgentTesla</br>MassLogger                         | 3</br>2              | ```NewAugust1303@```                                                                                        |
+| ```zaid.alyusuf@gpgolbal.com```              | 3           | AgentTesla</br>MassLogger                         | 2</br>1              | ```Newest@1234#```                                                                                          |
+
 
 
 An interesting systematic anomaly associted with these operators is a set of 18 unique samples, which can be divided into two groups based on the domain name used in the accounts.
@@ -229,9 +253,12 @@ Hashes
 ```
 001b14d21f1f99aae9ae6b365482be3cd75568e33a8af6aba36d148129ac19dc
 0088497f4ffbdf48b4b5401503a8960b7bf493e3e0ac574c6ade1695520300f9
+01163e556055d4918fe33453f3aff7ca3074da1e887492c418c1f5298c691c42
 015da4d338b5ccb6a5ae37b29a30bdd80445280746011616535a26c60b4be0bb
+018d4e9e4a4a7324f21cf782de5d92e9cc975b350955588444752220aa86be04
 02bb0ff54a31436e39c168c4e55237aeb972098a8da8e83eb1cbc99796a60394
 033cccd5c1d6affd3269077550ba942b144fe64092c83e8c1a70ab06468206a7
+034b8adea4ddcae055c94f0d0af361bb2e5dbe02047db9371fe0d2c189adcdef
 03689c10f765e2b86440c6463e0af8da0aa5d4d46987ee86f1787c53cc678667
 03968a3a5a7a880feefca31686fcfbed445080a0c06eda2b6d623757179b782c
 03beb3f3181673b3c770ef7a42fa96c13c3c1b554e77885b0c2817fcbab01299
@@ -242,6 +269,7 @@ Hashes
 07236ee497bab6187ef9e5ea42f6a184a9bb32030b50d88f251a449b03890305
 07426d1fa6cc07107277cedeb0ed843fba44a79bf71fd228b3e74b5aaa5b9e4b
 07660fce0eb3a6f3f5036f2059a52ccb2e8e83f77a2f584d9392ad06fbf5a4e0
+07c9af002dada0fa94d5d754cfd7453447b073e8e6cb9dfac6139b0afe0ec820
 083c70afde1be48426ebcf28eacfa0cd47f96130790b79f5a367ae6b00eab142
 093021d7dfcac2a0fb28007f98413ab66df6efd8b942571dff1198a5587c8807
 0981eed2da1ddb0d93b002274bb01aa64a44a7af785c36b4bf66f21f7ba882b3
@@ -251,7 +279,9 @@ Hashes
 0a699d50cee9fc3eb46b0703c5502a84fbb357757853e25474683baf8f477fe0
 0a7104481d9a86895362b28a49420c90427054217fd82ba9a5ebbb2a086e61a2
 0ac30990fdf9e06367b60690e98803de01f668f8bc6b76c673a9295acb435d16
+0b8fa34b4f6551d824d43170aaf8f4a1f7771eb9af4728a508058cfda9907908
 0c2cc0b045d670852f628dad967894fa549de4a3dca0fd13ac5e9307a5b262a6
+0d0a6d8809b9005e1e299d09c2ee38afdac93923f055db410f2923757d5654d4
 0ea5d6d7d7e520a61a396c77d166dd1cb34cde965d3788430c3484a616381c74
 0f22bd1e202b2fa87adfca75ca61405ac232863a75ab7b5a71a69c3b7c22e7b1
 0f589bd3c4bfdf1301a52c6b4b9f9202ab61131bb7230f4e91767b28894005b2
@@ -264,6 +294,7 @@ Hashes
 10a7dd514bbfa4bd8aa3358f4330cdebc3b59658b865c66692dc66d680f1c658
 10b2155331d3b0c7934808e52084c3911f82ece51f39836e3ef0e8db39ee9904
 10c341f03698c730a4591d844c0d563f19e4a6b87934b45ff0447bd57808bb32
+10e38bdb1a32d7a54e877e6404fa4882b0049e2ee87b1558470b19eded1f4376
 1146e4d995c67932f70852ddd73410efbf0ecfbe227fa9834ec7dfea12cb6097
 11855a5df64ad4ecfc2093fdcf973313404d21cd8f9198f622fd3c16d4c1b2d1
 11b4c682e2712b0c6516b3800b48afb967015dae3b4a06307281539d691aee86
@@ -279,14 +310,19 @@ Hashes
 1440ef576d0b002306600b414a15fe71fed7658b107683882b0339cc4a82a182
 16d7ba996c924f71b9bec979109680f9137df4184ae69f164efce56c89000ae1
 175f436a3075c4016faad4907b7fa86c0f34851ea7ec4ce0210fb1e377258aa2
+1778b4170b77273169de41fc982bf9da4f675504f7aee4011aad350ba8af9072
 181c9610626543c859424ae029daa9f2d17b48040e65c31d61c71d0213d269b4
 1893c6a575128c947c2edb3771a87d16710d0b84c503bf0057be1f0be8fc5660
+18df5b401017096d9bf5ee692ef5a4e261d5b8f349e7d6375fd38b4289733880
+190da594cc201729fac0e71816274b00681b1d8720e60569c380625e5d69f643
 1947b2ed119c74a87843dc49522939e178658cb768b00948ed1cd2b28b2479ea
 19acd39592c857d2605521e17b61a6ce3f2b5c6d34a3a05ea8ea4d312d37091f
 1a99e83fdf9e80eb51d0ee8857632a895e5e7715ea435ead572e23fa1f7f191c
+1c0f051f220cce0652e12b02db69ba02ffae1d80409cc26c4bda3273cfe3ac97
 1d72dcb3abbfac1e2f0970832958bc2c2dac25d9b869b28f6dddb5fec0d45e7f
 1db65284dd73545215b9db3834b16709bf5bf5c33a417c38a205d09317cd6d0d
 1e5a3425debcf82d2c5bf95ae4aaabb84280402b98accc2cefa6145217093ab1
+1f14007ec260152c94553054b6d0a40aeba9acbfbb7f2589ca3501106726b26e
 239fca3f5df496aab1b7c7696aaa26d77174501abc9cb1c1e12a188584d745cc
 2530df4015014e80e6fe59efc45a03f4692a80027d78eec4e1390c5f5da65576
 258970d034e0216fb43795b398996dad9542e23894dd3c31a886402b5ab6d438
@@ -295,12 +331,15 @@ Hashes
 2978aabe9e13034efa30336c2a013714a9166bd482df569d5081d70a18c22a28
 2bfd2788208bebdbd027bfb1220e27b8283198e5b6f05e3e09b1fad2c8b29c8e
 2d6b00e9396cb0ec14f3ce3757cc6c375a429c71fc0142dab03d3df2df7a0fd0
+2e2e578826bd54a79a4a687ba2f534a4075af5e77cc1349fb0094ef1051b7307
 2e5c6ecfef94f9922f152344b96041b85bf2dc01136e921e2d8c644d903b708d
 2f03330687eb31f3d4f69af9c7b69223cb1fad0f9889ec79d6c65a5cab66bd84
+307c775ae016fcd48f7811b312bcb4caea0b9a49f88da110e29afc0b80b6da22
 30aa96552ed6d03af50adcf6557a6ec3c3cb54f78fc50ee822d6d3c2bf70f9bc
 31a01efe3d5484cb4f2b635c841b493fd4d9bb819457d7471135bf640d85c1ae
 31db019368c71ce1ae360fccb5e4bdb511b289f5815eb74be72fc39ef49f03d2
 32055b2d52f63c415e84a3b6552b02e2773ac7939674a242b4856ff441f1adbe
+3266447fc385372c0f4a5755fe396483b3856949980607ba9022598ebd82b8dd
 32d271b7df9a7bd3cae2b2d7a9db56c287ede67b2ad537d1eb41701f62c3323a
 33bbefb4d3bb2a66e713a55da6b852df10241fb371ebda3e5a39a761bacca0b3
 3468b520ec611e72cc9cf84c15ba791b9dd4008a2766d7ce680fe5df0bdbac35
@@ -319,18 +358,23 @@ Hashes
 3b788ad21e6bb8e9c068488f1670c500be46802b0bdc5c475df2503220cccb07
 3bc9dc7b317b7c89f28895842d68dbd314d89172d5775caad38a500cfdb27af1
 3c75c540ea636d898b645dc6bbcda3568200ddd20810ab65d7b2dc0b5e01e3b1
+3c969bc65ce904a957ad469246cd3e3642c881fc128b5b389e1e3195acc16f20
 3d4f85aa3d78db4a67194188821fa0f6993d66b308a70c67e2bb052fe59d1f2c
 3e52c8da33ee1aabec29afa3ac69f591dbca78a62a01128265963e53004a2ef3
 3e6a911c8f2229431d131898a2fb046a6bae8267263a451baf93ec919d61afbd
 3eb85214c777bc9b173684ee6cf0de3c415bff66e06bb0d96e11937509aee552
+418c8e44fdc405ae7502e488f981529d7c2d834052816b34b25501d7f4a2b5c5
 419d14b7d31b5d505c4a67a157454756b43697e1156a1181b8e431cad3d2106f
 426110407bdba9dfe5a4f6d39d6369c8baf47008d7738765c3eb7d1ee62e3344
 438b22a51b7bf77785d93d3ace1951b5b492e0b12e145178a24c5b80db9fb573
+444aa203d5c61f2399aadee4715eeeab261fc56653eadd4c2aa34951f3a10d93
+4506fe045a37e1cf9a8642116813005cf649d3c54cc1171850583fc7a699497f
 4593a512ed7dabb6be349fc4bab80909c998261426560fc851c8ceb157446e3d
 45ef1e51df38e6778aaf2cd726748b55459b4aa54a2c8c2fea445cab0885f7bc
 463a59391f58c400a2daeb7da076b468be31e6dc6c61b4cfe8d257381885a787
 47799b4853ffa2cb541f153f0b50fc335324a5964e04093a8316d4a62eacc8f1
 48d9cb77f8ed388bfccf2d12b6f10f60c69d14b8559f5d545d31e443635e465f
+4bd55192d3aa9630c8c34791ed8113087fbfa8e3e074a1e2d0304120eb19a224
 4bf7de683b35ceea765ff609bbf7f161c62adf581b14d3222e8ccde251bb743e
 4cca5e53350f2adb11cf4eb202ec7a994631014325e5bed0d040f564737eb38e
 4cea65512dbdf77377eb95df694165cfdfd47a190efc64c7ebf3947415a8c08b
@@ -341,6 +385,7 @@ Hashes
 4ede1197d5311e23fc768b683d59c02ed11405ae722c5df522d2b31a452d4bcb
 4ffdd6034cad263af3664d13887f4d578a624a818de11e00775c1e10697502e7
 517d8b2852f709db4e9899576e5e1b1b848427b7e0829a7f918a6dc8875772b9
+521c1b6993fb062ac752617b505cb7dc237d35a5a70e6e21c1cacb386b87e4cb
 521fdcdefe26b74dfe10386220135f67ca1270e945270287eb7b984b390536ee
 52f47ee64260116303b07638df8c2b7f71e3bf1514f44e11e89f1d3329b42235
 53723a77cc0a4fa705d3e1fd3fd815786db02afbeb2a990eeb92383a9a71a9ef
@@ -350,6 +395,7 @@ Hashes
 540a1ab8a63b1b07ea3d80939868a94dafb79f6e2fc37a8a2cc22ded21c60deb
 549ebde3daa59c044fc725c988ceced294da49053f723f31cae3a0bf9c7aa93b
 5580e34f50f932f27c42e1d2b8551aaed212321a4a519442ee38dadb61ecd7f9
+55eac28159a33a69256885d8d0b500028d54c36390d5f7efcb4b48a3849e5ae5
 562dc6b24ea581f4f285a016cab0f8243d80dfae6fb484d38533ba29972cf644
 57435661ab4cd164a10b82ae964c86a96eeab749600a9e1b093794cea989a37a
 577f1aaf7014272adaeffea243272a164641c90553f5d87e4dee03037b2b8a82
@@ -364,15 +410,19 @@ Hashes
 5e89838b965d79a4782b3f1079a810f8a801c0b91e0cd71081d9580d1b954f70
 5f291378beb7c8264918b491efa4ebc66110423efbd45ee4e1258a16f9d2a401
 5f2f26cf27b0ffb53cf4a5ddec0d2fcd1236eaf7f4af3a7b78d9d23a23e4cb50
+5f7767c177c15c5da944ed138f0b39b6902e4bf4d896d01c9a368613b1291788
 5f816f9b45889e55fc0a0c714f900968583738c6827c31f774bd45e07aec4c3f
 60fef33d394d079626952dd2cb1d7bc6c28ba789116ee87d1d263e433857a856
+620fe51977578ab356bf90aec9982e03fd7928d000e75226c757b4f70163f4ba
 6299f3e36dc84d0d1aa0b460cfe353d8460f8aae5b13aa75aab9d8ea2efc1a7a
 632488a95f110337903d21112c4982bac033aa4328c4df85b6abac260e34bc8a
 63b7d1315ae6db5a6f0c66fd1e8ade94a83a9bda0eb3864734e511c087430d7c
 640ffe74b1f7d37a7e15471f5f9f3c8a556296225b5961fcfdceb33624b000fe
 64917df5f523fc7c2622a523c91223cacb4f56f28158736ade67ff4210b528e0
+64cf49217af987d0626bda4b48ebe5cf40e9c27b47cadda9ca5a4ff7c1914027
 661b63dca6bdd7d51ec6231bc5891b029f7bd8c6fb37989212f2fdf98a0ee8c0
 665981bc367a71821608c4da0f21f2fd07cc78ec740dab4c35690b68799bfc96
+673a907adba8b423478f008dd0651b2ad80f00b52a5e7fc8923e66c3c5566cab
 679fa9f420878adcae22033e44afc0f0350e4463c527dd036f957fa06f0657a4
 67a5b58d36ef0884ee86d601a72ffb085c02aa9cfa40cd3a869ea6806084a011
 6855062ed35b045f8773b1c2d999cb7c9fb9c0871341e2a1a1f965cad2d07c95
@@ -382,34 +432,46 @@ Hashes
 6d23e4cb2a7704f3ebeaf44893bb9c1df101f0f03d522ceb51a0e1cfc7f8e8ec
 6e042b1e9b57979ff67476adac3b38e7ca2a45228ef361ab0faa7d1f59072d2b
 6ebdd810e46d96ffefcc9bb771377431bea8b2c31c51ae585045810cb7e826c0
+6f1724a590699e9041015699f4646c500764cbbbf4fac0d0065be1a36b86c4d3
 6f386875b5039c4f6322daafac454769be06e1823879d6de068f415ee01893b2
 6f3c24c620d2e4908ae09fc17656f0a61dafa63df181ebd8c7c5fcc3369cf7f6
 7021a189f24167ad53bdfc259eee5b6f94d8413f79a0a399220504583dee8455
 7029f74bfaf5637a25dad61b7a7462141833886ac9637790d0fdaf7e72d84a3f
 70502bb6c9fd88cdce1092f83ef2f6408a039c7b9de5652cd22087159dd8ba28
 70bace206efc5066e6179603dc6af05a89773629eb5b00c921daad016c46f41f
+70ff378c8e14c09654fe4859c8e9a613f6af2e6c7775628e2e8f52dbb595b1a5
 717cc1c1cd1788a45027d549ae018a57f72e8f5f7586be633055c2400440b489
 71e00f0a18ce6d6cd5e183b7cf13dfe659754eb939368b6a003792797c45056b
+7462afbe83515ab5553b43bac8010a45b1733cf2175fb6646732efacd6cfce1e
 749112fd2fc84f3f5c1da92a3c8c14ff6dbacde09dd63e25a04e425ba25bab14
 74f68545f08cae0fd9d9e2de016e0a10876df82136be0f06f852cde31f486b4c
 750fad3db3f495fec07ac204f7e3717e75324ea9beed2fce1c48350015b888c5
 7601104485381f818f5b171b8be6630c0f6b4792e14695e6146c876ff852cb3c
+765b949ea7303df0165e0d79e9456fb7bf6f70e88128cbcceabdd9f6efe9b757
 765baabf2cffedacadb1b683f242396bdf147f045a14e90e50cea2c164756b10
+76886075c158597451b514883b75f84fbf5660fc5445de4124662b7aba132cf0
+76ad36b4eee5e98fe6b7fdedcbec83e5840129541b9eb0d67a2713812dd2da71
+76ffdc89320bb54ff75c47bec51044802d96efa3f4456a7dc5cd338f9a80c333
 77b7fa89c446b127b0c1d8ad0c5dc5fb57c8121dd3c40a67b77e5c0a35d75114
 78222a2681d18f4f2b0b33503eab25be3f4ac00604fa0fb4d5546e2c88043758
+78c0358132b22eb6cb91f783aee538a62aa6d266a55f88819cb5269e77cfc0a6
 79823c206d8b844c67dbd9db4a0345b11930b699ce1a545cea9601f9f89a51c1
 799ad2e1325621191989046263aa5e431ea36eec156451afeb41aeb04afca9a9
 79d97d58dbb9845b2101ad4a03a987b9fc8e937e43b4b9f5bfe3a47f71a6f113
 7a0d8c4542b1e1ba4dab3b3f3fed19c02862c7b8e77732eb4c87551f09e06d29
+7aefff47da5ec1a633a406297cd1decd1569d9ff0948ce39c80be809129ebf6d
 7b601d4a67aedd2c161de142b4799032a3a298905beb96a732e4ce0157de2aa8
 7b61b337fa911a993574e9094f17f0d48247551929cee1369a0259349ede3ea7
 7c38161b50bfa0d62fba13ee1daaaad2a86e59fc5e9693dcaccbb29046644347
 7ccf0424b23d23ba33937f84b5ebfae2391c023beb1567b7145d1df81593e1c0
 7d3633f4d63dd8e95075561828126a43b45cd0687c7e9fd58a8e556c311f5519
 7e99363c7c9914ed54d176de130b1d4b00ad5a43476d9315096201a3ddbc3e5e
+7faf3c9684350e8a8b4836ecdf7a01ddb8f3b8655941ea940125a144f4cbadfd
 7fb6e9a788b18806469167cf64458dd590122593a04489cf70bb70434905a246
+80b1f627af23d7aaefc6fec3a72e8f7e3299f600251acfbb682fa3b80a702798
 82a9252b7d18acc69cff2c82b740d9b810d8a5042ef65a532b680ee4020effae
 82c58393e0d855e14a9a3dadf046d823134e3d65c098146c9689df121739334b
+82db2e4b20a00fd41fcf246a014913067d07c4fc97f0c360af12b3cb066a19a6
 82f755397b3e305be68747fc964dd8c5702c271bca7c85a2dbe2ca726dcafbc8
 8380f95847f1a226d620c15fab7c1612f9ae7d375b78d004ed12f4ed9787faf3
 838352d1425aaae03fda3d7cfcd5ed398e17bd22c6d0248ac1576aa47f4e1b52
@@ -419,6 +481,8 @@ Hashes
 85361ea462a29e3bbd43480a70fbec9bb8507bc03713d64b9c5cb725383b8968
 853eefbbfdc888ff893c5dfe288d8791dfa219e856e4e6ffea4a217846244614
 86284f4e247cbadd3b43ad1914daaf591621d4d88b9200b500b5a7683c920e4a
+862c3c7bef5e6eef0c13e8381f69fa45eec9c859434fdf1620776e99094ab996
+86c4ac690b82025a2dbaea573b94bb919980ff2a11e2a95e9e3561fa29924614
 876ba8d76dfcb4cca54ca50f4c9a8c8d23c0e1edc3d671982402a61e7db8fa12
 883bff3bf4fa910b0842dd7ca716783b7f2f08dba9226f6e84d3f2d726ed8274
 884611a77b2db18c1a48e6086ae41fcf97541e2cd4214063ee6dac7b308f33cd
@@ -454,11 +518,17 @@ Hashes
 9b66bcea2cd1e6f08b4f5500a367e12c9a9f33a4ed756037d63dc2121071beda
 9b8b18328c40299c8663c96d8462a5349aa21b0180c263696b174f171c82b93b
 9bb6aba0ebc1593ed13ff5e00907397ac508944f95232e17e5afa194ee4c6002
+9d2f06cdfc272bb58fa2e4150f06a8984506466ac684a0a4a43b8a417ee5a8fe
 9d84786f19587aff8ed8a7d7ac2def4c15969bf6f1fcaade1fd8e5d60c33f21c
+9e4af1376e0045314e358ea71ecc87a7d6a5f2e036476c5e5d86c6cf28007998
+9f873fccfa560d5fddea520012267c961abea33bd1fbe7026e75930aca9788da
 9fb242a4adc557d4eb4f638c7815f58dd590fbd20e4132dbc358eadae42fe44d
 a0128feeab40984785d7cdf293c46bf9e4c1b84d41af5a109bd26717c56b08ef
 a11b83f414ad201f60db4af79dc55b41b0e7820e3381951e106a330da49af2d4
+a2335089d3fba76c21e8fdc3ee5796695226ad78c5e4f75c90e73050626e7d30
+a2487e3d6a48b6e8b6098b6a82f5d26b09a1250782c4f34051e06857936ea882
 a2ca137ab1650809aad7bff3029454c6e7fcdd7716b5bb6fc95822c15c208974
+a49487fe3a9aab6df57c5eec240286b3b3a1b80a4b6e81d59eb9106a72483d9a
 a4b07204b33173093041072e00e88d0083c88b88f634561aabe46ec8992f9332
 a4cebe4913d275f7387b8d8b2acb7d76324550746e8802f28d432a15d3608194
 a5ddd635bbbf579e865bd324329ef64b9d750c92eef0e9599e23916139a0b1c7
@@ -472,18 +542,23 @@ aaee037bd7631c72f08d7d9b8261c02da2a0d7a69fd98e5b4a0d51b71d4ca89c
 ab50736803967469f2a5ae5624f5e06cfd299f92ac94e255c39d0ee7bc30e40a
 abb96fbc3e4b80337204e33d19134498c7eca75ba47390fe4df7939383515e6d
 adb0d88a8655a39400e194d8ac9df6e6f3ac28defadf5e4a2686fbcf688bf259
+adb35f04f0e72fdbde5d24f2a590e71fd4424ef5e1ea354ed546eb1c17a1b6d5
 adfd200a16ffe7c04631176e3ad03ded8785c7ecf9581f42915ea199f8c27e9b
+ae8c7f63195f1f39ebf09f87b61fd3f27ced535bf9035900d2f185aa7662f728
 af1dfb63504e698918cb9af2ddae7d21c978191824515f0d08420bcb870463d2
 af52a469ef5d9dd3b9b9c5bc1ea20c9fdd486b7c24aa7df6be3f006f82d228d6
 af5562054a38fd1eef5465883393189cb1f862d6a52e85441f6efa638a8e119b
 afdef065db92bacabeb6a8b638ff1adcded1a0f578c36ac89128d13cdf701234
 b07b89a722de05928f4f674bcb7e9901e45c29a2af387a6e8e8c12a171eb2373
+b0f89d59febc0907d2dadaaddc90f5a236cb1d876fdb7346139aa9d8ee3babc0
 b18c9e75825836541b9d7015a4a53dacddae7bb29c3bedbca9758349d9de7425
+b28bb290703c9bd1606bd009753854d31ef8071e21fb98185ddad138f98cbac7
 b37d20f35c23ecee0198e90d8d1efb7e9cd7f47a4d1999fe35562aeab4e82e01
 b40551ea3f577d38778a762b4983ab25ef3247f4227b30a2bc47acab8224afe5
 b61808ecd5aa0c6abd3df46e1f2ec32a18fc9da837d5b7db895214d5a4745682
 b633d14b6eb77ceeae4348f54df5f0dd430df22e5455862edd2d13bd2d53ef6b
 b68c6e9c0b287cf9d7e82707c44708f7762213b90bfe2cfbeefe4cb3f0667442
+b6f3204e492d91b15e67583db1b35c9f18a110367d91bae3985d3c06ee10f539
 b6f457aebc800db12b08ccda58e0be7a2d15a043e9b2f10457168e9d99c9b854
 b7e415a16cfc8d84c09f105709910d808f0ad13e64c7feb4169b135fe57c7f99
 b8942b158c02dd3f2b985eacd89c0947964812f01f0ecfd22f6349a130c77542
@@ -494,6 +569,7 @@ b98030335337f01183cc474feefbb351d45afe8263ddfcfa7fd5554b97147362
 bac48e9a9fad6c9afa0387fe592bb1eabd56cfbcbffef2bbc765e32de2846478
 bb99a151f60484be5fbbe2dd9db7d6ab7ab82eabbcffbfbe19eca68ed0675663
 bd878970ab0cbcf5b29bf5a7e2f9ae25e81279ddc0cc30d59bdd242f40a465c2
+be328d6a63dbbc984c1902a57b8ec0a317816d551b96bbeb81a0f8c25993d82a
 bec324abe89a4466ea31b46a11270f69ee71fb01d6a640edaad566f589aa9ef9
 bf1e3e21bfb678c9f7c1cfd2063c68c91d46056289bba3c93877cfd7e28a4cad
 bfc3d6d12ca4a76297cf920edbdfe491c6be14e42e6b9c0722ff5efb5bfb6377
@@ -504,35 +580,45 @@ c2cc66ffc0aa0e8aca95e53d21258868583a2048d0c25538c5b25b47621224b7
 c2fe8ce700771308a283bcf219b19472c58f5a994e498132eccf22fdb1073ec0
 c38440fde99869002aec2e422f28e4ba360bced59bbe6ea769d0caad763fdc6e
 c3a8830187f24899610607a4537fc6615cd46a640cd01f4abc0577f6a3edf894
+c3eea2f6442912bb4aed67e57f65c65f65adf4bfd9689553e1ea516ac0990479
 c4daccf0ac446a6160b18ea3fbf9ab3166ee4181c0e9a40d1c7f26702dea5a69
 c4decb86958771c4332bce4748a7eb4867dd9f66258dfba85a88bc8eb1822a38
 c4f6077458402ab0803226800fdcfc92c58169ce94435cd62d688588ccfe89f1
+c52e200d0834f27c2cfd75aad8402bf07a8f982efa950141806a086594e3343c
 c5ed1cf6f6be1689ce7d401f5687e91fae56bbac4c2e665385a341135d91d4e1
 c68b5425cf8300b031a775846e07e65dd5a419e01584213671ede25381188dc1
 c730e6287aa786e04d22daa4e6c77b504cdf80dc4f09877a15bc79bac84403f6
 c77b479ead371d060f45186dc10d6bb2c9d32aac0275de27fab94b2f65a54500
 c7c057a2a841138af9f5e5d0919aa2099c27453600d87c3186896836ba812399
+c8c4dc99c1afaf623acc44d947a5b0841b0c49cb0514c2353d7d70240a9f9ad1
 ca2edeee5d4e8017503333240d938c3ac2ea6ad9818f41d54a637c0c2099ebca
 ca313b26bf374909bd0232772f86c613e206f33a77e7c66452429a684693c5f9
 cae79bd87462cf7f5134c476db64c8c9c081d512a27936deb7cf7b507079f329
 cae8cc4a40faf9c3474f86baf427e7eb1c63c4d75afec8a99da5f616752ffbdd
 cbccb0494dc3b5ef6810a203851c68cd00cc2c397bca55898ebf82981c1ba648
 cbe0ec259077679463a23abb44d85529e27d54bdc0f1c5afbf72e7f8cba4b8f2
+cc515ffc7f4d8b46c81220995aa18193d4fdb9ece4211034a289c65177b66492
+ce741606b0ecf619924513f80c43418a02c0b966aa3f1f7ef8cd961362ae5b3f
+cf282b407f84bf06ccdf0146d3a250991f7f38e310a7296870e64b38378c7196
 d0a5ea1fe235fab5d540999cf1dc87788fcd4f5072642f2eb7875e5c150d7211
 d0d2aa0220d8d55fe5a028d41f02af236a0c5f6ad5d39054621aec63fc1bef83
 d37a05507ee7da9f95d5fab0b52f03248bb3e160643c17a1e2668db80c077846
 d43c6aba8577d6f6e846545d25587748ff13e676320936f4c3104ba94e22e24c
+d6560333f140f32f097c228b427bb8fb0b334e5d0b25d8ac2ce664c0d0871916
 d65c564ac7ecbe786ab6f66b4a2aff57b21ef70e24d25727307d6a51a722da7e
 d76b4212f4b378be4ebac39567fb86df9b1bddffabf4e041d2e45503c441914a
+d788acb4f4c4b97e515f77d61a994832ded56994a3334314f861020c85587363
 d7e12e3d7cd55ad4fc698a7cd6a39f3f6ec873aeba78742ae2d74ccd19ed3da5
 d85f877f8d4d56ebfe56be1f8e11d3de68632c13b258955ed52cabad19a4e783
 d871694564319f19892ade1b3e34486883d95b384b1f07185bd572777303fea5
+d879b76d757e6b789eec5ff4a396396902be4fbb19e90412b7b1f64f16e4d619
 d9105bd42fdab5c865980300f0700490933fcb93aa9223e5a1051b780f036cae
 d9146883a7ac6f961a504acac6cd2e2a538eb102aec9c07d571541ac1ea976aa
 da192e3c40c906d947993aba743113a796cff63779db7ac7f7789f51873c192d
 da6f7b3b59260d0dcb45aa5b8e2212e99cf75d8c4bc36e56c720b02496ef816f
 dace2f4b76d741282866cb3e5038e7b2008817ed8f7079d5d764099be01d34bb
 db374ba72eeceb56a67ec78c6f5c98d2e454ece2e83e3c4c1b1ac044baeb2cc0
+dbd37ae8f25704a4f34a5bc21a026dfe3afb6724fc850e3077028b219a93a7b6
 dd0b44aeb504ee47ac61b86d092f14b7f3955b76c4b227458237acc4c9f55663
 dd1ccdaf08e9374dfa9214180830f32a8b0ce4344854496ad48a5fc3963ef0ca
 df43aec4416c5ccf985815877a169241c06edf747b5695c048665d4a40323afc
@@ -549,10 +635,12 @@ e4dff6694f28d833ff1087e64c1498c9c9232abdcebf324bffdcbe322a125bb3
 e56f554fbbd10426e2fc784847a2ba8c8554b4f5c6248294e6da3a5a07555ef0
 e6475b9ec4e5494a4952074f2acc6352ce617dea4c39b0646e3af2a67c99fddb
 e741316cdee811177ffe7b20cfdd1616cf29d63d475b5abcf4be45f0165b2095
+e75146f8ff6b18c900a5896fd04dd76f772ec6770b6378963de96dcf67ba894b
 e7611fac5c7603bc7a9f342efe76c656ed04e267192ef0620e827ebddac5520a
 e83f6a6f47e7d51ad62415e6c07a5e8e9fd5408a107b9afbdba5657c9d6882c0
 ea05802a8a6ac055e735378cad6469d1f7819d461d1402d78ae23aa125ab03dc
 ea73e56a48fe4a3cc6ec0006c7d802f3902b8bd2d491586d4943795c7bcb5811
+eabd45e874589dd8a61a40c5e17dfa1fb4b0a9c78d7ea1f4f783f1de74f5377d
 eaf233924580f52342e12c63fd6a33ec5db002b85a20b26a3e7534147d292bc5
 eafb46760c6ca2a826af095d5b71423b93ff9a0ce5e6b2369d55d51bae5ba5cd
 eb185e6d132bbedd392160872e4329a96977f6d338014696fcdae3b35f195cc8
@@ -566,18 +654,24 @@ ef7af4b3a2e3860e7b210b8c24dff885515573d28204053c8e4523eccfd6aa36
 efe3a916d8946435407de5ca7f8110d93ad788aade74f8b83c698b5d7ae8338e
 f0159cc8ce4568753a7475824095dc94555c724302a817943ae6c670cfc24c9f
 f1b5f045df72f5e6f35be5014e0884ef0a5ce1255b558461647340044573ba9e
+f442caaea63f4ea2a4b270f04adc9e6ce707cdf24fc07b297a3adf61b2e7276e
 f4629c7de5efbbc0047ca88cfdb4403619b94651fb01dd144cfa6283f3840cd8
 f4d0e6be4fa21b836500f0254352dd10a7f5a26abebeb1e7b7980e1896570796
 f56d7d52023e3a3dd1f6b2c2dc31b11a509d6175ca1385459bcc1cf4a67c9c2f
 f6853a25abff371818a7a5852ecaf8b01482577e3f2a4eb1ca2093b739d1601c
 f6c5412b5b16428b3898f8e534318b6e5e1e19981302d4301a308c8486e4e3ff
 f70e37d9c9380b978df1ccb8a67f644bb7d90174c420ff4b90beb61edb9e5f99
+f712e3d1f64a9b4c8847f9f0c624615cc0faea60e052e186da1ab965cb49569b
 f71822de24a50ca44db81e8529d59bc071ca457318dc5c4d35ce02a1ccef3b53
+f7f0e23c36ef2e5d2c3a50f3214f01bdf2d9b1d4a2e8cc361e97e42a51442a3e
 f97797ca0d80a8406dec8f939c725445742a884d734c9d339321c10e88bb4433
 f994013af4ac4aec934bcbf4267a169982cd58451b2586450abf86523b301653
 f9a12bd3805ccb30888cf55b8145dcbdeb64ecab5cc2be9d1ab831585ee2831b
 f9aa404e6b892570fa59a968eb1e6f2069cb6e6105632e323ae91d7c8005fe57
+f9d23884ea2c8b181615c7e0eaeee633d85d5c7c76ed347ce02fb89c5529ebe7
 fa5b139ba84bcbe572db3ed6cd29793f70f2c7f77d7f60e403a91d96a06db7e8
+face960fd123b7e2fa14e9f4bf832fcbcdbe7bfa1b85d40d09aaba519175d272
+fae134e18334300e543ec348d156397bcd51dcaa83fcc2330b0263fa43f38c8c
 fb085874ccc515ae84118ccfdbd9f7eaf718ff1194b0f8dbf5b62caec906516e
 fb4c19ce89d08a9056fcca54a158693109901dfab61adfeaf449ca230786945f
 fbc6193466853c3733172b8e384bde2e132c9135d0f6f0659cab5b1a0eee14f7
@@ -656,14 +750,14 @@ The account ```issac@anding-tw.com``` is observed to reference two different dom
 | ```skt@startranslogistics.com```                                             | ```skt@startranslogistics.com```                                                                        | ```SIALKOT12345```                               | 11     | AgentTesla             |
 | ```msg@acroative.com```                                                      | ```hm@acroative.com```</br>```nu@acroative.com```</br>```jn@acroative.com```</br>```nx@acroative.com``` | ```onegod5050()```                               | 6      | AgentTesla             |
 | ```info@pat.ps```                                                            | ```info@pat.ps```                                                                                       | ```Firas2017!```                                 | 3      | AgentTesla             |
-| ```elekus2020@aerotacctvn.com```                                             | ```elekus2020@aerotacctvn.com```                                                                        | ```sOeKk#E6```                                   | 9      | AgentTesla             |
+| ```elekus2020@aerotacctvn.com```                                             | ```elekus2020@aerotacctvn.com```                                                                        | ```sOeKk#E6```                                   | 14     | AgentTesla             |
 | ```finance@enmark.com.my```                                                  | ```finance@enmark.com.my```                                                                             | ```08Jan1963```                                  | 4      | AgentTesla             |
 | ```finance@manunggalkaroseri.com```                                          | ```finance@manunggalkaroseri.com```                                                                     | ```123572525finance```                           | 9      | AgentTesla             |
-| ```tegaworks@masterindo.net```                                               | ```tegaworks@masterindo.net```                                                                          | ```Gp:b2Qgqa3*}```</br>```uLrOsjJYN9```          | 10     | AgentTesla             |
+| ```tegaworks@masterindo.net```                                               | ```tegaworks@masterindo.net```                                                                          | ```Gp:b2Qgqa3*}```</br>```uLrOsjJYN9```          | 11     | AgentTesla             |
 | ```donga3@dongaseimcon.com```                                                | ```donga3@dongaseimcon.com```                                                                           | ```rDdlJ%h9```                                   | 4      | Phoenix                |
-| ```moin.ansari@sapgroup.com.pk```                                            | ```moin.ansari@sapgroup.com.pk```                                                                       | ```moin@26919```                                 | 4      | Phoenix                |
+| ```moin.ansari@sapgroup.com.pk```                                            | ```moin.ansari@sapgroup.com.pk```                                                                       | ```moin@26919```                                 | 5      | Phoenix                |
 | ```pulsit.c@spinteng.com```                                                  | ```pulsit.c@spinteng.com```                                                                             | ```Spie#th2017```                                | 4      | Phoenix                |
-| ```sbourdais@sielupz.com```                                                  | ```sbourdais@sielupz.com```                                                                             | ```eJkG%KP9```                                   | 4      | Phoenix                |
+| ```sbourdais@sielupz.com```                                                  | ```sbourdais@sielupz.com```                                                                             | ```eJkG%KP9```                                   | 5      | Phoenix                |
 | ```ranger@canvanatransport.com```</br>```ranger@seltrabank.com```</br>```ranger2@amisglobaltransport.com```</br>```anger@canvanatransport.com```</br>```grant3@leltbank.com``` | ```ranger@canvanatransport.com```</br>```ranger@seltrabank.com```</br>```ranger2@amisglobaltransport.com```</br>```anger@canvanatransport.com```</br>```grant3@leltbank.com``` | ```newpassword216```           | 37     | AgentTesla             |
 
 [Top](#information-stealers-wall-of-sheep-analysis)
@@ -685,11 +779,16 @@ Some operators opted to impersonate or target or illud association with entities
 
 ### Use-Case 1
 
-The domain ```qatarpharmas.org``` might be an attempt to impersonate or target a pharmaceutical company in Qatar with the legitimate domain ```qatarpharma.org```. Additionally, the IP address ```162.241.27.33``` is observed in 26 previous samples with domains ```mail.platinships.net``` and ```mail.novaa-ship.com```, with similarly structured password patterns. This suggests that these samples (38 AgentTesla, 2 MassLogger and 1 HawkEye) are operated by the same operators. See correlation [Correlation 'Why even bother?'](#correlation-why-even-bother) for more details.
+The domain ```qatarpharmas.org``` might be an attempt to impersonate or target a pharmaceutical company in Qatar with the legitimate domain ```qatarpharma.org```. With low confidentce, this operator appears to be responsible for the following downloader servers:
+- ```http://88.218.16.20/```
+- ```http://192.3.31.219/```
+- ```http://biz9holdings.com/```
+
+Additionally, the IP address ```162.241.27.33``` is observed in 26 previous samples with domains ```mail.platinships.net``` and ```mail.novaa-ship.com```, with similarly structured password patterns. This suggests that these samples (38 AgentTesla, 2 MassLogger and 1 HawkEye) are operated by the same operators. See correlation [Correlation 'Why even bother?'](#correlation-why-even-bother) for more details.
 
 | Domain                         | IP                   | Count | User                                                       | Password                                              | Family     |
 |--------------------------------|----------------------|-------|-----------------------------------------------------|-------------------------------------------------------|------------|
-| ```mail.qatarpharmas.org```    | ```162.241.27.33```  | 15    |```flo@qatarpharmas.org```</br>```jojo@qatarpharmas.org```</br>```royal@qatarpharmas.org```</br>```vip@qatarpharmas.org```</br>```mic@qatarpharmas.org``` | ```v~t-0~GGykudc@r&u*```</br>```?A4$!,SpMP@YwVn0qV```</br>```@dX2#^%HWdg?fZ;g5n```</br>```YEK7Ne@.6,m]vBXKQw```</br>```{[g(XaBNF%aJkU*U72``` | AgentTesla</br>MassLogger |
+| ```mail.qatarpharmas.org```    | ```162.241.27.33```  | 20    |```flo@qatarpharmas.org```</br>```jojo@qatarpharmas.org```</br>```royal@qatarpharmas.org```</br>```vip@qatarpharmas.org```</br>```mic@qatarpharmas.org``` | ```v~t-0~GGykudc@r&u*```</br>```?A4$!,SpMP@YwVn0qV```</br>```@dX2#^%HWdg?fZ;g5n```</br>```YEK7Ne@.6,m]vBXKQw```</br>```{[g(XaBNF%aJkU*U72``` | AgentTesla</br>MassLogger |
 
 ### Use-Cae 2
 
@@ -701,70 +800,92 @@ The operator's domain ```usamilitarydept.com``` might be an attempt to impersona
 
 [Top](#information-stealers-wall-of-sheep-analysis)
 
+## Correlation 'Compromised Accounts?'
+
+An AgentTesla sample ```973de14a37f6408161ec0ec249a50527d3cdf4bf7482a67134ac7b0c9e3b7a25``` was observed to (ab)use a legitimate but potentially compromised email address to exfiltrate data stolen by AgentTesla. The email address appears to belong to a one Goverment official __Mr. Bosko Stojanov__, the Head of Sector for normative-legal, general affairs, affairs of the Mayor, public activities and work with the Council of the Municipality of "Gjorce Petrov", of the city of Skopje, the capital of North Macedonia.
+
+| Sender                                 | Password | Recipient                    |
+|----------------------------------------|----------|------------------------------|
+| ```b.stojanov@opstinagpetrov.gov.mk``` | REDACTED | ```confirmed@graduate.org``` |
+
+Reviewing the website ```opstinagpetrov.gov.mk```, in particular ```http://opstinagpetrov.gov.mk/opstinska-administracija/```, identifies the email address and the owner of this email address.
+
+![image](https://github.com/ditekshen/is-wos/raw/master/img/compromised_account_infor.jpg)
+![image](https://github.com/ditekshen/is-wos/raw/master/img/compromised_account_info.jpg)
+
+The recipient domain ```graduate.org``` appears to be a parked domain.
+
+![image](https://github.com/ditekshen/is-wos/raw/master/img/parked_domain.png)
+
+[Top](#information-stealers-wall-of-sheep-analysis)
+
 ## Correlation 'Steering Towards Arid Yandex Pastures'
 
-In general, 157 samples fully abused Yandex as an exfiltration platform.
+In general, 202 samples fully abused Yandex as an exfiltration platform.
 
-| User                                   | Password                                     | Family                    | Count |
-|----------------------------------------|----------------------------------------------|---------------------------|-------|
-| ```ikpc1@yandex.com```                 | ```ikechukwu112```                           | AgentTesla                | 20    |
-| ```mullarwhite@yandex.com```           | ```challenge12345```                         | AgentTesla                | 10    |
-| ```tim3.44@yandex.com```               | ```Obaten10```                               | AgentTesla                | 9     |
-| ```staronuegbu@yandex.com```           | ```@@Io419090@@```                           | AgentTesla                | 6     |
-| ```irina.macrotek@yandex.ru```         | ```hygiene@789```                            | AgentTesla                | 6     |
-| ```okirinwajesus@yandex.com```         | ```07062487004```                            | AgentTesla                | 5     |
-| ```johnsonpikyu@yandex.com```          | ```cr*fDaW&m@2y6u```                         | AgentTesla                | 5     |
-| ```selecttools@yandex.com```           | ```biafra123```                              | AgentTesla                | 4     |
-| ```petersonhouston@yandex.com```       | ```faith12AB```                              | AgentTesla                | 4     |
-| ```lucinedauglas@yandex.com```         | ```myhp6000```                               | AgentTesla                | 4     |
-| ```genuxpc@yandex.com```               | ```africa@@@@@```                            | AgentTesla                | 4     |
-| ```chijiokejackson121@yandex.com```    | ```chijiokejackson```                        | AgentTesla                | 4     |
-| ```chi.eb@yandex.com```                | ```sages101```                               | AgentTesla                | 4     |
-| ```sleeves100@yandex.com```            | ```@Sleeves100```                            | AgentTesla                | 3     |
-| ```rose.nunez@yandex.ru```             | ```lochmann2```                              | AgentTesla                | 3     |
-| ```r.tome@yandex.com```                | ```qwerty123@@```                            | AgentTesla                | 3     |
-| ```p.origin@yandex.com```              | ```Loverboy123```                            | AgentTesla                | 3     |
-| ```fxxxfuz@yandex.com```               | ```genesis070```                             | AgentTesla                | 3     |
-| ```fffffffgggd@yandex.com```           | ```greatman32```                             | AgentTesla                | 3     |
-| ```zecospiritual101@yandex.com```      | ```07030452451```                            | AgentTesla                | 2     |
-| ```resultbox042@yandex.com```          | ```OGOM12345```                              | AgentTesla                | 2     |
-| ```result.package@yandex.ru```         | ```Blessing123```                            | AgentTesla                | 2     |
-| ```lightmusic12345@yandex.ru```        | ```chibuike12345@@@@@```                     | AgentTesla                | 2     |
-| ```james.cho8282@yandex.com```         | ```klassic1993```                            | AgentTesla                | 2     |
-| ```cruizjames@yandex.ru```             | ```cruizjamesvhjkl@```                       | AgentTesla                | 2     |
-| ```cjmyguy@yandex.com```               | ```@@Io419090@@```                           | HawkEye                   | 2     |
-| ```chinapeace@yandex.com```            | ```chibuikelightwork1```                     | AgentTesla                | 2     |
-| ```Goodluck2k20@yandex.com```          | ```Pl@nedon1234```                           | AgentTesla                | 2     |
-| ```pauline.vostropiatova@yandex.com``` | ```kaka1234@1@1```                           | AgentTesla                | 1     |
-| ```boymouse@yandex.com```              | ```333link00win```                           | AgentTesla</br>HawkEye    | 2     |
-| ```annwilso@yandex.com```              | ```theoldlady```</br>```HueCycle```          | AgentTesla                | 2     |
-| ```zhu.china@yandex.com```             | ```KOSI213141```                             | AgentTesla                | 1     |
-| ```vipa.agraindustry1@yandex.com```    | ```chosen@@@123456```</br>```chosen@@@123``` | MassLogger</br>AgentTesla | 2     |
-| ```victormuller10@yandex.com```        | ```Mummy212```                               | AgentTesla                | 1     |
-| ```sly-originlogs@yandex.ru```         | ```JesusChrist007```                         | AgentTesla                | 1     |
-| ```pauline.vostropiatova@yandex.com``` | ```kaka1234@1@1```                           | AgentTesla                | 1     |
-| ```oriego1@yandex.ru```                | ```Ijeomam288```                             | AgentTesla                | 1     |
-| ```mor440ney@yandex.com```             | ```castor123@```                             | HawkEye                   | 1     |
-| ```mobile.mailer@yandex.com```         | ```qwerty123@```                             | AgentTesla                | 1     |
-| ```magagraceman@yandex.ru```           | ```tonero4417```                             | HawkEye                   | 1     |
-| ```jessicafaithjessica@yandex.com```   | ```123abc1!```                               | AgentTesla                | 1     |
-| ```iykelog1@yandex.com```              | ```Conversation2```                          | AgentTesla                | 1     |
-| ```iren159k@yandex.com```              | ```Protected@123```                          | AgentTesla                | 1     |
-| ```info.pana@yandex.com```             | ```user@12345```                             | AgentTesla                | 1     |
-| ```import22.export@yandex.com```       | ```khalifa2019```                            | AgentTesla                | 1     |
-| ```genaral1122@yandex.ru```            | ```kukeremaster1122```                       | AgentTesla                | 1     |
-| ```freshclinton8269@yandex.com```      | ```fresh826699```                            | AgentTesla                | 1     |
-| ```frank.got@yandex.ru```              | ```godson00```                               | AgentTesla                | 1     |
-| ```cupjul@yandex.com```                | ```esut96092```                              | HawkEye                   | 1     |
-| ```blr@saharaexpress.com```            | ```Sahara*542```                             | AgentTesla                | 1     |
-| ```acksonjogodo121@yandex.com```       | ```jacksonjogodo```                          | AgentTesla                | 1     |
-| ```account.info1000@yandex.com```      | ```4canada1A@```                             | AgentTesla                | 1     |
-| ```Alibabalogs657@yandex.com```        | ```austinmilla```                            | AgentTesla                | 1     |
-| ```jerryedward1@yandex.ru```           | ```enugu042```                               | AgentTesla                | 2     |
-| ```kom.upakovkai@yandex.com```         | ```Ilovegod12```                             | HawkEye                   | 1     |
-| ```jaffinmark@yandex.ru```             | ```@jaffinmarknma@344```                     | MassLogger                | 1     |
-
-
+| User                                   | Password                                       | Family                    | Count |
+|----------------------------------------|------------------------------------------------|---------------------------|-------|
+| ```ikpc1@yandex.com```                 | ```ikechukwu112```                             | AgentTesla                | 20    |
+| ```mullarwhite@yandex.com```           | ```challenge12345```</br>```challenge12345@``` | AgentTesla                | 20    |
+| ```tim3.44@yandex.com```               | ```Obaten10```                                 | AgentTesla                | 9     |
+| ```staronuegbu@yandex.com```           | ```@@Io419090@@```                             | AgentTesla                | 6     |
+| ```irina.macrotek@yandex.ru```         | ```hygiene@789```                              | AgentTesla                | 6     |
+| ```okirinwajesus@yandex.com```         | ```07062487004```                              | AgentTesla                | 5     |
+| ```johnsonpikyu@yandex.com```          | ```cr*fDaW&m@2y6u```                           | AgentTesla                | 5     |
+| ```selecttools@yandex.com```           | ```biafra123```                                | AgentTesla                | 4     |
+| ```petersonhouston@yandex.com```       | ```faith12AB```                                | AgentTesla                | 4     |
+| ```houstondavidson@yandex.com```       | ```faith12AB```                                | AgentTesla                | 2     |
+| ```lucinedauglas@yandex.com```         | ```myhp6000```                                 | AgentTesla                | 4     |
+| ```genuxpc@yandex.com```               | ```africa@@@@@```                              | AgentTesla                | 4     |
+| ```chijiokejackson121@yandex.com```    | ```chijiokejackson```                          | AgentTesla                | 4     |
+| ```chi.eb@yandex.com```                | ```sages101```                                 | AgentTesla                | 4     |
+| ```tt.swift@yandex.com```              | ```Sages101*```                                | AgentTesla                | 1     |
+| ```sleeves100@yandex.com```            | ```@Sleeves100```                              | AgentTesla                | 3     |
+| ```rose.nunez@yandex.ru```             | ```lochmann2```                                | AgentTesla                | 4     |
+| ```r.tome@yandex.com```                | ```qwerty123@@```                              | AgentTesla                | 3     |
+| ```p.origin@yandex.com```              | ```Loverboy123```                              | AgentTesla                | 3     |
+| ```fxxxfuz@yandex.com```               | ```genesis070```                               | AgentTesla                | 3     |
+| ```fffffffgggd@yandex.com```           | ```greatman32```                               | AgentTesla                | 3     |
+| ```zecospiritual101@yandex.com```      | ```07030452451```                              | AgentTesla                | 2     |
+| ```resultbox042@yandex.com```          | ```OGOM12345```                                | AgentTesla                | 2     |
+| ```result.package@yandex.ru```         | ```Blessing123```                              | AgentTesla                | 2     |
+| ```lightmusic12345@yandex.ru```        | ```chibuike12345@@@@@```                       | AgentTesla                | 2     |
+| ```james.cho8282@yandex.com```         | ```klassic1993```                              | AgentTesla                | 2     |
+| ```cruizjames@yandex.ru```             | ```cruizjamesvhjkl@```                         | AgentTesla                | 2     |
+| ```cjmyguy@yandex.com```               | ```@@Io419090@@```                             | HawkEye                   | 2     |
+| ```chinapeace@yandex.com```            | ```chibuikelightwork1```                       | AgentTesla                | 2     |
+| ```Goodluck2k20@yandex.com```          | ```Pl@nedon1234```                             | AgentTesla                | 2     |
+| ```pauline.vostropiatova@yandex.com``` | ```kaka1234@1@1```                             | AgentTesla                | 1     |
+| ```boymouse@yandex.com```              | ```333link00win```                             | AgentTesla</br>HawkEye    | 2     |
+| ```annwilso@yandex.com```              | ```theoldlady```</br>```HueCycle```            | AgentTesla                | 2     |
+| ```zhu.china@yandex.com```             | ```KOSI213141```                               | AgentTesla                | 1     |
+| ```vipa.agraindustry1@yandex.com```    | ```chosen@@@123456```</br>```chosen@@@123```   | MassLogger</br>AgentTesla | 2     |
+| ```mor440ney@yandex.com```             | ```castor123@```                               | HawkEye</br>AgentTesla    | 2     |
+| ```victormuller10@yandex.com```        | ```Mummy212```                                 | AgentTesla                | 1     |
+| ```sly-originlogs@yandex.ru```         | ```JesusChrist007```                           | AgentTesla                | 1     |
+| ```oriego1@yandex.ru```                | ```Ijeomam288```                               | AgentTesla                | 1     |
+| ```mobile.mailer@yandex.com```         | ```qwerty123@```                               | AgentTesla                | 1     |
+| ```magagraceman@yandex.ru```           | ```tonero4417```                               | HawkEye                   | 1     |
+| ```jessicafaithjessica@yandex.com```   | ```123abc1!```                                 | AgentTesla                | 1     |
+| ```iykelog1@yandex.com```              | ```Conversation2```                            | AgentTesla                | 1     |
+| ```iren159k@yandex.com```              | ```Protected@123```                            | AgentTesla                | 1     |
+| ```info.pana@yandex.com```             | ```user@12345```                               | AgentTesla                | 1     |
+| ```import22.export@yandex.com```       | ```khalifa2019```                              | AgentTesla                | 1     |
+| ```genaral1122@yandex.ru```            | ```kukeremaster1122```                         | AgentTesla                | 1     |
+| ```freshclinton8269@yandex.com```      | ```fresh826699```                              | AgentTesla                | 1     |
+| ```frank.got@yandex.ru```              | ```godson00```                                 | AgentTesla                | 1     |
+| ```cupjul@yandex.com```                | ```esut96092```                                | HawkEye                   | 1     |
+| ```blr@saharaexpress.com```            | ```Sahara*542```                               | AgentTesla                | 1     |
+| ```acksonjogodo121@yandex.com```       | ```jacksonjogodo```                            | AgentTesla                | 1     |
+| ```account.info1000@yandex.com```      | ```4canada1A@```                               | AgentTesla                | 1     |
+| ```Alibabalogs657@yandex.com```        | ```austinmilla```                              | AgentTesla                | 1     |
+| ```jerryedward1@yandex.ru```           | ```enugu042```                                 | AgentTesla                | 2     |
+| ```kom.upakovkai@yandex.com```         | ```Ilovegod12```                               | HawkEye                   | 1     |
+| ```jaffinmark@yandex.ru```             | ```@jaffinmarknma@344```                       | MassLogger                | 2     |
+| ```wpollczyk@yandex.com```             | ```qwertyuiop[]\```                            | Phoenix                   | 1     |
+| ```passjones@yandex.com```             | ```kings@8088```                               | AgentTesla                | 1     |
+| ```luc4smail@yandex.com```             | ```Lucas@9842```                               | AgentTesla                | 2     |
+| ```glowhub@yandex.com```               | ```INfinity12345```                            | AgentTesla                | 1     |
 
 Other operators opted to exfiltrate to Yandex recipient accounts without using Yandex as for the user/sender accounts. Yet, different user/sender accounts send to the same Yandex recipient account. An example is the accounts ```charlesxmoni@yandex.com``` and ```stanleybox@yandex.com```, which appears to belong to the same operator.
 
@@ -899,9 +1020,9 @@ The uses cases in this correlation demonstrate that some operators attempted to 
 
 ### Use-Case 1
 
-| User                          | Count | Password | Recipient                                                                                                                                                                                       | Family     |
-|-------------------------------|-------|----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|
-| ```ikostadinov@cargoair.bg``` | 10    | 334455   |```info@agri-chernicals.net```</br>```grace_pan@traingle-cn.com```</br>```e.pezzli@giivin.com```</br>```stan@iskreameco.com```</br>```brunolugnani@arrmet.in```</br>```neo.ycwang@mindroy.com``` | AgentTesla |
+| User                          | Count | Password     | Recipient                                                                                                                                                                                       | Family     |
+|-------------------------------|-------|--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|
+| ```ikostadinov@cargoair.bg``` | 10    | ```334455``` |```info@agri-chernicals.net```</br>```grace_pan@traingle-cn.com```</br>```e.pezzli@giivin.com```</br>```stan@iskreameco.com```</br>```brunolugnani@arrmet.in```</br>```neo.ycwang@mindroy.com``` | AgentTesla |
 
 ### Use-Case 2
 
@@ -1027,4 +1148,4 @@ Some samples opted to exfiltrate via HTTP only, or both HTTP and SMTP.
 
 [Top](#information-stealers-wall-of-sheep-analysis)
 
-#AS20200703
+#AS20200815
