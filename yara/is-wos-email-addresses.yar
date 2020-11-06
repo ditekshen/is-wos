@@ -691,6 +691,9 @@ rule ISWOS_Indicator_Email_Address {
         $account683 = "zlogs@zolvtek.com" ascii wide nocase
         $account684 = "jojo@obazolu-ovim.pw" ascii wide nocase
         $account685 = "s.terasa@shibata-fenderteam.team" ascii wide nocase
+        $account686 = "caglar@lidyatriko-tr.pw" ascii wide nocase
+        $account687 = "purchasing@siicegypt.com" ascii wide nocase
+        $account688 = "nd@pantheomtankers.com" ascii wide nocase
     condition:
         any of them
 }

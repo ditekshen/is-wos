@@ -94,13 +94,13 @@ The 'ROBO' name is derived from the name the operators use to refer to themselve
 
 ### Statistics:
 
-- Total Unique Samples: 519
+- Total Unique Samples: 538
   - MassLogger: 286
-  - AgentTesla: 156
+  - AgentTesla: 175
   - HawkEye: 58
   - M00nD3v: 19
-- Total Unique Accounts: 92
-- Total Unique Passwords: 106
+- Total Unique Accounts: 94
+- Total Unique Passwords: 111
 
 ### Profile:
 
@@ -220,6 +220,10 @@ http://dinosaurdiscovery.co.nz/css/kr/
 http://dinosaurdiscovery.co.nz/css/ok/
 http://dinosaurdiscovery.co.nz/css/pa/
 http://dinosaurdiscovery.co.nz/css/yg/
+http://dinosaurdiscovery.co.nz/wps/ok/
+http://listingcyprus.com/leeds/
+http://listingcyprus.com/wpcon/
+http://oficnna.sytes.net/boo/
 ```
 
 ### Analysis
@@ -305,21 +309,23 @@ The below table displays the accounts and associated passwords across multiple m
 | ```binu@metalfabne.com```                    | 5           | AgentTesla</br>MassLogger                         | 3</br>2              | ```NewAugust1303@```                                                                                        |
 | ```zaid.alyusuf@gpgolbal.com```              | 3           | AgentTesla</br>MassLogger                         | 2</br>1              | ```Newest@1234#```                                                                                          |
 | ```director@medormw.org```                   | 7           | AgentTesla                                        | 7                    | ```@Mexico1.,```</br>```bigGod1234```                                                                       |
-| ```hgalvan@vacontgo.com```                   | 4           | AgentTesla                                        | 4                    | ```@Mexico1.,```</br>```BurgerKings123@```                                                                  |
+| ```hgalvan@vacontgo.com```                   | 6           | AgentTesla                                        | 6                    | ```@Mexico1.,```</br>```BurgerKings123@```                                                                  |
 | ```kathrin.comanns@medoer.me```              | 4           | AgentTesla                                        | 4                    | ```@Mexico1.,```                                                                                            |
-| ```stu@frescnoy.com```                       | 7           | AgentTesla</br>MassLogger                         | 6</br>1              | ```@Mexico1.,```                                                                                            |
-| ```hussam.odeh@temico-mep.com```             | 6           | AgentTesla</br>MassLogger                         | 5</br>1              | ```@Mexico1.,```                                                                                            |
-| ```smita.pagade@a1fencesproducts.com```      | 5           | AgentTesla</br>MassLogger                         | 4</br>1              | ```@Mexico1.,```</br>```SURELOGS123456```                                                                   |
+| ```stu@frescnoy.com```                       | 9           | AgentTesla</br>MassLogger                         | 8</br>1              | ```@Mexico1.,```</br>```@Mexico120.,```                                                                     |
+| ```hussam.odeh@temico-mep.com```             | 8           | AgentTesla</br>MassLogger                         | 7</br>1              | ```@Mexico1.,```</br>```@Mexico1.```                                                                        |
+| ```smita.pagade@a1fencesproducts.com```      | 8           | AgentTesla</br>MassLogger                         | 7</br>1              | ```@Mexico1.,```</br>```SURELOGS123456```</br>```BLOCKLOGS123```                                            |
 | ```safety@rayanetech.com```                  | 4           | AgentTesla</br>MassLogger                         | 3</br>1              | ```Dedication100%```                                                                                        |
 | ```frankvanderloop@swannberg.com```          | 5           | AgentTesla                                        | 5                    | ```Figuring@123```                                                                                          |
 | ```sales1@razorwirefecning.com```            | 2           | AgentTesla                                        | 2                    | ```Biggod1234```                                                                                            |
-| ```phyno@obazolu-ovim.pw```                  | 5           | AgentTesla                                        | 5                    | ```Blessings@12345```                                                                                       |
-| ```challa@obazolu-ovim.pw```                 | 6           | AgentTesla</br>MassLogger                         | 5</br>1              | ```@Mexico1.,```                                                                                            |
+| ```phyno@obazolu-ovim.pw```                  | 7           | AgentTesla                                        | 7                    | ```Blessings@12345```                                                                                       |
+| ```challa@obazolu-ovim.pw```                 | 7           | AgentTesla</br>MassLogger                         | 5</br>1              | ```@Mexico1.,```                                                                                            |
 | ```olmx@obazolu-ovim.pw```                   | 1           | AgentTesla                                        | 1                    | ```whyworry.,```                                                                                            |
-| ```zeco@obazolu-ovim.pw```                   | 3           | AgentTesla                                        | 3                    | ```Remember@123```                                                                                          |
+| ```zeco@obazolu-ovim.pw```                   | 5           | AgentTesla                                        | 5                    | ```Remember@123```</br>```BigGod1234@```                                                                    |
 | ```uz@obazolu-ovim.pw```                     | 3           | AgentTesla                                        | 3                    | ```LifeDrama@123```                                                                                         |
 | ```jojo@obazolu-ovim.pw```                   | 2           | AgentTesla                                        | 2                    | ```Remember@123```                                                                                          |
 | ```s.terasa@shibata-fenderteam.team```       | 1           | AgentTesla                                        | 1                    | ```WORKharder@123```                                                                                        |
+| ```caglar@lidyatriko-tr.pw```                | 2           | AgentTesla                                        | 2                    | ```1234567890```                                                                                            |
+| ```olamx@obazolu-ovim.pw```                  | 3           | AgentTesla                                        | 3                    | ```NewSeason@123```</br>```Miracle@123.,```                                                                 |
 
 
 An interesting systematic anomaly associted with these operators is a set of 18 unique samples, which can be divided into two groups based on the domain name used in the accounts.
@@ -956,11 +962,11 @@ The domain ```qatarpharmas.org``` might be an attempt to impersonate or target a
 - ```http://192.3.31.219/```
 - ```http://biz9holdings.com/```
 
-Additionally, the IP address ```162.241.27.33``` is observed in 26 previous samples with domains ```mail.platinships.net``` and ```mail.novaa-ship.com```, with similarly structured password patterns. This suggests that these samples (38 AgentTesla, 2 MassLogger and 1 HawkEye) are operated by the same operators. See correlation [Correlation 'Why even bother?'](#correlation-why-even-bother) for more details.
+Additionally, the IP address ```162.241.27.33``` is observed in 26 previous samples with domains ```mail.platinships.net``` and ```mail.novaa-ship.com```, with similarly structured password patterns. This suggests that these samples (38 AgentTesla, 2 MassLogger and 1 HawkEye) are operated by the same operators. See correlation [Correlation 'Why even bother?'](#correlation-why-even-bother) for more details. In total, the IP address is associated with 55 malware samples
 
 | Domain                         | IP                   | Count | User                                                       | Password                                              | Family     |
 |--------------------------------|----------------------|-------|-----------------------------------------------------|-------------------------------------------------------|------------|
-| ```mail.qatarpharmas.org```    | ```162.241.27.33```  | 20    |```flo@qatarpharmas.org```</br>```jojo@qatarpharmas.org```</br>```royal@qatarpharmas.org```</br>```vip@qatarpharmas.org```</br>```mic@qatarpharmas.org``` | ```v~t-0~GGykudc@r&u*```</br>```?A4$!,SpMP@YwVn0qV```</br>```@dX2#^%HWdg?fZ;g5n```</br>```YEK7Ne@.6,m]vBXKQw```</br>```{[g(XaBNF%aJkU*U72``` | AgentTesla</br>MassLogger |
+| ```mail.qatarpharmas.org```    | ```162.241.27.33```  | 55    |```flo@qatarpharmas.org```</br>```jojo@qatarpharmas.org```</br>```royal@qatarpharmas.org```</br>```vip@qatarpharmas.org```</br>```mic@qatarpharmas.org```</br>```nd@pantheomtankers.com``` | ```v~t-0~GGykudc@r&u*```</br>```?A4$!,SpMP@YwVn0qV```</br>```@dX2#^%HWdg?fZ;g5n```</br>```YEK7Ne@.6,m]vBXKQw```</br>```{[g(XaBNF%aJkU*U72```</br>```;oB-_Sf.+F4e{^!I1@``` | AgentTesla</br>MassLogger |
 
 ### Use-Cae 2
 

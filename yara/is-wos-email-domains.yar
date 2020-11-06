@@ -395,7 +395,6 @@ rule ISWOS_Indicator_Email_Domain {
         $domain387 = "@serviceconsutant.com" ascii wide nocase
         $domain388 = "@shivanilocks.com" ascii wide nocase
         $domain389 = "@shrc-india.com" ascii wide nocase
-        $domain390 = "@shreejitransport.com"" ascii wide nocase
         $domain391 = "@shreejitransport.com" ascii wide nocase
         $domain392 = "@sicim.icu" ascii wide nocase
         $domain393 = "@sielupz.com" ascii wide nocase
@@ -475,6 +474,9 @@ rule ISWOS_Indicator_Email_Domain {
         $domain467 = "@zi-gem.com" ascii wide nocase
         $domain468 = "@zolvtek.com" ascii wide nocase
         $domain469 = "@shibata-fenderteam.team" ascii wide nocase
+        $domain470 = "@siicegypt.com" ascii wide nocase
+        $domain471 = "@lidyatriko-tr.pw" ascii wide nocase
+        $domain472 = "@@pantheomtankers.com" ascii wide nocase
     condition:
         any of them
 }
