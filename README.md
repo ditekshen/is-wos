@@ -6,7 +6,7 @@ __Note: The old mappings and data are not longer maintained and will be removed 
 - Using password analysis and correlation, among other data pivot points, it is possbile to cluster sheep into identifiable herds.
 - Collect static file properties as enrichment data points, including imaphash, ssdeep, debug paths, compilers, libraries, packers, protectors, and metadata.
 
-![image](https://github.com/ditekshen/is-wos/raw/master/img/dashboard_snapshot_20200912.jpg)
+![image](https://github.com/ditekshen/is-wos/raw/master/img/dashboard_snapshot_20201111.jpg)
 
 ## Observations and Analysis
 

@@ -4,6 +4,7 @@
 - [Observations](#observerations)
 - [Correlations](#correlations)
     - [The 'ROBO' Gang (Formerly: Correlation 'Fire Them')](#the-robo-gang-formerly-correlation-fire-them)
+    - [Hello 'JoJo'](#hello-jojo)
     - [Correlation 'Repetition Makes Perfect'](#correlation-repetition-makes-perfect)
     - [Correlation 'Impersonation'](#correlation-impersonation)
     - [Correlation 'Geo Impersonation'](#correlation-geo-impersonation)
@@ -118,6 +119,7 @@ The 'ROBO' name is derived from the name the operators use to refer to themselve
   - ```http://anythingbilliest.com/bmink/```
   - ```http://bazzardeals.com/bano/```
 - Operators occasionally change passwords of existing exfiltration accounts.
+- Operators occasionally utilize GuLoader.
 
 ### Confirmed Information Stealer Families:
 
@@ -224,6 +226,7 @@ http://dinosaurdiscovery.co.nz/wps/ok/
 http://listingcyprus.com/leeds/
 http://listingcyprus.com/wpcon/
 http://oficnna.sytes.net/boo/
+http://www.cieloabiertocasahogar.com/capenter/
 ```
 
 ### Analysis
@@ -861,6 +864,47 @@ ffed64fdf03ed762c8dbf6f3409dfd01a5e7f83497c9da48e8c8e2a223e11c31
 
 [Top](#information-stealers-wall-of-sheep-analysis)
 
+## Hello 'JoJo'
+
+This operator ustilizes AgentTesla (61 samples) for their malice. However, they were observed to experiment with MassLogger (2 samples) and HawkEye (1 sample). The operator runs a single IP address of ```162.241.27.33``` for exfiltration, with three domains, namely, ```qatarpharmas.org```, ```mail.platinships.net``` and ```mail.novaa-ship.com```. This operator is responsible for 64 unique samples, with the majority operating under the domain ```qatarpharmas.org```. This domain might be an attempt to impersonate or target a pharmaceutical company in Qatar with the legitimate domain ```qatarpharma.org```.
+
+The operator also appears to have managed the following addresses for hosting the second stage payloads after successfull CVE-2017-11882 exploitation:
+
+- ```http://88.218.16.20/```
+- ```http://88.218.16.151/```
+- ```http://192.3.31.219/```
+- ```http://biz9holdings.com/```
+- ```http://synergyship.com.ng```
+
+| IP Address          | Count | Domain                     | User                               | Count | Password                 | Family     |
+|---------------------|-------|----------------------------|------------------------------------|-------|--------------------------|------------|
+| ```162.241.27.33``` | 64    | ```mail.platinships.net``` | ```amani@platinships.net```</br>```armani@platinships.net```</br>```garang@platinships.net```</br>```phyno@platinships.net```</br>```chima@platinships.net```</br>```don@platinships.net```   | 2</br>4</br>5</br>6</br>5</br>1   | ```Azz%LcQK%sb!```</br>```#%c,*lVZNIXctE.!BA```</br>```%izARl@$-zHKEYwlHM```</br>```J~5v.F5[G06H6}ct{!```</br>```R[2](NaueJp!6tL?sW```</br>```Vn,?+Es5;dNayEvk]*```       | AgentTesla |
+|                     |       | ```mail.novaa-ship.com```  | ```ebase@novaa-ship.com```</br>```flo@novaa-ship.com```</br>```armani@novaa-ship.com``` | 1</br>1</br>1</br>     | ```O-xgNxpHw~?h5H.ZEB```</br>```KyayQQ{Kn$TJ+f;dRd```</br>```Azz%LcQK%sb!``` | AgentTesla</br>AgentTesla</br>HawkEye |
+|                     |       | ```qatarpharmas.org```     | ```royal@qatarpharmas.org```</br>```flo@qatarpharmas.org```</br>```jojo@qatarpharmas.org```</br>```vip@qatarpharmas.org```</br>```nd@pantheomtankers.com```</br>```mic@qatarpharmas.org```</br>```uaa@qatarpharmas.org```</br>```don@qatarpharmas.org``` | 10</br>7</br>7</br>6</br>3</br>2</br>2</br>1   | ```@dX2#^%HWdg?fZ;g5n```</br>```?A4$!,SpMP@YwVn0qV```</br>```v~t-0~GGykudc@r&u*```</br>```YEK7Ne@.6,m]vBXKQw```</br>```;oB-_Sf.+F4e{^!I1@```</br>```jd9}ohRMh(cIz~&)%n```</br>```{[g(XaBNF%aJkU*U72```</br>```eY^H[nPuV3lMJl6Cw%``` | AgentTesla</br>MassLogger |
+
+The operator could be suffering from dementia. Recently they started naming their samples or use initials in sample names that match the exfiltration email addresses used in each sample. It is suggested that the operator go through a mental check up before they start the next campaign.
+
+| Sample Name    | Email                        |
+|----------------|------------------------------|
+```uaade.exe```  | ```uaa@qatarpharmas.org```   |
+```jojode.exe``` | ```jojo@qatarpharmas.org```  |
+```nde.exe```	   | ```nd@pantheomtankers.com``` |
+```dc.exe```	   | ```don@qatarpharmas.org```   |
+```rbp.exe```	   | ```royal@qatarpharmas.org``` |
+```vbp.exe```	   | ```vip@qatarpharmas.org```   |
+```ubp.exe```	   | ```uaa@qatarpharmas.org```   |
+```jde.exe```	   | ```jojo@qatarpharmas.org```  |
+```fbp.exe```	   | ```flo@qatarpharmas.org```   |
+```r.exe```	     | ```royal@qatarpharmas.org``` |
+```n.exe```	     | ```nd@pantheomtankers.com``` |
+```v.exe```	     | ```vip@qatarpharmas.org```   |
+```ndc.exe```	   | ```nd@pantheomtankers.com``` |
+```floc.exe```	 | ```flo@qatarpharmas.org```   |
+```j.exe```	     | ```jojo@qatarpharmas.org```  |
+```rc.exe```	   | ```royal@qatarpharmas.org``` |
+```jc.exe```	   | ```jojo@qatarpharmas.org```  |
+```royalc.exe``` | ```royal@qatarpharmas.org``` |
+
 ## Correlation 'Repetition Makes Perfect'
 
 ### Use-Case 1
@@ -955,26 +999,15 @@ This correlation invloves two different malware families under the same exfiltra
 
 Some operators opted to impersonate or target or illud association with entities within countries.
 
-### Use-Case 1
-
-The domain ```qatarpharmas.org``` might be an attempt to impersonate or target a pharmaceutical company in Qatar with the legitimate domain ```qatarpharma.org```. With low confidentce, this operator appears to be responsible for the following downloader servers:
-- ```http://88.218.16.20/```
-- ```http://192.3.31.219/```
-- ```http://biz9holdings.com/```
-
-Additionally, the IP address ```162.241.27.33``` is observed in 26 previous samples with domains ```mail.platinships.net``` and ```mail.novaa-ship.com```, with similarly structured password patterns. This suggests that these samples (38 AgentTesla, 2 MassLogger and 1 HawkEye) are operated by the same operators. See correlation [Correlation 'Why even bother?'](#correlation-why-even-bother) for more details. In total, the IP address is associated with 55 malware samples
-
-| Domain                         | IP                   | Count | User                                                       | Password                                              | Family     |
-|--------------------------------|----------------------|-------|-----------------------------------------------------|-------------------------------------------------------|------------|
-| ```mail.qatarpharmas.org```    | ```162.241.27.33```  | 55    |```flo@qatarpharmas.org```</br>```jojo@qatarpharmas.org```</br>```royal@qatarpharmas.org```</br>```vip@qatarpharmas.org```</br>```mic@qatarpharmas.org```</br>```nd@pantheomtankers.com``` | ```v~t-0~GGykudc@r&u*```</br>```?A4$!,SpMP@YwVn0qV```</br>```@dX2#^%HWdg?fZ;g5n```</br>```YEK7Ne@.6,m]vBXKQw```</br>```{[g(XaBNF%aJkU*U72```</br>```;oB-_Sf.+F4e{^!I1@``` | AgentTesla</br>MassLogger |
-
-### Use-Cae 2
+### Use-Cae 1
 
 The operator's domain ```usamilitarydept.com``` might be an attempt to impersonate or target the US Departemtn of Defense (Military).
 
 | Domain                         | IP                   | User                                 | Password       | Family     |
 |--------------------------------|----------------------|--------------------------------------|----------------|------------|
 | ```smtp.usamilitarydept.com``` | ```208.91.198.143``` | ```leaveboard@usamilitarydept.com``` | ```qqkgpIN2``` | AgentTesla |
+
+See correlation [Hello 'JoJo'](#hello-jojo) for another use case of potential geo-impersonation.
 
 [Top](#information-stealers-wall-of-sheep-analysis)
 
@@ -1064,6 +1097,7 @@ In general, 202 samples fully abused Yandex as an exfiltration platform.
 | ```passjones@yandex.com```             | ```kings@8088```                               | AgentTesla                | 1     |
 | ```luc4smail@yandex.com```             | ```Lucas@9842```                               | AgentTesla                | 2     |
 | ```glowhub@yandex.com```               | ```INfinity12345```                            | AgentTesla                | 1     |
+| ```lawman7070@yandex.com```            | ```sirohms442037```                            | AgentTesla                | 1     |
 
 Other operators opted to exfiltrate to Yandex recipient accounts without using Yandex as for the user/sender accounts. Yet, different user/sender accounts send to the same Yandex recipient account. An example is the accounts ```charlesxmoni@yandex.com``` and ```stanleybox@yandex.com```, which appears to belong to the same operator.
 
@@ -1078,6 +1112,9 @@ Other operators opted to exfiltrate to Yandex recipient accounts without using Y
 | ```morrishome1@yandex.com```      | ```limcor@le-belt.co.za```                                                                                                     | ```bemi6ERe```                                                                       | AgentTesla                                              | 1                      |
 | ```ffangfang@yandex.com```        | ```info@excellent.ba```                                                                                                        | ```Ilidza_1322```                                                                    | AgentTesla                                              | 1                      |
 | ```billionvain@yandex.com```      | ```supin@daiphatfood.com.vn```                                                                                                 | ```jn&6kG~_w;;A```                                                                   | AgentTesla                                              | 1                      |
+| ```thedropboxx88@yandex.com```    | ```finance@wowwow.com.sg```                                                                                                    | ```$$wow_5405*```                                                                    | AgentTesla                                              | 1                      |
+| ```fresh.italian@yandex.com```    | ```finance@wowwow.com.sg```                                                                                                    | ```$$wow_5405*```                                                                    | AgentTesla                                              | 1                      |
+| ```l3ebenard@yandex.com```        | ```finance@wowwow.com.sg```                                                                                                    | ```$$wow_5405*```                                                                    | AgentTesla                                              | 1                      |
 
 [Top](#information-stealers-wall-of-sheep-analysis)
 
@@ -1204,13 +1241,6 @@ The uses cases in this correlation demonstrate that some operators attempted to 
 
 ### Use-Case 2
 
-| IP Address          | Count | Domain               | User                               | Count | Password                 | Family     |
-|---------------------|-------|----------------------|------------------------------------|-------|--------------------------|------------|
-| ```162.241.27.33``` | 26    | ```mail.platinships.net``` | ```amani@platinships.net```</br>```armani@platinships.net```</br>```garang@platinships.net```</br>```phyno@platinships.net```</br>```chima@platinships.net```</br>```don@platinships.net```   | 2</br>4</br>5</br>6</br>5</br>1     | ```Azz%LcQK%sb!```</br>```#%c,*lVZNIXctE.!BA```</br>```%izARl@$-zHKEYwlHM```</br>```J~5v.F5[G06H6}ct{!```</br>```R[2](NaueJp!6tL?sW```</br>```Vn,?+Es5;dNayEvk]*```       | AgentTesla |
-|                     |       | ```mail.novaa-ship.com```  | ```ebase@novaa-ship.com```</br>```flo@novaa-ship.com```</br>```armani@novaa-ship.com``` | 1</br>1</br>1</br>     | ```O-xgNxpHw~?h5H.ZEB```</br>```KyayQQ{Kn$TJ+f;dRd```</br>```Azz%LcQK%sb!``` | AgentTesla</br>AgentTesla</br>HawkEye |
-
-### Use-Case 3
-
 | IP Address           | Count | Domain                          | User                              | Password         | Count    | Family     |
 |----------------------|-------|---------------------------------|-----------------------------------|------------------|----------|------------|
 | ```85.187.154.178``` | 28    | ```mail.flood-protection.org``` | ```clark@flood-protection.org```  | ```clark2424@``` | 3        | AgentTesla |
@@ -1222,7 +1252,7 @@ The uses cases in this correlation demonstrate that some operators attempted to 
 |                      |       |                                 | ```sepp@flood-protection.org```   | ```sepp2424@```  | 4        | AgentTesla |
 |                      |       |                                 | ```dom@flood-protection.org```    | ```dom2424@```   | 1        | AgentTesla |
 
-### Use-Case 4
+### Use-Case 3
 
 Same operator attempted to change by using the "kingmezz" domain, though everything else is almost the same.
 
@@ -1326,4 +1356,4 @@ Some samples opted to exfiltrate via HTTP only, or both HTTP and SMTP.
 
 [Top](#information-stealers-wall-of-sheep-analysis)
 
-#AS20200815
+#AS20201111
